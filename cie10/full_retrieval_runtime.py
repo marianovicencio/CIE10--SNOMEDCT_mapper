@@ -1,7 +1,7 @@
 """Read the immutable v2 index in bounded blocks without retaining its file cache.
 
-This changes I/O only. The original encoder/builder and exact ranking functions
-remain unchanged, and the stored builder/encoder fingerprints are still checked.
+This changes I/O only. Encoding and ranking are unchanged. Source fingerprints are checked against
+the exact build or an explicitly audited refactor; index files remain immutable.
 """
 import os
 import sqlite3
@@ -11,12 +11,12 @@ import json
 import time
 from datetime import datetime,timezone
 from pathlib import Path
-from . import full_retrieval as stored
 from .full_retrieval import load_bundle,lexical_search,semantic_search_batch,fuse_rankings
 from .mapping_context import ContextError
-from .retrieval_evaluation import TransformerRetriever,sha256,write_json
+from .retrieval_core import TransformerRetriever,sha256,write_json
 from .retrieval_queries import check_token_budget,queries_for_encoding
 from .snomed_catalog import load_catalog
+from .retrieval_configuration import verify_index_implementation
 
 
 def streamed_sha256(path):
@@ -84,8 +84,7 @@ def run_hybrid(bundle, index, output, pool_k=50, top_k=10, device='cuda', allow_
         info=json.loads((index/'index.json').read_text())
         if info.get('schema_version')!='0.2.0':raise ContextError('Formato de índice incompatible.')
         if info.get('status')!='completed':raise ContextError('El índice está incompleto.')
-        if info.get('implementation_sha256')!=sha256(stored.__file__) or info.get('encoder_implementation_sha256')!=sha256(Path(__file__).with_name('retrieval_evaluation.py')):
-            raise ContextError('La implementación cambió; se requiere reconstruir el índice.')
+        report['implementation_verification'] = verify_index_implementation(info)
         if any(importlib.metadata.version(p)!=v for p,v in info['packages'].items()):
             raise ContextError('El entorno del índice cambió; se requiere reconstruirlo.')
         catalog=Path(info['catalog_path']);meta=load_catalog(catalog,allow_fixture)

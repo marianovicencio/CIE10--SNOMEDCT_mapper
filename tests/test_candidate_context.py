@@ -7,10 +7,9 @@ from unittest import TestCase, main
 from unittest.mock import patch
 
 from cie10.mapping_context import ContextError
-from cie10.proposal_context import (
+from cie10.candidate_context import (
     sites,
     compare_sites,
-    order_candidates,
     CIEContextReviewer,
     BodySiteRelations,
 )
@@ -91,27 +90,6 @@ class AnatomyTests(TestCase):
         with self.assertRaises(ContextError):
             sites([{"part": [{"name": "code", "valueCode": "363698007"}]}])
 
-    def test_stable_order_retains_original_ranks_and_all_candidates(self):
-        def row(cid, rank, status, anatomy):
-            return {
-                "concept_id": cid,
-                "rank": rank,
-                "context_review": {"status": status, "anatomy": {"status": anatomy}},
-            }
-
-        rows = [
-            row("a", 1, "requires_review", "no_hierarchy_link_review"),
-            row("b", 2, "no_detected_conflict", "same_published_site"),
-            row("c", 3, "excluded_by_explicit_constraint", "not_comparable"),
-            row("d", 4, "no_detected_conflict", "same_published_site"),
-        ]
-        original = deepcopy(rows)
-        out = order_candidates(rows)
-        self.assertEqual([x["concept_id"] for x in out], ["b", "d", "a", "c"])
-        self.assertEqual(rows, original)
-        self.assertEqual([x["semantic_rank"] for x in out], [2, 4, 1, 3])
-        self.assertEqual([x["rank"] for x in out], [1, 2, 3, 4])
-
 
 class BodyRelationTests(TestCase):
     def resolver(self, valid=True):
@@ -170,7 +148,7 @@ class ContextTests(TestCase):
         r = self.reviewer()
         r.resolver.index = Path("/tmp/unopened-test-index")
         r.resolver.verifier = None
-        with patch("cie10.proposal_context.ComponentResolver") as factory:
+        with patch("cie10.candidate_context.ComponentResolver") as factory:
             factory.return_value.resolve.return_value = None
             self.assertEqual(r.resolve_anchor()["status"], "unresolved")
 
@@ -179,10 +157,6 @@ class ContextTests(TestCase):
             with self.assertRaises(ContextError):
                 CIEContextReviewer(".", code, "text", None)
 
-    def test_other_edition_blocks_before_candidate_review(self):
-        r = self.reviewer()
-        with self.assertRaises(ContextError):
-            r.apply({"version": "other", "phrases": []})
 
     def run_review(self, scope="asserted", constraint=None, clinical=True):
         r = self.reviewer()
@@ -202,21 +176,21 @@ class ContextTests(TestCase):
                 "text": "conditioned source",
             },
         ]
-        with patch("cie10.proposal_context.prepare_evidence", return_value=ev), patch(
-            "cie10.proposal_context.build_manual_context",
+        with patch("cie10.candidate_context.prepare_evidence", return_value=ev), patch(
+            "cie10.candidate_context.build_manual_context",
             return_value=([], {"scope": "morbidity"}),
         ), patch(
-            "cie10.proposal_context.build_index_context",
+            "cie10.candidate_context.build_index_context",
             return_value=([], {"scope": "morbidity"}),
         ), patch(
-            "cie10.proposal_context.enrich_components",
+            "cie10.candidate_context.enrich_components",
             side_effect=lambda e, *_: (e, {"status": "not_needed"}),
         ), patch(
-            "cie10.proposal_context.anatomical_exclusion", return_value=None
+            "cie10.candidate_context.anatomical_exclusion", return_value=None
         ), patch(
-            "cie10.proposal_context.effective_constraint", return_value=constraint
+            "cie10.candidate_context.effective_constraint", return_value=constraint
         ), patch(
-            "cie10.proposal_context.compare_sites",
+            "cie10.candidate_context.compare_sites",
             return_value={"status": "same_published_site"},
         ):
             return r.review(candidate, {"scope": scope})

@@ -11,8 +11,8 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from cie10.context_api import ContextStore
 from cie10.full_retrieval_runtime import streamed_sha256
-from cie10.retrieval_configuration import EDITION
-from cie10.retrieval_evaluation import sha256
+from cie10.retrieval_configuration import EDITION, verify_index_implementation
+from cie10.retrieval_core import sha256
 from cie10.retrieval_title_fragments import POLICY as FRAGMENT_POLICY
 from cie10.terminology_alignment import POLICY as COMPONENT_POLICY
 
@@ -44,10 +44,7 @@ def main():
     for name in ("aliases.sqlite", "embeddings.npy"):
         if streamed_sha256(index / name) != info["files"][name]:
             raise ValueError("Archivo de índice modificado: " + name)
-    if info.get("implementation_sha256") != sha256(ROOT / "cie10/full_retrieval.py"):
-        raise ValueError("El índice fue construido con otra implementación.")
-    if info.get("encoder_implementation_sha256") != sha256(ROOT / "cie10/retrieval_evaluation.py"):
-        raise ValueError("El codificador del índice es diferente.")
+    verify_index_implementation(info, ROOT)
     # A fresh compilation has its own documentary snapshot. Never reuse the
     # developer's snapshot hash as an assertion about a different installation.
     snapshot = ContextStore().context("C76.4", "morbidity", 1, 0)["source_snapshot_sha256"]

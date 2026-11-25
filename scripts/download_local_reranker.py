@@ -4,7 +4,7 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT))
 from huggingface_hub import snapshot_download
-from cie10.retrieval_evaluation import sha256,write_json
+from cie10.retrieval_core import sha256,write_json
 REPO='BAAI/bge-reranker-v2-m3'
 REVISION='953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e'
 FILES=['config.json','model.safetensors','tokenizer.json','tokenizer_config.json','special_tokens_map.json','README.md']

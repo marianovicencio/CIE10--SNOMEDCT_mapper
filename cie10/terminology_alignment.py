@@ -10,7 +10,7 @@ from pathlib import Path
 from urllib.parse import urlencode
 from .mapping_context import ContextError, digest
 from .retrieval_configuration import load_active_index, EDITION
-from .retrieval_evaluation import sha256
+from .retrieval_core import sha256
 from .full_retrieval_runtime import streamed_sha256
 from .snowstorm_verification import SnowstormFHIR
 from .reasoning.assertions import extract_assertions, ARTICLES

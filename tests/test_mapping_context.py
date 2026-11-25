@@ -8,7 +8,7 @@ from unittest.mock import patch
 
 from cie10 import context_api
 from cie10.common import write_json, write_jsonl
-from cie10.mapping_context import ContextError, MappingContextClient, focus_context, messages_for, validate_mapping_input
+from cie10.mapping_context import ContextError, MappingContextClient, validate_mapping_input
 from cie10.mapping_context import digest
 
 
@@ -116,28 +116,6 @@ class MappingContextTests(unittest.TestCase):
         b = self.prepare(200)['context']
         self.assertEqual(a['documentary_context'], b['documentary_context'])
         self.assertEqual(a['evidence'], b['evidence'])
-
-    def test_focus_keeps_whole_items_and_declares_selection(self):
-        pack = self.prepare()['context']
-        selected = focus_context(pack, '¿Qué dice mano NCOP #?', max_items=1)
-        self.assertIn('mano NCOP #', selected['documentary_context']['index_context'][0]['term'])
-        self.assertEqual(selected['context_selection']['coverage'], 'selected_evidence_not_all_retrieved_context')
-        self.assertEqual(len(pack['documentary_context']['manual_context']), 4)
-        prompt = messages_for(selected, '¿Qué dice mano NCOP #?')
-        self.assertNotIn('"expected":', prompt[1]['content'])
-
-    def test_baseline_does_not_receive_rubric_or_full_context(self):
-        prompt = messages_for(self.prepare()['context'], '¿Qué excluye?', 'title_only')
-        data = json.loads(prompt[1]['content'])['data']
-        self.assertEqual(data['evidence'], {})
-        self.assertNotIn('tabular', data)
-        self.assertNotIn('expected', data)
-
-
-
-
-
-
 
 
 if __name__ == '__main__':

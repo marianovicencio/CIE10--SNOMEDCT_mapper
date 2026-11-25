@@ -91,26 +91,3 @@ def literal_label_analysis(concept_id, diagnostic, evidence):
         quotes=[dict(evidence_id=r, text=sources[r]["text"]) for r in refs],
         additional_detail_needed=[],
     )
-
-
-def conservative_analysis(concept_id, diagnostic, evidence):
-    title = source(evidence, "CIE10", "title", "cie-title")
-    term = source(evidence, "SNOMED", "candidate_term", "snomed-term")
-    if not title or not term:
-        return None
-    refs = [title["id"], term["id"]] + [
-        x["id"] for x in evidence if x["type"] == "INPUT"
-    ]
-    sources = {x["id"]: x for x in evidence}
-    text = "CIE-10 y SNOMED no tienen la misma formulación. No se obtuvo una comparación suficientemente respaldada de sus diferencias de alcance; la correspondencia queda pendiente de revisión."
-    return dict(
-        concept_id=concept_id,
-        assessment="undetermined",
-        selection="abstained" if diagnostic else "not_requested",
-        justification=text,
-        evidence_refs=refs,
-        quotes=[dict(evidence_id=r, text=sources[r]["text"]) for r in refs],
-        additional_detail_needed=[
-            "Revisar que los términos conserven la afección y sus calificadores."
-        ],
-    )

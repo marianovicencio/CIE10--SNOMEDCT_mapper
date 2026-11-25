@@ -16,8 +16,8 @@ from .candidate_explanation import (
     anatomical_exclusion,
     explain_candidate,
     effective_constraint,
-    literal_label_analysis,
 )
+from .reasoning.comparisons import literal_label_analysis
 from .snowstorm_verification import SnowstormFHIR
 from .manual_reasoning import build_manual_context
 from .index_reasoning import build_index_context
@@ -390,7 +390,7 @@ def run_explanation(request):
     if not model_attempted:
         # Preserve restrictions, but never present a rule template as LLM prose.
         check = explain_candidate(
-            request["concept_id"], diagnostic, evidence, allow_literal_comparison=False
+            request["concept_id"], diagnostic, evidence
         )
         result = {
             "status": "explanation_unavailable",
@@ -412,7 +412,6 @@ def run_explanation(request):
                 transport=remote,
                 prompt_renderer=lambda prompt, _: prompt,
                 generation_method="openai_model",
-                safe_fallback=False,
             )
         except OpenAIError as error:
             raise ExplanationError(str(error)) from None
@@ -434,7 +433,6 @@ def run_explanation(request):
                 evidence,
                 endpoint=MODEL_ENDPOINT,
                 timeout=60,
-                safe_fallback=False,
                 response_profile="local",
             )
         result["provider"] = "local"

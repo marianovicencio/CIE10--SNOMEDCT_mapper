@@ -1,6 +1,7 @@
 import unittest,json
-from cie10.comparison_safety import safety_constraint,qualifier_conflict,scope_marker
+from cie10.reasoning.safety import safety_constraint,qualifier_conflict,scope_marker
 from cie10.candidate_explanation import explain_candidate
+from cie10.reasoning.comparisons import literal_label_analysis
 from cie10.explanation_attribution import validate_claim_attribution
 
 ID='39450006'
@@ -32,14 +33,14 @@ class SafetyTests(unittest.TestCase):
   title='Cálculo de la vesícula biliar sin colecistitis';term='cálculo de vesícula biliar sin colecistitis o colangitis'
   self.assertEqual(safety_constraint(ev(title,term))['assessment'],'undetermined')
   self.assertIsNone(safety_constraint(ev(title,term,'Cálculos vesiculares sin colecistitis ni colangitis.')))
- def test_literal_identity_is_explicit_and_opt_in(self):
+ def test_literal_header_uses_explicit_source_identity(self):
   e=ev('Psoriasis, no especificada','psoriasis','Se confirma psoriasis.')
-  r=explain_candidate(ID,e[-1]['text'],e,allow_literal_comparison=True,transport=lambda _:self.fail('Model called'))
-  self.assertEqual(r['generation_method'],'literal_heading_comparison');self.assertEqual(r['analysis']['selection'],'proposed')
+  r={'analysis':literal_label_analysis(ID,e[-1]['text'],e)}
+  self.assertEqual(r['analysis']['selection'],'proposed')
  def test_failed_generation_abstains_without_erasing_errors(self):
   e=ev('Hipertensión esencial','hipertensión arterial esencial','Hipertensión primaria.')
-  r=explain_candidate(ID,e[-1]['text'],e,safe_fallback=True,transport=lambda _:dict(content='invalid'))
-  self.assertEqual(r['generation_method'],'conservative_documentary_fallback');self.assertEqual(r['analysis']['selection'],'abstained');self.assertEqual(len(r['generation_errors']),2)
+  r=explain_candidate(ID,e[-1]['text'],e,transport=lambda _:dict(content='invalid'))
+  self.assertEqual(r['status'],'explanation_rejected');self.assertIsNone(r['analysis']);self.assertEqual(len(r['errors']),2)
  def test_unattributed_mechanism_and_internal_role_rejected(self):
   sources={x['id']:x for x in ev('Psoriasis','psoriasis')}
   for text in ['El candidato tiene naturaleza citotóxica mediada por células.','El término candidate_term coincide.']:
@@ -48,13 +49,13 @@ class SafetyTests(unittest.TestCase):
 
  def test_unrelated_unspecified_subtype_does_not_erase_literal_support(self):
   e=ev('Psoriasis, no especificada','psoriasis','Se confirma psoriasis; no se especifica una variedad.')
-  r=explain_candidate(ID,e[-1]['text'],e,allow_literal_comparison=True,transport=lambda _:self.fail('Model called'))
+  r={'analysis':literal_label_analysis(ID,e[-1]['text'],e)}
   self.assertEqual(r['analysis']['selection'],'proposed')
 
  def test_official_same_concept_alias_can_back_literal_input_match(self):
   e=ev('Catarata senil, no especificada','catarata senil','Diagnóstico: catarata relacionada con la edad.')
   e.append(dict(id='alias',type='SNOMED',role='candidate_alias',concept_id=ID,text='catarata relacionada con la edad'))
-  r=explain_candidate(ID,e[2]['text'],e,allow_literal_comparison=True,transport=lambda _:self.fail('Model called'))
+  r={'analysis':literal_label_analysis(ID,e[2]['text'],e)}
   self.assertIn('alias',r['analysis']['evidence_refs']);self.assertEqual(r['analysis']['selection'],'proposed')
 
  def test_negated_manifestation_does_not_activate_index_pair(self):
@@ -72,11 +73,9 @@ class GrammaticalLabelTests(unittest.TestCase):
    ('Enfermedad de los nervios periféricos','enfermedad de nervios periféricos')]:
    with self.subTest(left=left):
     evidence=ev(left,right)
-    result=explain_candidate(ID,None,evidence,allow_literal_comparison=True,transport=lambda _:self.fail('Model called'))
+    result={'analysis':literal_label_analysis(ID,None,evidence)}
     self.assertEqual(result['analysis']['assessment'],'compatible')
     self.assertEqual(result['analysis']['selection'],'not_requested')
-    self.assertEqual(result['generation_method'],'grammatical_heading_comparison')
-    self.assertEqual(result['attempts'],0)
     self.assertEqual([x['text'] for x in result['analysis']['quotes']],[left,right])
  def test_content_qualifiers_and_names_preserved(self):
   from cie10.reasoning.comparisons import label_comparison_kind
@@ -94,7 +93,7 @@ class GrammaticalLabelTests(unittest.TestCase):
    with self.subTest(left=left):self.assertIsNone(label_comparison_kind(left,right))
  def test_diagnostic_grammar_is_source_bound(self):
   e=ev('Angiosarcoma del hígado','angiosarcoma de hígado','Se confirma angiosarcoma del hígado.')
-  r=explain_candidate(ID,e[-1]['text'],e,allow_literal_comparison=True,transport=lambda _:self.fail('Model called'))
+  r={'analysis':literal_label_analysis(ID,e[-1]['text'],e)}
   self.assertEqual(r['analysis']['selection'],'proposed')
   self.assertIn('i',r['analysis']['evidence_refs'])
  def test_unsafe_diagnostic_does_not_become_positive(self):
@@ -106,5 +105,5 @@ class GrammaticalLabelTests(unittest.TestCase):
  def test_exclusion_precedes_grammatical_agreement(self):
   e=ev('Tumor del hígado','tumor de hígado')
   e += [dict(id='ex',type='CIE10',role='exclusion',inherited=False,text='hígado (C22)'),dict(id='site',type='SNOMED',role='finding_site',concept_id=ID,text='hígado')]
-  r=explain_candidate(ID,None,e,allow_literal_comparison=True,transport=lambda _:self.fail('Model called'))
+  r=explain_candidate(ID,None,e,transport=lambda _:self.fail('Model called'))
   self.assertEqual(r['analysis']['assessment'],'incompatible')

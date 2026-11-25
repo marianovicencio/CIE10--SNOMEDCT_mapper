@@ -1,4 +1,4 @@
-"""Conservative CIE-10 contrast of review-only semantic proposals.
+"""Source-bound CIE-10 contrast of retrieved SNOMED CT candidates.
 
 Only independently verified published descriptions may anchor CIE anatomy.
 No embedding result becomes an anchor or an equivalence. No-hierarchy-link is
@@ -17,8 +17,8 @@ from .index_reasoning import build_index_context
 from .reasoning.policy import effective_constraint, anatomical_exclusion
 from .reasoning.assertions import extract_assertions
 from .terminology_alignment import enrich_components, ComponentResolver
-from .retrieval_evaluation import normalize
-from .semantic_proposals import published_attributes
+from .retrieval_core import normalize
+from .snowstorm_verification import published_attributes
 from .candidate_comparison import build_comparison
 
 POLICY = "verified_cie_anchor_anatomy_and_documentary_constraints_v1"
@@ -122,22 +122,6 @@ def compare_sites(expected, actual, resolver):
     else:
         status = "relation_unresolved"
     return {"status": status, "comparisons": comparisons, "proves_disjointness": False}
-
-
-def review_priority(review):
-    if review["status"] == "excluded_by_explicit_constraint":
-        return 3
-    if review["anatomy"]["status"] == "no_hierarchy_link_review":
-        return 2
-    if review["status"] == "requires_review":
-        return 1
-    return 0
-
-
-def order_candidates(candidates):
-    # Retain all alternatives and original ranks; this is not clinical selection.
-    ordered = sorted(candidates, key=lambda c: review_priority(c["context_review"]))
-    return [dict(c, semantic_rank=c["rank"], rank=i) for i, c in enumerate(ordered, 1)]
 
 
 class CIEContextReviewer:
@@ -356,26 +340,4 @@ class CIEContextReviewer:
         if result["comparison"]:
             known = {item["id"] for item in citations}
             citations.extend(item for item in result["comparison"]["sources"] if item["id"] not in known)
-        return result
-
-    def apply(self, response):
-        if response.get("version") != self.resolver.version:
-            raise ContextError("La propuesta pertenece a otra edición.")
-        result = deepcopy(response)
-        for phrase in result["phrases"]:
-            for candidate in phrase["candidates"]:
-                candidate["context_review"] = self.review(candidate, phrase)
-            phrase["candidates"] = order_candidates(phrase["candidates"])
-        result["cie_context"] = {
-            "code": self.code,
-            "title": self.title,
-            "scope": "morbidity",
-            "source_snapshot_sha256": self.snapshot,
-            "reference": self.doc["classification"].get("reference"),
-            "anatomical_anchor": self.anchor,
-            "policy": POLICY,
-            "candidate_set_preserved": True,
-            "automatic_selection": False,
-            "coverage": "selected_documentary_constraints_not_exhaustive_clinical_validation",
-        }
         return result

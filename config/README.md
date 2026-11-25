@@ -1,6 +1,7 @@
 # Configuración documental y modelos
 
 - `sources.json`: nombres, huellas y regiones de los tres PDF CIE-10 2018 esperados.
+- `index-compatibility.json`: excepción de compatibilidad para la reorganización auditada del codificador y constructor. Fija ambas parejas de huellas; no autoriza cambios de algoritmos ni modifica los datos del índice.
 - `retrieval_models.json`: identificadores y revisiones de modelos. La plataforma utiliza `sapbert_spanish`, con su revisión fijada.
 - `vol2_documentary_review.json`: registro de revisión documental. Sus huellas invalidan el estado revisado si cambia la extracción; no certifica decisiones clínicas.
 

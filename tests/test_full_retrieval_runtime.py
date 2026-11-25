@@ -9,7 +9,7 @@ from cie10.full_retrieval_runtime import StreamedMatrix,semantic_search_batch,st
 class StreamedIndexTests(unittest.TestCase):
  def test_streamed_reads_and_rankings_equal_mmap_without_changing_file(self):
   with tempfile.TemporaryDirectory() as tmp:
-   from cie10.retrieval_evaluation import sha256
+   from cie10.retrieval_core import sha256
    path=Path(tmp)/'vectors.npy';values=np.random.default_rng(7).normal(size=(45,8)).astype('float32');np.save(path,values)
    self.assertEqual(streamed_sha256(path),sha256(path))
    probe=np.load(path,mmap_mode='r');offset,shape,dtype=probe.offset,probe.shape,probe.dtype;probe._mmap.close()
@@ -27,7 +27,7 @@ class StreamedIndexTests(unittest.TestCase):
  def test_complete_fixture_runtime_wires_index_and_search_without_a_real_model(self):
   import json
   from unittest.mock import patch
-  from cie10.retrieval_evaluation import sha256,write_json
+  from cie10.retrieval_core import sha256,write_json
   from cie10.full_retrieval_runtime import run_hybrid
   from cie10 import full_retrieval as stored
   class FakeEngine:
@@ -41,7 +41,7 @@ class StreamedIndexTests(unittest.TestCase):
    meta={'status':'completed','kind':'synthetic_fixture','system':'urn:magister:synthetic-fixture','version':'fixture-v1','coverage':'fixture','files':{'catalog.jsonl':sha256(cat/'catalog.jsonl')}};write_json(cat/'catalog.json',meta)
    db=sqlite3.connect(index/'aliases.sqlite');db.executescript("CREATE TABLE aliases(alias_no INTEGER PRIMARY KEY,concept_id,term,description_id,normalized,semantic_eligible); CREATE VIRTUAL TABLE lexical USING fts5(normalized,content='aliases',content_rowid='alias_no'); INSERT INTO aliases VALUES(1,'fixture:a','renal','a','renal',1); INSERT INTO lexical(lexical) VALUES('rebuild');");db.commit();db.close()
    np.save(index/'embeddings.npy',np.array([[1,0]],dtype='float32'))
-   info={'status':'completed','schema_version':'0.2.0','implementation_sha256':sha256(stored.__file__),'encoder_implementation_sha256':sha256(Path(stored.__file__).with_name('retrieval_evaluation.py')),'packages':{},'catalog_path':str(cat),'catalog_manifest_sha256':sha256(cat/'catalog.json'),'files':{n:sha256(index/n) for n in ('aliases.sqlite','embeddings.npy')},'aliases':1,'embedding_dimension':2,'model':{}}
+   info={'status':'completed','schema_version':'0.2.0','implementation_sha256':sha256(stored.__file__),'encoder_implementation_sha256':sha256(Path(stored.__file__).with_name('retrieval_core.py')),'packages':{},'catalog_path':str(cat),'catalog_manifest_sha256':sha256(cat/'catalog.json'),'files':{n:sha256(index/n) for n in ('aliases.sqlite','embeddings.npy')},'aliases':1,'embedding_dimension':2,'model':{}}
    write_json(index/'index.json',info)
    plan={'code':'C64','input_mode':'code_only','plan_sha256':'fixture','source_snapshot_sha256':'fixture','context_sha256':'fixture','policy':{}}
    queries=[{'id':'q1','text':'renal'}]

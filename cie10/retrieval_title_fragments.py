@@ -4,7 +4,7 @@ import hashlib,json,re
 from pathlib import Path
 from . import retrieval_queries as legacy
 from .mapping_context import ContextError,digest
-from .retrieval_evaluation import normalize,sha256
+from .retrieval_core import normalize,sha256
 
 VERSION='0.2.0'
 KIND='official_title_bracket_fragment'

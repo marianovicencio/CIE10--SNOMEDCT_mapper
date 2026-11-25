@@ -54,3 +54,32 @@ class SnowstormFHIR:
         return {'status':'verified_in_requested_server_version','active':True,'version':self.version,
             'request_path':path,'response_sha256':digest(data),
             'activity_basis':'explicit_inactive_false' if inactive else 'inactive_defaults_false_in_fhir_snomed_r4'}
+
+
+def published_attributes(verified, resolver):
+    """Expose published attributes without inferring new anatomy from the input.
+
+    This is a FHIR lookup projection, not a complete role-group representation.
+    Every part is retained for selected properties; no relationship is invented.
+    """
+    if "_proposal_attributes" not in verified:
+        data = resolver.verifier.get(verified["request_path"])
+        if digest(data) != verified["response_sha256"]:
+            raise ContextError("Cambió la respuesta de origen al leer sus atributos.")
+        attributes = []
+        for prop in data.get("parameter", []):
+            if prop.get("name") != "property":
+                continue
+            codes = [
+                p.get("valueCode")
+                for p in prop.get("part", [])
+                if p.get("name") == "code"
+            ]
+            if (
+                len(codes) == 1
+                and isinstance(codes[0], str)
+                and (codes[0].isdigit() or codes[0] == "parent")
+            ):
+                attributes.append(prop)
+        verified["_proposal_attributes"] = attributes
+    return verified["_proposal_attributes"]

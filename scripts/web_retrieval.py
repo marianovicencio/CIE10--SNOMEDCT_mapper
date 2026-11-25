@@ -12,7 +12,7 @@ sys.path.insert(0, str(ROOT))
 
 from cie10.retrieval_configuration import load_active_index
 from cie10.mapping_context import ContextError, MappingContextClient
-from cie10.retrieval_evaluation import sha256, write_json
+from cie10.retrieval_core import sha256, write_json
 from cie10.retrieval_queries import prepare_queries
 
 FHIR = 'http://127.0.0.1:8081/fhir'
@@ -49,10 +49,7 @@ def search(request):
         raise ContextError('Código inválido.')
     request = {**request, 'scope': 'morbidity', 'top_k': 5}
     index, index_info = load_active_index(ROOT)
-    if index_info['schema_version'] == '0.2.0':
-        from cie10.full_retrieval_runtime import run_hybrid
-    else:
-        from cie10.hybrid_retrieval import run_hybrid
+    from cie10.full_retrieval_runtime import run_hybrid
     pack = MappingContextClient().prepare(request)
     from cie10 import retrieval_title_fragments as fragments
     use_fragments = index_info['schema_version'] == '0.2.0' and fragments.enabled(ROOT, index)

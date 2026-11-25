@@ -1,8 +1,8 @@
 """Execute an on-demand candidate explanation without persisting input or prose.
 
-This module coordinates restrictions, optional literal comparison and generation.
+This module coordinates documentary restrictions and model generation.
 Contract, prompts, validation and documentary policy live in separate modules.
-Previous public imports remain available here for compatibility.
+Generated explanations always come from the selected model.
 """
 
 import json
@@ -24,8 +24,6 @@ from .reasoning.policy import (
     anatomical_exclusion,
     effective_constraint,
 )
-from .comparison_safety import literal_label_analysis, conservative_analysis
-from .reasoning.comparisons import label_comparison_kind
 from .explanation_attribution import (
     validate_claim_attribution,
     validate_mapping_comparison,
@@ -41,8 +39,6 @@ def explain_candidate(
     transport=None,
     prompt_renderer=gemma_turn,
     generation_method="local_model",
-    allow_literal_comparison=False,
-    safe_fallback=False,
     response_profile="expanded",
 ):
     """Generate and validate in memory, allowing one explicit correction attempt."""
@@ -152,37 +148,6 @@ def explain_candidate(
             "validation_scope": "structure_references_and_explicit_documentary_constraints",
             "clinical_validation": "not_performed",
         }
-    if allow_literal_comparison:
-        literal = literal_label_analysis(concept_id, diagnostic, evidence)
-        if literal:
-            literal = validate_explanation(literal, concept_id, diagnostic, evidence)
-            title = next(
-                x for x in evidence if x.get("role") == "title" and x["type"] == "CIE10"
-            )
-            term = next(
-                x
-                for x in evidence
-                if x.get("role") == "candidate_term" and x["type"] == "SNOMED"
-            )
-            grammatical = (
-                label_comparison_kind(title["text"], term["text"]) == "grammatical"
-            )
-            return {
-                "status": "explanation_available",
-                "analysis": literal,
-                "attempts": 0,
-                "generation_method": (
-                    "grammatical_heading_comparison"
-                    if grammatical
-                    else "literal_heading_comparison"
-                ),
-                "validation_scope": (
-                    "grammatical_heading_identity_not_clinical_equivalence"
-                    if grammatical
-                    else "literal_heading_identity_not_clinical_equivalence"
-                ),
-                "clinical_validation": "not_performed",
-            }
     schema, base_prompt = generation_setup(concept_id, diagnostic, evidence, profile=response_profile)
     attempts = []
     previous = None
@@ -398,19 +363,6 @@ def explain_candidate(
             }
         except (ValueError, TypeError, KeyError) as error:
             attempts.append(str(error))
-    if safe_fallback:
-        fallback = conservative_analysis(concept_id, diagnostic, evidence)
-        if fallback:
-            fallback = validate_explanation(fallback, concept_id, diagnostic, evidence)
-            return {
-                "status": "explanation_available",
-                "analysis": fallback,
-                "attempts": 2,
-                "generation_method": "conservative_documentary_fallback",
-                "generation_errors": attempts,
-                "validation_scope": "explicit_uncertainty_not_validated_positive_mapping",
-                "clinical_validation": "not_performed",
-            }
     return {
         "status": "explanation_rejected",
         "analysis": None,

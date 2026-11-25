@@ -6,7 +6,7 @@ from urllib.parse import urlsplit, parse_qs
 from cie10.terminology_alignment import ComponentResolver, canonical, enrich_components
 from cie10.reasoning.grounded_alignment import grounded_constraint
 from cie10.mapping_context import ContextError
-from cie10.retrieval_evaluation import normalize
+from cie10.retrieval_core import normalize
 
 VERSION = "http://snomed.info/sct/449081005/version/20261110"
 CID = "999999999"

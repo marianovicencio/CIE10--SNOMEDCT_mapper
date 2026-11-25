@@ -11,9 +11,9 @@ from .mapping_context import CODE, HASH, ContextError
 from .retrieval_configuration import load_active_index, EDITION
 from .full_retrieval_runtime import streamed_sha256
 from .terminology_alignment import ComponentResolver
-from .semantic_proposals import published_attributes
+from .snowstorm_verification import published_attributes
 from .reasoning.assertions import extract_assertions
-from .proposal_context import CIEContextReviewer, sites
+from .candidate_context import CIEContextReviewer, sites
 from .reasoning.comparisons import label_comparison_kind
 
 

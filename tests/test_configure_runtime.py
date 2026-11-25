@@ -29,12 +29,12 @@ class RuntimeConfigurationTests(unittest.TestCase):
     def invoke(self, flags=(), corrupt=False):
         (self.index / "index.json").write_text(json.dumps(self.info))
         def digest(path):
-            return {"full_retrieval.py": "builder", "retrieval_evaluation.py": "encoder"}.get(path.name, "fingerprint")
+            return {"full_retrieval.py": "builder", "retrieval_core.py": "encoder"}.get(path.name, "fingerprint")
         def streamed(path):
             return "corrupt" if corrupt else {"aliases.sqlite": "aliases", "embeddings.npy": "vectors"}[path.name]
         store = Mock()
         store.context.return_value = {"source_snapshot_sha256": "this-installation-snapshot"}
-        with patch.object(module, "ROOT", self.root), patch.object(module, "sha256", side_effect=digest), patch.object(module, "streamed_sha256", side_effect=streamed), patch.object(module, "ContextStore", return_value=store), patch.object(sys, "argv", ["configure_runtime.py", "--index", "data/indexes/snomed/test", *flags]), contextlib.redirect_stdout(io.StringIO()):
+        with patch.object(module, "ROOT", self.root), patch.object(module, "sha256", side_effect=digest), patch("cie10.retrieval_configuration.sha256", side_effect=digest), patch.object(module, "streamed_sha256", side_effect=streamed), patch.object(module, "ContextStore", return_value=store), patch.object(sys, "argv", ["configure_runtime.py", "--index", "data/indexes/snomed/test", *flags]), contextlib.redirect_stdout(io.StringIO()):
             module.main()
         return self.root / "infra/retrieval"
 

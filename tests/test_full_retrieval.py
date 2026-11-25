@@ -42,7 +42,7 @@ class FullSearchTests(unittest.TestCase):
   from types import SimpleNamespace
   from unittest.mock import patch
   from cie10.full_retrieval import build_index,lexical_search
-  from cie10.retrieval_evaluation import sha256
+  from cie10.retrieval_core import sha256
   class FakeEngine:
    calls=0;fail=True
    def __init__(self,*args):self.model=SimpleNamespace(config=SimpleNamespace(hidden_size=2))

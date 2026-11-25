@@ -108,6 +108,8 @@ Empieza por la [guía del código](docs/code-guide.md) para seguir una petición
 
 El entorno de referencia es **Linux / Ubuntu WSL**, con Python **3.14**, Node.js **24**, Docker y, para la recuperación semántica y el generador local actuales, una GPU NVIDIA compatible con CUDA. Los servicios se enlazan a la interfaz local.
 
+Los módulos de `cie10/` separan la ejecución de consultas, el razonamiento documental y la preparación de fuentes. `scripts/` contiene los puntos de entrada necesarios para operar o preparar la plataforma; `tests/` conserva sus verificaciones. Los experimentos históricos y las herramientas piloto quedan fuera.
+
 Consulta la [guía de instalación](docs/installation.md). Allí se explica cómo preparar los PDF, importar SNOMED CT, construir los índices, configurar los modelos e iniciar los servicios. El frontend puede inspeccionarse sin los datos; las consultas necesitan los servicios y catálogos preparados.
 
 ## Pruebas

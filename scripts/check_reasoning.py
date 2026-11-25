@@ -9,8 +9,8 @@ sys.path.insert(0, str(ROOT))
 PATTERNS = (
     "test_candidate_review_service.py",
     "test_candidate_comparison.py",
-    "test_proposal_context.py",
-    "test_semantic_proposals.py",
+    "test_candidate_context.py",
+    "test_published_attributes.py",
     "test_grounded_alignment.py",
     "test_assertion_comparison.py",
     "test_comparison_safety.py",
@@ -27,6 +27,7 @@ PATTERNS = (
     "test_index_reasoning.py",
     "test_openai_explanation.py",
     "test_retrieval_configuration.py",
+    "test_index_compatibility.py",
     "test_reranker_service.py",
     "test_retrieval_title_fragments.py",
     "test_shortlist_reranker.py",

@@ -3,7 +3,7 @@ import fcntl,json,tempfile,time
 from pathlib import Path
 from .shortlist_reranker import LocalCrossEncoder,apply_scores,query_text,scope_status,REPOSITORY,REVISION,POLICY
 from .full_retrieval_runtime import streamed_sha256
-from .retrieval_evaluation import sha256
+from .retrieval_core import sha256
 from .mapping_context import ContextError,digest
 
 
@@ -38,7 +38,7 @@ def apply_configured_reranker(result,request,plan,index,index_info,root):
         if sha256(Path(index)/'index.json')!=cfg['index_manifest_sha256']:raise ContextError('Edición de índice diferente.')
         for name,fingerprint in cfg['implementation_sha256'].items():
             if sha256(root/name)!=fingerprint:raise ContextError('La implementación cambió.')
-        from .comparison_safety import scope_marker
+        from .reasoning.safety import scope_marker
         if scope_marker(request.get('diagnostic_text','')):
             return unchanged('hypothetical_scope_keep_baseline')
         status=scope_status(request.get('diagnostic_text',''))

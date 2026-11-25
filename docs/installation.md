@@ -96,6 +96,8 @@ El importador compone los estados RF2 y comprueba sus dependencias. El construct
 
 `configure_runtime.py` verifica la integridad del índice y obtiene la huella de la compilación CIE-10 local. Genera los archivos `infra/retrieval/active*.json` que vinculan la versión, las variantes de consulta y la alineación de componentes. Es una configuración de consistencia técnica, no una aprobación clínica.
 
+Se admite el índice de formato `0.2.0`; el índice piloto antiguo ya no forma parte de la plataforma. Una reorganización de fuentes conserva compatibilidad únicamente si está fijada en `config/index-compatibility.json`. Cualquier cambio de algoritmos requiere reconstruir el índice.
+
 El reranker es opcional:
 
 ```bash

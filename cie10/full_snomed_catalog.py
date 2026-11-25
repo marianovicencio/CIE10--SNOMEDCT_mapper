@@ -10,7 +10,7 @@ from zipfile import ZipFile
 
 from .mapping_context import ContextError
 from .snomed_catalog import SYSTEM,SCTID,DESCRIPTION_TYPES,dated_version
-from .retrieval_evaluation import sha256,write_json
+from .retrieval_core import sha256,write_json
 
 
 @lru_cache(maxsize=10000)

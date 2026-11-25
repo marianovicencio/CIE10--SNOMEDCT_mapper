@@ -9,7 +9,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT))
 from cie10.mapping_context import ContextError, MappingContextClient
 from cie10.retrieval_queries import check_token_budget, prepare_queries, render_queries
-from cie10.retrieval_evaluation import sha256, write_json
+from cie10.retrieval_core import sha256, write_json
 
 
 def main():

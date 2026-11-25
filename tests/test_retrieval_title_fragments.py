@@ -4,7 +4,7 @@ from pathlib import Path
 from cie10.retrieval_title_fragments import prepare_queries,inspect_fragment,load_bundle,KIND,search_lexical
 from cie10.retrieval_queries import prepare_queries as legacy,check_token_budget,queries_for_encoding,pointer_get
 from cie10.mapping_context import ContextError,digest
-from cie10.retrieval_evaluation import sha256,write_json
+from cie10.retrieval_core import sha256,write_json
 from test_retrieval_queries import pack,reseal
 
 def titled(title,**kwargs):

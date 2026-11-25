@@ -3,7 +3,7 @@ from pathlib import Path
 from unittest.mock import patch
 from cie10.reranker_service import apply_configured_reranker,published_fsns
 from cie10.shortlist_reranker import REPOSITORY,REVISION,POLICY
-from cie10.retrieval_evaluation import sha256
+from cie10.retrieval_core import sha256
 from cie10.mapping_context import ContextError
 
 class FakeEncoder:
