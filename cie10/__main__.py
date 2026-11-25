@@ -5,10 +5,10 @@ import sys
 from concurrent.futures import ProcessPoolExecutor
 from pathlib import Path
 
-from .audit import audit
-from .common import MANIFEST, ROOT, read_json, read_jsonl, sha256, write_json
-from .extract import extract_volume
-from .parse import parse_all
+from cie10.processing.audit import audit
+from cie10.common import MANIFEST, ROOT, read_json, read_jsonl, sha256, write_json
+from cie10.processing.extract import extract_volume
+from cie10.processing.parse import parse_all
 
 
 def import_sources(source_dir, manifest):
@@ -90,13 +90,13 @@ def main():
         if args.command == "import-sources":
             import_sources(args.source_dir, manifest)
         elif args.command=='build-context':
-            from .context_api import build_database
+            from cie10.api.context_api import build_database
             print(json.dumps(build_database(args.mode),ensure_ascii=False))
         elif args.command=='context':
-            from .context_api import ContextStore
+            from cie10.api.context_api import ContextStore
             print(json.dumps(ContextStore().context(args.code,args.scope,args.limit,args.offset,args.view),ensure_ascii=False,indent=2))
         elif args.command=='mapping-context':
-            from .mapping_context import MappingContextClient
+            from cie10.api.mapping_context import MappingContextClient
             request={'code':args.code,'scope':args.scope}
             if args.diagnostic_text is not None:request['diagnostic_text']=args.diagnostic_text
             pack=MappingContextClient(args.api_url,page_size=args.page_size).prepare(request)
@@ -104,7 +104,7 @@ def main():
             for name,payload in pack.items():write_json(args.output/(name+'.json'),payload)
             print(json.dumps({'status':'context_prepared','output':str(args.output),'retrieval':pack['context']['retrieval']},ensure_ascii=False))
         elif args.command=='serve':
-            from .context_api import serve
+            from cie10.api.context_api import serve
             serve(host=args.host,port=args.port)
         elif args.command in ("extract", "run"):
             run_extraction(args, manifest)

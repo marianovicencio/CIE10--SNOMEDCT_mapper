@@ -24,7 +24,7 @@ export default defineEventHandler(async (event) => {
   busy = true
   try {
     return await new Promise((resolve, reject) => {
-      const child = spawn(join(project, 'infra/retrieval/.venv/bin/python'), ['scripts/web_retrieval.py'], {
+      const child = spawn(join(project, 'infra/retrieval/.venv/bin/python'), ['scripts/web/web_retrieval.py'], {
         cwd: project, env: { ...process.env, HF_HUB_OFFLINE: '1', OPENBLAS_NUM_THREADS: '4' },
         stdio: ['pipe', 'pipe', 'ignore']
       })

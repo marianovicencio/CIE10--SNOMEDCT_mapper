@@ -89,20 +89,34 @@ Las explicaciones se mantienen en memoria durante la consulta; no se guardan com
 ## Organización del repositorio
 
 ```text
-cie10/                 Procesamiento documental, API, recuperación y comparación.
-  reasoning/           Análisis de afirmaciones, negación, alcance y restricciones.
-config/                Fuentes, revisiones documentales y especificaciones de modelos.
-frontend/              Interfaz Nuxt + Nuxt UI y rutas de servidor que llaman a Python.
-  app/components/      Consulta, comparación, explicaciones, fuentes y tutorial.
-  app/pages/           Consulta y páginas explicativas del proyecto.
-  server/api/          Puente HTTP con los servicios locales y vistas JSON.
-infra/                 Configuración de Snowstorm y preparación de modelos.
-scripts/               Preparación, configuración y puntos de entrada de la plataforma.
-tests/                 Pruebas unitarias y controles documentales.
-docs/                  Instalación y guía de lectura del código.
+cie10/
+├── processing/         Extracción, reconstrucción y auditoría documental.
+│   ├── volume1/       Lista tabular, listas, llaves, alcance y herencia.
+│   ├── volume2/       Manual, reglas, ejemplos, unidades y anexos.
+│   └── volume3/       Índice, tablas, continuaciones y remisiones.
+├── api/                Compilación, servicio HTTP y consumo del contexto CIE-10.
+├── retrieval/          Consultas, SAPBERT, BM25, RRF, índices y reranker.
+├── terminology/        Catálogos RF2, verificación FHIR y alineación SNOMED CT.
+├── comparison/         Contraste documental de los candidatos y sus dimensiones.
+├── explanations/       Prompts, generación local/BYOK, citas y validación.
+├── reasoning/          Afirmaciones, alcance y restricciones de los tres tomos.
+└── common.py           Raíz del proyecto y utilidades documentales compartidas.
+
+scripts/
+├── preparation/        Importación RF2, catálogo, índice y preparación de consultas.
+├── models/             Descarga de SAPBERT y del reranker.
+├── configuration/      Configuración local y de la API externa.
+├── web/                Entrada JSON desde el servidor Nuxt.
+└── checks/             Ejecución de las pruebas de razonamiento.
+
+tests/                  Grupos equivalentes a los módulos, con configuración aparte.
+frontend/               Interfaz Nuxt + Nuxt UI y rutas de servidor.
+config/                 Fuentes, revisiones, modelos y compatibilidad del índice.
+infra/                  Snowstorm y ejecutor del modelo generativo local.
+docs/                   Instalación y guía de lectura.
 ```
 
-Empieza por la [guía del código](docs/code-guide.md) para seguir una petición entre archivos. Algunas tablas JSON de `cie10/` y el registro de revisión de `config/` forman parte de la normalización documental; se conservan porque el parser las utiliza.
+Empieza por la [guía del código](docs/code-guide.md) para seguir una petición entre archivos. Las tablas JSON de `cie10/processing/` y el registro de revisión de `config/` forman parte de la normalización documental; se conservan porque el parser las utiliza.
 
 ## Instalación y ejecución
 
@@ -118,7 +132,7 @@ Las pruebas unitarias no requieren una clave externa ni realizan llamadas de pag
 
 ```bash
 python3 -m unittest discover -s tests
-python3 scripts/check_reasoning.py
+python3 scripts/checks/check_reasoning.py
 ```
 
 Las comprobaciones que necesitan corpus locales se omiten cuando estos no están disponibles. Los informes experimentales históricos no forman parte de esta publicación.

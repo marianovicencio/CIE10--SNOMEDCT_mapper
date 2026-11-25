@@ -35,7 +35,7 @@ export default defineEventHandler(async (event) => {
   busy = true
   try {
     return await new Promise((resolve, reject) => {
-      const child = spawn(join(project, '.venv/bin/python'), ['scripts/web_explanation.py'], {
+      const child = spawn(join(project, '.venv/bin/python'), ['scripts/web/web_explanation.py'], {
         cwd: project, stdio: ['pipe', 'pipe', 'ignore']
       })
       let output = ''

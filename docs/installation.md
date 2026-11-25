@@ -67,7 +67,7 @@ MAGISTER_SNOWSTORM_READONLY=false docker compose -p cie10-snomed \
 # Comprobar que el servidor responde antes de importar:
 curl --fail http://127.0.0.1:8081/fhir/metadata
 
-.venv/bin/python scripts/import_snomed.py
+.venv/bin/python scripts/preparation/import_snomed.py
 ```
 
 El importador comprueba que la rama base esté vacía. Importa primero la dependencia internacional, crea la rama española y verifica sus versiones. No se debe volver a ejecutar sobre un servidor ya importado. Su estado se guarda en `data/runtime/snomed-import.json`.
@@ -86,10 +86,10 @@ El puerto expuesto es `127.0.0.1:8081`; la API FHIR queda en `/fhir`. Los archiv
 Descarga el recuperador español fijado y prepara el catálogo completo:
 
 ```bash
-infra/retrieval/.venv/bin/python scripts/download_retriever_models.py --models sapbert_spanish
-.venv/bin/python scripts/prepare_full_snomed_catalog.py
-infra/retrieval/.venv/bin/python scripts/build_full_snomed_index.py
-.venv/bin/python scripts/configure_runtime.py
+infra/retrieval/.venv/bin/python scripts/models/download_retriever_models.py --models sapbert_spanish
+.venv/bin/python scripts/preparation/prepare_full_snomed_catalog.py
+infra/retrieval/.venv/bin/python scripts/preparation/build_full_snomed_index.py
+.venv/bin/python scripts/configuration/configure_runtime.py
 ```
 
 El importador compone los estados RF2 y comprueba sus dependencias. El constructor produce `aliases.sqlite`, `embeddings.npy` e `index.json` dentro de `data/indexes/snomed/full-es-20261110-v1/`. Las rutas del catálogo se generan para esta instalación: no se debe copiar un manifiesto con rutas de otro equipo sin reconstruir o revisar su enlace.
@@ -101,8 +101,8 @@ Se admite el índice de formato `0.2.0`; el índice piloto antiguo ya no forma p
 El reranker es opcional:
 
 ```bash
-infra/retrieval/.venv/bin/python scripts/download_local_reranker.py
-.venv/bin/python scripts/configure_runtime.py --enable-reranker
+infra/retrieval/.venv/bin/python scripts/models/download_local_reranker.py
+.venv/bin/python scripts/configuration/configure_runtime.py --enable-reranker
 ```
 
 Solo puede reordenar el mismo conjunto de candidatos cuando la entrada es elegible. Si no está configurado o disponible, la búsqueda conserva su orden de referencia.
@@ -128,7 +128,7 @@ El servicio encuentra las bibliotecas NVIDIA en `infra/retrieval/.venv`, usa una
 ## API externa opcional
 
 ```bash
-.venv/bin/python scripts/configure_openai.py
+.venv/bin/python scripts/configuration/configure_openai.py
 ```
 
 El comando solicita la clave con entrada oculta y la guarda en `.secrets/openai.json`, con permisos privados. No se incluye una clave de ejemplo ni se coloca en variables públicas de Nuxt.
@@ -166,7 +166,7 @@ Las respuestas documentales pueden paginarse. Las rutas Nuxt de consulta realiza
 
 ```bash
 python3 -m unittest discover -s tests
-python3 scripts/check_reasoning.py
+python3 scripts/checks/check_reasoning.py
 cd frontend
 npm run typecheck
 npm run build

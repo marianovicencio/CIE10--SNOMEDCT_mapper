@@ -1,25 +1,31 @@
 {
-  "policy": "unchanged_algorithms_source_refactor_v1",
+  "policy": "unchanged_algorithms_source_refactor_v2",
   "original": {
     "builder": "a957de41c611ed6d4351f6de54afd5c6cb3005a5aaa79c842947578ad73447f2",
     "encoder": "a6e9462e305d36820fbef37063bef3d429c812177a9299b3d270dde77ee2ae19"
   },
   "refactored": {
-    "builder": "d8ad30e2228e49673e8c5c9da7e074d9b0bb6ba6d1578e18e0edebb153d52e55",
+    "builder": "cb963b781249ddf772162a1b746b2e9b51299f979d309fd98e77da848514c83e",
     "encoder": "742bdf22d58451661e9d74b1cef5e99f90e1824165abce5ee1d2f49ba3c737de"
   },
   "verified_definitions_sha256": {
-    "cie10/retrieval_core.py:sha256": "a57beb1902139f68e40792b56bb61e4cf4d6c422bd577b77f96548e9ee2ab2a2",
-    "cie10/retrieval_core.py:write_json": "28cfb98f9ed493fa10512a0e44eb7a7587a16d2bf8d2c115695c3dc8662193eb",
-    "cie10/retrieval_core.py:normalize": "e7d829c42c13dbc504bf649bbc40553eb760b4b4bf6280c0ce0dd572b27df243",
-    "cie10/retrieval_core.py:TransformerRetriever": "a30908076d021d6b279df365c532c2253e152327346afef0c7bc20c4d6ec6f9a",
-    "cie10/full_retrieval.py:load_bundle": "de165f81b8906f077365834071821c328db5acbb14ccd44c1ccb809f00526c70",
-    "cie10/full_retrieval.py:build_index": "57a80d4f5cd589797d0028e5409717e958c895e3fa829793d9fe90df5cbacdf8",
-    "cie10/full_retrieval.py:lexical_search": "b4dafe4c75f4ab37f5926f1aa9ea30f88f919264ac306fc4cd4211a69e942548",
-    "cie10/full_retrieval.py:semantic_search_batch": "175ecf0aa25f8396ca4581a1946e8ecdd51dbf2c0340181c61151620fccaeecb",
-    "cie10/full_retrieval.py:fuse_rankings": "02aea33b1f04f67c0d6657ba76379bbe1390ede737f57249f7e4364c715c819c"
+    "cie10/retrieval/retrieval_core.py:sha256": "a57beb1902139f68e40792b56bb61e4cf4d6c422bd577b77f96548e9ee2ab2a2",
+    "cie10/retrieval/retrieval_core.py:write_json": "28cfb98f9ed493fa10512a0e44eb7a7587a16d2bf8d2c115695c3dc8662193eb",
+    "cie10/retrieval/retrieval_core.py:normalize": "e7d829c42c13dbc504bf649bbc40553eb760b4b4bf6280c0ce0dd572b27df243",
+    "cie10/retrieval/retrieval_core.py:TransformerRetriever": "a30908076d021d6b279df365c532c2253e152327346afef0c7bc20c4d6ec6f9a",
+    "cie10/retrieval/full_retrieval.py:load_bundle": "de165f81b8906f077365834071821c328db5acbb14ccd44c1ccb809f00526c70",
+    "cie10/retrieval/full_retrieval.py:build_index": "a23b535b07ee0176eb8ceaad0daf441c8158c5940a14d7a92580f688fdfde05d",
+    "cie10/retrieval/full_retrieval.py:lexical_search": "b4dafe4c75f4ab37f5926f1aa9ea30f88f919264ac306fc4cd4211a69e942548",
+    "cie10/retrieval/full_retrieval.py:semantic_search_batch": "175ecf0aa25f8396ca4581a1946e8ecdd51dbf2c0340181c61151620fccaeecb",
+    "cie10/retrieval/full_retrieval.py:fuse_rankings": "02aea33b1f04f67c0d6657ba76379bbe1390ede737f57249f7e4364c715c819c"
   },
-  "allowed_provenance_change": "encoder source filename retrieval_evaluation.py to retrieval_core.py",
+  "allowed_provenance_change": "imports and project paths updated for functional packages; encoding, normalization, BM25, vector ranking and RRF unchanged",
   "removed_runtime": "unused monolithic run_hybrid, single-vector wrapper, preflight helper and experimental TransformerRetriever.search",
-  "index_manifest_rewritten": false
+  "index_manifest_rewritten": false,
+  "compatible_sources": [
+    {
+      "builder": "d8ad30e2228e49673e8c5c9da7e074d9b0bb6ba6d1578e18e0edebb153d52e55",
+      "encoder": "742bdf22d58451661e9d74b1cef5e99f90e1824165abce5ee1d2f49ba3c737de"
+    }
+  ]
 }

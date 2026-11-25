@@ -6,7 +6,7 @@ const execute = promisify(execFile)
 export default defineEventHandler(async (event) => {
   setResponseHeader(event, 'Cache-Control', 'no-store')
   try {
-    const { stdout } = await execute(join(project, '.venv/bin/python'), ['scripts/web_retrieval.py', '--catalog'], {
+    const { stdout } = await execute(join(project, '.venv/bin/python'), ['scripts/web/web_retrieval.py', '--catalog'], {
       cwd: project, timeout: 5000, maxBuffer: 100000
     })
     const data = JSON.parse(stdout)

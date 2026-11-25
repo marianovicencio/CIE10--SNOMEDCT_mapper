@@ -1,7 +1,7 @@
 """Compare source-aligned assertions; this layer can reject/defer, never approve."""
 
-from .assertions import extract_assertions, align
-from ..explanation_constraints import source
+from cie10.reasoning.assertions import extract_assertions, align
+from cie10.explanations.explanation_constraints import source
 
 
 def compare_sources(left, right):

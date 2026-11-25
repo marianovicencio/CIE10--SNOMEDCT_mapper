@@ -6,7 +6,7 @@ paraphrases remain unmatched. Headings define concepts; they are not patient fac
 
 from dataclasses import dataclass, replace
 import re
-from ..explanation_constraints import normalize
+from cie10.explanations.explanation_constraints import normalize
 
 ARTICLES = {"de", "del", "la", "el", "los", "las", "un", "una", "en"}
 METADATA = {

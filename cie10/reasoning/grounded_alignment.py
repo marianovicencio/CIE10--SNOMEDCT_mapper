@@ -4,9 +4,9 @@ A narrower present condition contradicts absence of its broader class. The rever
 is not assumed. These constraints can reject/defer, never approve a clinical map.
 """
 
-from .assertions import extract_assertions
-from ..explanation_constraints import source
-from ..mapping_context import digest
+from cie10.reasoning.assertions import extract_assertions
+from cie10.explanations.explanation_constraints import source
+from cie10.api.mapping_context import digest
 
 
 def grounded_constraint(evidence):

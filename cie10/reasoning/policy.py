@@ -3,13 +3,13 @@
 This is the single place to inspect which restriction takes precedence."""
 
 import re
-from ..explanation_constraints import normalize, documentary_constraint
-from ..literal_assertions import literal_constraint
-from ..manual_reasoning import manual_constraint
-from ..index_reasoning import index_constraint
-from .safety import safety_constraint
-from .assertion_comparison import assertion_constraint
-from .grounded_alignment import grounded_constraint
+from cie10.explanations.explanation_constraints import normalize, documentary_constraint
+from cie10.reasoning.literal_assertions import literal_constraint
+from cie10.reasoning.manual_reasoning import manual_constraint
+from cie10.reasoning.index_reasoning import index_constraint
+from cie10.reasoning.safety import safety_constraint
+from cie10.reasoning.assertion_comparison import assertion_constraint
+from cie10.reasoning.grounded_alignment import grounded_constraint
 
 
 def normalized_anatomy(text):

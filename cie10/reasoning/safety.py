@@ -4,8 +4,8 @@ These rules recognize limited written forms; they are not a clinical NLP model.
 A returned restriction can reject or defer a proposal, never confirm disease."""
 
 import re
-from ..explanation_constraints import normalize, source
-from .text import STOP, clean, absence, core
+from cie10.explanations.explanation_constraints import normalize, source
+from cie10.reasoning.text import STOP, clean, absence, core
 
 
 HYPOTHETICAL = re.compile(

@@ -4,8 +4,8 @@ Literal compatibility is not a validated clinical equivalence. The conservative
 response preserves abstention after failed generation; it never approves a map."""
 
 import re
-from ..explanation_constraints import normalize, source
-from .text import clean
+from cie10.explanations.explanation_constraints import normalize, source
+from cie10.reasoning.text import clean
 
 
 def grammatical_label(text):

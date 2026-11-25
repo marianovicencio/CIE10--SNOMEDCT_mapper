@@ -1,7 +1,7 @@
 """Literal text helpers. Normalization never rewrites the stored source."""
 
 import re
-from ..explanation_constraints import normalize
+from cie10.explanations.explanation_constraints import normalize
 
 
 STOP = {
