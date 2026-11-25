@@ -83,6 +83,7 @@ watch(() => route.path, () => { mobileMenuOpen.value = false })
           variant="outline"
           block
           class="repository-link"
+          data-tour="repository"
           aria-label="GitHub"
           :title="repositoryUrl ? 'Abrir repositorio en GitHub' : 'URL del repositorio pendiente'"
         >
