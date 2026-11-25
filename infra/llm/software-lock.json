@@ -1,0 +1,25 @@
+{
+  "runtime": {
+    "name": "llama.cpp",
+    "release": "b11430",
+    "commit": "8345f3339",
+    "archive_sha256": "1b898a3b23df35cc6c3e93c3adba5c63ec31d48bee8e5f30639e9372836ec2f2",
+    "source_url": "https://github.com/ggml-org/llama.cpp/releases/download/b11430/llama-b11430-bin-ubuntu-x64.tar.gz"
+  },
+  "model": {
+    "name": "gemma3-4b",
+    "distribution": "ollama/library/gemma3:4b",
+    "sha256": "f06e91e18fc74295d0c781bf91622508c75655e2c18ed869d52447ffe1e667e1",
+    "bytes": 2499012288,
+    "source_url": "https://registry.ollama.ai/v2/library/gemma3/blobs/sha256:f06e91e18fc74295d0c781bf91622508c75655e2c18ed869d52447ffe1e667e1"
+  },
+  "gpu_runtime": {
+    "name": "llama.cpp",
+    "release": "b11430",
+    "cuda": "12.8",
+    "source_url": "https://github.com/ggml-org/llama.cpp/releases/download/b11430/llama-b11430-bin-ubuntu-cuda-12.8-x64.tar.gz",
+    "archive_sha256": "8f79f75093e8fb6d9c65e59167511e9547776794191073e488ce81efd5ade723",
+    "bytes": 171651349,
+    "libraries": "Existing NVIDIA CUDA libraries from infra/retrieval/.venv"
+  }
+}

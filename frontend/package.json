@@ -1,0 +1,27 @@
+{
+  "name": "magister-frontend",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "^24.15.0"
+  },
+  "scripts": {
+    "dev": "nuxt dev --host 127.0.0.1 --port 3000",
+    "build": "nuxt build",
+    "typecheck": "nuxt typecheck",
+    "preview": "nuxt preview --host 127.0.0.1 --port 3000"
+  },
+  "dependencies": {
+    "@iconify-json/lucide": "1.2.154",
+    "@nuxt/ui": "4.12.0",
+    "nuxt": "4.6.4",
+    "tailwindcss": "4.3.5",
+    "vue": "^3.5.0",
+    "vue-router": "^5.4.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.0",
+    "vue-tsc": "^3.0.0",
+    "@types/node": "^24.0.0"
+  }
+}

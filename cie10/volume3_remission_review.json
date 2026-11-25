@@ -1,0 +1,4131 @@
+{
+  "source_sha256": "c95ef4b76916e3aced0faaa599c26c16c58544c46c952d6d2e0c4ad9d8cb5c5f",
+  "review_date": "2026-10-02",
+  "scope": "All 140 baseline incomplete remission addresses; 114 distinct printed directions.",
+  "method": "PDF images of every source occurrence and every selected destination; literal, namespace, hierarchy and modifiers checked. No clinical equivalence inferred.",
+  "visually_compared_pdf_pages": [
+    13,
+    20,
+    24,
+    29,
+    30,
+    31,
+    32,
+    33,
+    37,
+    38,
+    41,
+    43,
+    44,
+    45,
+    46,
+    49,
+    51,
+    53,
+    58,
+    60,
+    61,
+    64,
+    65,
+    66,
+    72,
+    73,
+    78,
+    80,
+    82,
+    86,
+    98,
+    103,
+    111,
+    118,
+    130,
+    135,
+    136,
+    137,
+    147,
+    149,
+    150,
+    151,
+    154,
+    155,
+    163,
+    178,
+    189,
+    190,
+    194,
+    199,
+    200,
+    201,
+    203,
+    204,
+    209,
+    210,
+    212,
+    214,
+    220,
+    230,
+    237,
+    240,
+    243,
+    249,
+    250,
+    251,
+    254,
+    257,
+    259,
+    264,
+    273,
+    274,
+    283,
+    284,
+    300,
+    302,
+    305,
+    307,
+    308,
+    309,
+    312,
+    313,
+    316,
+    317,
+    320,
+    325,
+    327,
+    328,
+    329,
+    330,
+    331,
+    332,
+    341,
+    342,
+    349,
+    355,
+    356,
+    357,
+    362,
+    363,
+    367,
+    370,
+    377,
+    378,
+    383,
+    387,
+    390,
+    391,
+    395,
+    396,
+    403,
+    406,
+    407,
+    408,
+    418,
+    419,
+    424,
+    425,
+    441,
+    443,
+    451,
+    456,
+    457,
+    458,
+    463,
+    464,
+    466,
+    469,
+    476,
+    477,
+    478,
+    483,
+    484,
+    486,
+    488,
+    489,
+    495,
+    499,
+    503,
+    505,
+    506,
+    511,
+    513,
+    514,
+    515,
+    516,
+    521,
+    522,
+    526,
+    542,
+    544,
+    545,
+    559,
+    562,
+    568,
+    571,
+    584,
+    594,
+    595,
+    602,
+    607,
+    608,
+    609,
+    611,
+    612,
+    613,
+    617,
+    618,
+    619,
+    623,
+    628,
+    629,
+    631,
+    632,
+    635,
+    640,
+    645,
+    646,
+    647,
+    696,
+    716,
+    730
+  ],
+  "decisions": [
+    {
+      "mode": "navigation",
+      "target_ids": [
+        "v3-p210-l78",
+        "v3-p511-l54"
+      ],
+      "finding": "«Enfermedad o Trastorno» enumera dos entradas alternativas, ambas con rama mental. Se muestran ambas rutas sin elegir una.",
+      "n": 1,
+      "printed_target_text": "Enfermedad o Trastorno, mental",
+      "source_ids": [
+        "v3-p13-l19"
+      ],
+      "expected_destinations": {
+        "v3-p210-l78": "mental",
+        "v3-p511-l54": "mental (o del comportamiento) (no psicótico)"
+      },
+      "expected_paths": {
+        "v3-p210-l78": [
+          "Enfermedad (de)",
+          "mental"
+        ],
+        "v3-p511-l54": [
+          "Trastorno (s)",
+          "mental (o del comportamiento) (no psicótico)"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p210-l78": "index_entry",
+        "v3-p511-l54": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p210-l78": [
+          "F99"
+        ],
+        "v3-p511-l54": [
+          "F99"
+        ]
+      }
+    },
+    {
+      "mode": "unresolved",
+      "target_ids": [],
+      "finding": "No hay rama «y > carcinoma» bajo Adenocarcinoma; la rama «con > carcinoma» reenvía a esa dirección ausente. No se crea un circuito.",
+      "proof_ids": [
+        "v3-p24-l75"
+      ],
+      "n": 2,
+      "printed_target_text": "Adenocarcinoma, y, carcinoma",
+      "source_ids": [
+        "v3-p24-l75"
+      ],
+      "expected_destinations": {
+        "v3-p24-l75": "carcinoma – ver Adenocarcinoma, y, carcinoma"
+      },
+      "expected_paths": {
+        "v3-p24-l75": [
+          "Adenocarcinoma – ver también Tumor (neoplasia), maligno",
+          "con",
+          "carcinoma – ver Adenocarcinoma, y, carcinoma"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p24-l75": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p24-l75": []
+      }
+    },
+    {
+      "mode": "unresolved",
+      "target_ids": [],
+      "finding": "La rama reacción del período perinatal enumera droga, pero no preparado; además la remisión incluye artículos. No se sustituye preparado por droga.",
+      "proof_ids": [
+        "v3-p51-l38"
+      ],
+      "n": 3,
+      "printed_target_text": "las Afecciones originadas en el período perinatal, la reacción, el preparado",
+      "source_ids": [
+        "v3-p31-l27"
+      ],
+      "expected_destinations": {
+        "v3-p51-l38": "reacción – ver también Afecciones originadas en el período perinatal, trastorno"
+      },
+      "expected_paths": {
+        "v3-p51-l38": [
+          "Afecciones originadas en el período perinatal",
+          "reacción – ver también Afecciones originadas en el período perinatal, trastorno"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p51-l38": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p51-l38": []
+      }
+    },
+    {
+      "mode": "exact",
+      "target_ids": [
+        "v3-p37-l95"
+      ],
+      "finding": "Las direcciones usan «angustia, fetal»; el encabezado perinatal impreso usa «distress, estrés, sufrimiento > fetal». Se recupera esa ruta de navegación sin cambiar códigos.",
+      "proof_ids": [
+        "v3-p37-l88"
+      ],
+      "n": 4,
+      "printed_target_text": "Afecciones originadas en el período perinatal, angustia, fetal",
+      "source_ids": [
+        "v3-p31-l49",
+        "v3-p31-l51",
+        "v3-p31-l54",
+        "v3-p33-l39",
+        "v3-p33-l41",
+        "v3-p33-l60",
+        "v3-p33-l119",
+        "v3-p37-l100",
+        "v3-p43-l47",
+        "v3-p53-l37"
+      ],
+      "expected_destinations": {
+        "v3-p37-l95": "fetal (síndrome)",
+        "v3-p37-l88": "distress, estrés, sufrimiento"
+      },
+      "expected_paths": {
+        "v3-p37-l95": [
+          "Afecciones originadas en el período perinatal",
+          "distress, estrés, sufrimiento",
+          "fetal (síndrome)"
+        ],
+        "v3-p37-l88": [
+          "Afecciones originadas en el período perinatal",
+          "distress, estrés, sufrimiento"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p37-l95": "index_entry",
+        "v3-p37-l88": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p37-l95": [
+          "P20.–"
+        ],
+        "v3-p37-l88": []
+      }
+    },
+    {
+      "mode": "unresolved",
+      "target_ids": [],
+      "finding": "La rama perinatal trabajo de parto no contiene falso. La rama general de trabajo de parto falso tiene un alcance materno diferente.",
+      "proof_ids": [
+        "v3-p53-l60"
+      ],
+      "n": 5,
+      "printed_target_text": "Afecciones originadas en el período perinatal, trabajo de parto, falso",
+      "source_ids": [
+        "v3-p31-l115",
+        "v3-p32-l4"
+      ],
+      "expected_destinations": {
+        "v3-p53-l60": "trabajo de parto (ver también Afecciones originadas en el período perinatal, parto)"
+      },
+      "expected_paths": {
+        "v3-p53-l60": [
+          "Afecciones originadas en el período perinatal",
+          "trabajo de parto (ver también Afecciones originadas en el período perinatal, parto)"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p53-l60": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p53-l60": []
+      }
+    },
+    {
+      "mode": "navigation",
+      "target_ids": [
+        "v3-p44-l59"
+      ],
+      "finding": "«Por organismo especificado» es un selector del organismo, no una entrada literal.",
+      "selector": "organismo especificado",
+      "n": 6,
+      "printed_target_text": "Afecciones originadas en el período perinatal, infección, por organismo especificado",
+      "source_ids": [
+        "v3-p33-l99"
+      ],
+      "expected_destinations": {
+        "v3-p44-l59": "infección, infectada (oportunista) (ver también Afecciones originadas en el período perinatal, inflamación)"
+      },
+      "expected_paths": {
+        "v3-p44-l59": [
+          "Afecciones originadas en el período perinatal",
+          "infección, infectada (oportunista) (ver también Afecciones originadas en el período perinatal, inflamación)"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p44-l59": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p44-l59": []
+      }
+    },
+    {
+      "mode": "navigation",
+      "target_ids": [
+        "v3-p44-l34"
+      ],
+      "finding": "La dirección abrevia «incompetencia, cuello uterino incompetente, cervical(es), materna». Se conservan las condiciones maternas del encabezado.",
+      "selector": "cuello uterino; materna",
+      "anchor_only": false,
+      "n": 7,
+      "printed_target_text": "Afecciones originadas en el período perinatal, incompetencia, cuello uterino",
+      "source_ids": [
+        "v3-p37-l47"
+      ],
+      "expected_destinations": {
+        "v3-p44-l34": "incompetencia, cuello uterino incompetente, cervical (es ), materna"
+      },
+      "expected_paths": {
+        "v3-p44-l34": [
+          "Afecciones originadas en el período perinatal",
+          "incompetencia, cuello uterino incompetente, cervical (es ), materna"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p44-l34": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p44-l34": []
+      }
+    },
+    {
+      "mode": "exact",
+      "target_ids": [
+        "v3-p37-l102"
+      ],
+      "finding": "La dirección usa «angustia, respiratoria» y el encabezado perinatal imprime «distress, estrés, sufrimiento > respiratorio, recién nacido».",
+      "proof_ids": [
+        "v3-p37-l88"
+      ],
+      "n": 8,
+      "printed_target_text": "Afecciones originadas en el período perinatal, angustia, respiratoria",
+      "source_ids": [
+        "v3-p38-l30"
+      ],
+      "expected_destinations": {
+        "v3-p37-l102": "respiratorio, recién nacido",
+        "v3-p37-l88": "distress, estrés, sufrimiento"
+      },
+      "expected_paths": {
+        "v3-p37-l102": [
+          "Afecciones originadas en el período perinatal",
+          "distress, estrés, sufrimiento",
+          "respiratorio, recién nacido"
+        ],
+        "v3-p37-l88": [
+          "Afecciones originadas en el período perinatal",
+          "distress, estrés, sufrimiento"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p37-l102": "index_entry",
+        "v3-p37-l88": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p37-l102": [
+          "P22.9"
+        ],
+        "v3-p37-l88": []
+      }
+    },
+    {
+      "mode": "navigation",
+      "target_ids": [
+        "v3-p41-l17",
+        "v3-p41-l103"
+      ],
+      "finding": "Anteparto figura en hemorragia anteparto accidental y en hemorragia inevitable (anteparto, placenta previa); el tipo de hemorragia debe distinguir las rutas.",
+      "selector": "tipo de hemorragia anteparto",
+      "n": 9,
+      "printed_target_text": "Afecciones originadas en el período perinatal, hemorragia, anteparto",
+      "source_ids": [
+        "v3-p41-l55"
+      ],
+      "expected_destinations": {
+        "v3-p41-l17": "anteparto accidental, que afecta al feto o al recién nacido",
+        "v3-p41-l103": "inevitable (anteparto) (debido a la placenta previa), que afecta al feto o al recién nacido"
+      },
+      "expected_paths": {
+        "v3-p41-l17": [
+          "Afecciones originadas en el período perinatal",
+          "hemorragia, hemorrágica",
+          "anteparto accidental, que afecta al feto o al recién nacido"
+        ],
+        "v3-p41-l103": [
+          "Afecciones originadas en el período perinatal",
+          "hemorragia, hemorrágica",
+          "inevitable (anteparto) (debido a la placenta previa), que afecta al feto o al recién nacido"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p41-l17": "index_entry",
+        "v3-p41-l103": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p41-l17": [
+          "P02.1"
+        ],
+        "v3-p41-l103": [
+          "P02.0"
+        ]
+      }
+    },
+    {
+      "mode": "exact",
+      "target_ids": [
+        "v3-p49-l86"
+      ],
+      "finding": "La propia fuente escribe «liviano (pequeño) para la edad» y el destino perinatal imprime «pequeño para la edad».",
+      "n": 10,
+      "printed_target_text": "Afecciones originadas en el período perinatal, liviano para la edad",
+      "source_ids": [
+        "v3-p43-l121"
+      ],
+      "expected_destinations": {
+        "v3-p49-l86": "pequeño para la edad (infantil)"
+      },
+      "expected_paths": {
+        "v3-p49-l86": [
+          "Afecciones originadas en el período perinatal",
+          "pequeño para la edad (infantil)"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p49-l86": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p49-l86": [
+          "P05.1"
+        ]
+      }
+    },
+    {
+      "mode": "navigation",
+      "target_ids": [
+        "v3-p45-l75"
+      ],
+      "finding": "ABO está impreso bajo isoinmunización > feto o recién nacido. La dirección omite ese nivel; se recupera la ruta completa y se conserva el contexto perinatal, sin aplicarla a la madre.",
+      "selector": "isoinmunización ABO; feto o recién nacido",
+      "proof_ids": [
+        "v3-p45-l68",
+        "v3-p44-l25"
+      ],
+      "anchor_only": false,
+      "n": 11,
+      "printed_target_text": "Afecciones originadas en el período perinatal, isoinmunización, ABO",
+      "source_ids": [
+        "v3-p44-l10"
+      ],
+      "expected_destinations": {
+        "v3-p45-l75": "ABO",
+        "v3-p45-l68": "isoinmunización NCOP (ver también Afecciones originadas en el período perinatal, incompatibilidad)",
+        "v3-p44-l25": "incompatibilidad"
+      },
+      "expected_paths": {
+        "v3-p45-l75": [
+          "Afecciones originadas en el período perinatal",
+          "isoinmunización NCOP (ver también Afecciones originadas en el período perinatal, incompatibilidad)",
+          "feto o recién nacido",
+          "ABO"
+        ],
+        "v3-p45-l68": [
+          "Afecciones originadas en el período perinatal",
+          "isoinmunización NCOP (ver también Afecciones originadas en el período perinatal, incompatibilidad)"
+        ],
+        "v3-p44-l25": [
+          "Afecciones originadas en el período perinatal",
+          "incompatibilidad"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p45-l75": "index_entry",
+        "v3-p45-l68": "index_entry",
+        "v3-p44-l25": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p45-l75": [
+          "P55.1"
+        ],
+        "v3-p45-l68": [],
+        "v3-p44-l25": []
+      }
+    },
+    {
+      "mode": "unresolved",
+      "target_ids": [],
+      "finding": "La rama infección perinatal no tiene una subentrada general congénita; hay entradas específicas por organismo. No se interpreta «rubéola, congénita» como congénita en general.",
+      "proof_ids": [
+        "v3-p44-l59",
+        "v3-p45-l24"
+      ],
+      "n": 12,
+      "printed_target_text": "Afecciones originadas en el período perinatal, infección, congénita",
+      "source_ids": [
+        "v3-p44-l109",
+        "v3-p45-l15"
+      ],
+      "expected_destinations": {
+        "v3-p44-l59": "infección, infectada (oportunista) (ver también Afecciones originadas en el período perinatal, inflamación)",
+        "v3-p45-l24": "rubéola, congénita"
+      },
+      "expected_paths": {
+        "v3-p44-l59": [
+          "Afecciones originadas en el período perinatal",
+          "infección, infectada (oportunista) (ver también Afecciones originadas en el período perinatal, inflamación)"
+        ],
+        "v3-p45-l24": [
+          "Afecciones originadas en el período perinatal",
+          "infección, infectada",
+          "rubéola, congénita"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p44-l59": "index_entry",
+        "v3-p45-l24": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p44-l59": [],
+        "v3-p45-l24": [
+          "P35.0"
+        ]
+      }
+    },
+    {
+      "mode": "exact",
+      "target_ids": [
+        "v3-p32-l54"
+      ],
+      "finding": "No existe un encabezado Acondicionamiento en el período perinatal. La sección se titula Afecciones originadas en el período perinatal y contiene anomalía; se preserva el defecto literal.",
+      "n": 13,
+      "printed_target_text": "Acondicionamiento en el período perinatal, anomalía",
+      "source_ids": [
+        "v3-p46-l51"
+      ],
+      "expected_destinations": {
+        "v3-p32-l54": "anomalía, anómala (congénita) (tipo no especificado)"
+      },
+      "expected_paths": {
+        "v3-p32-l54": [
+          "Afecciones originadas en el período perinatal",
+          "anomalía, anómala (congénita) (tipo no especificado)"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p32-l54": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p32-l54": []
+      }
+    },
+    {
+      "mode": "exact",
+      "target_ids": [
+        "v3-p378-l63"
+      ],
+      "finding": "La dirección invierte las palabras de «precipitado, que afecta al feto o al recién nacido». La fuente y la entrada imprimen P03.5.",
+      "n": 14,
+      "printed_target_text": "Nacimiento, feto precipitado o recién nacido",
+      "source_ids": [
+        "v3-p46-l113"
+      ],
+      "expected_destinations": {
+        "v3-p378-l63": "precipitado, que afecta al feto o al recién nacido"
+      },
+      "expected_paths": {
+        "v3-p378-l63": [
+          "Nacimiento",
+          "precipitado, que afecta al feto o al recién nacido"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p378-l63": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p378-l63": [
+          "P03.5"
+        ]
+      }
+    },
+    {
+      "mode": "exact",
+      "target_ids": [
+        "v3-p425-l45"
+      ],
+      "finding": "Búsqueda remite expresamente a Pesquisa especial, donde existe prenatal.",
+      "proof_ids": [
+        "v3-p103-l5"
+      ],
+      "n": 15,
+      "printed_target_text": "Búsqueda, prenatal",
+      "source_ids": [
+        "v3-p61-l116"
+      ],
+      "expected_destinations": {
+        "v3-p425-l45": "prenatal (por)",
+        "v3-p103-l5": "Búsqueda (de) – ver Pesquisa especial"
+      },
+      "expected_paths": {
+        "v3-p425-l45": [
+          "Pesquisa especial (para)",
+          "prenatal (por)"
+        ],
+        "v3-p103-l5": [
+          "Búsqueda (de) – ver Pesquisa especial"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p425-l45": "index_entry",
+        "v3-p103-l5": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p425-l45": [
+          "Z36.9"
+        ],
+        "v3-p103-l5": []
+      }
+    },
+    {
+      "mode": "unresolved",
+      "target_ids": [],
+      "finding": "El PDF 65 rotula la continuación «eritroblástica» mientras el final del PDF 64 usa hemolítica. No se reasigna automáticamente esa rama de no > esferocítica.",
+      "proof_ids": [
+        "v3-p64-l116",
+        "v3-p65-l43"
+      ],
+      "n": 16,
+      "printed_target_text": "Anemia, hemolítica, no esferocítica",
+      "source_ids": [
+        "v3-p66-l7"
+      ],
+      "expected_destinations": {
+        "v3-p64-l116": "hemolítica",
+        "v3-p65-l43": "esferocítica"
+      },
+      "expected_paths": {
+        "v3-p64-l116": [
+          "Anemia",
+          "hemolítica"
+        ],
+        "v3-p65-l43": [
+          "Anemia",
+          "eritroblástica",
+          "no",
+          "esferocítica"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p64-l116": "index_entry",
+        "v3-p65-l43": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p64-l116": [
+          "D58.9"
+        ],
+        "v3-p65-l43": []
+      }
+    },
+    {
+      "mode": "unresolved",
+      "target_ids": [],
+      "finding": "La única entrada de Anomalía para útero está restringida al embarazo o parto. La dirección de Anormalidad > forma > útero no imprime esa restricción.",
+      "proof_ids": [
+        "v3-p72-l119"
+      ],
+      "n": 17,
+      "printed_target_text": "Anomalía, útero",
+      "source_ids": [
+        "v3-p73-l88"
+      ],
+      "expected_destinations": {
+        "v3-p72-l119": "útero en el embarazo o el parto"
+      },
+      "expected_paths": {
+        "v3-p72-l119": [
+          "Anomalía",
+          "útero en el embarazo o el parto"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p72-l119": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p72-l119": [
+          "O34.0"
+        ]
+      }
+    },
+    {
+      "mode": "exact",
+      "target_ids": [
+        "v3-p80-l55"
+      ],
+      "finding": "«Debida a» aparece explícitamente como modificador entre paréntesis en la rama «en (debida a) > cristales».",
+      "n": 18,
+      "printed_target_text": "Artritis, debida a, cristales",
+      "source_ids": [
+        "v3-p82-l13"
+      ],
+      "expected_destinations": {
+        "v3-p80-l55": "cristales"
+      },
+      "expected_paths": {
+        "v3-p80-l55": [
+          "Artritis, artrítico(a) (aguda) (crónica) (subaguda)",
+          "en (debida a)",
+          "cristales"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p80-l55": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p80-l55": [
+          "M11.9"
+        ]
+      }
+    },
+    {
+      "mode": "exact",
+      "target_ids": [
+        "v3-p406-l54"
+      ],
+      "finding": "La dirección presenta una variante ortográfica de Paracoccidioidomicosis; las fuentes imprimen B41.9 y la entrada de destino imprime B41.9.",
+      "n": 19,
+      "printed_target_text": "Paracoccidiomicosis",
+      "source_ids": [
+        "v3-p98-l21"
+      ],
+      "expected_destinations": {
+        "v3-p406-l54": "Paracoccidioidomicosis"
+      },
+      "expected_paths": {
+        "v3-p406-l54": [
+          "Paracoccidioidomicosis"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p406-l54": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p406-l54": [
+          "B41.9"
+        ]
+      }
+    },
+    {
+      "mode": "exact",
+      "target_ids": [
+        "v3-p406-l54"
+      ],
+      "finding": "La dirección presenta una variante ortográfica de Paracoccidioidomicosis; las fuentes imprimen B41.9 y la entrada de destino imprime B41.9.",
+      "n": 20,
+      "printed_target_text": "Paracoccidiodomicosis",
+      "source_ids": [
+        "v3-p98-l35"
+      ],
+      "expected_destinations": {
+        "v3-p406-l54": "Paracoccidioidomicosis"
+      },
+      "expected_paths": {
+        "v3-p406-l54": [
+          "Paracoccidioidomicosis"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p406-l54": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p406-l54": [
+          "B41.9"
+        ]
+      }
+    },
+    {
+      "mode": "table",
+      "target_ids": [
+        "v3-p568-table-y1968"
+      ],
+      "finding": "La dirección pierde la m inicial de maligno. La rama Carcinoma y la tabla piel se conservan; se muestran las columnas malignas sin elegir primaria o secundaria.",
+      "columns": [
+        "malignant_primary",
+        "malignant_secondary"
+      ],
+      "n": 21,
+      "printed_target_text": "Tumor, piel, aligno",
+      "source_ids": [
+        "v3-p111-l39"
+      ],
+      "expected_destinations": {
+        "v3-p568-table-y1968": "piel (no melanótico)"
+      },
+      "expected_paths": {
+        "v3-p568-table-y1968": [
+          "Tumor (de)",
+          "piel (no melanótico)"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p568-table-y1968": "neoplasm_table_row"
+      },
+      "expected_code_references": {
+        "v3-p568-table-y1968": [
+          "C44.9",
+          "C79.2",
+          "D04.9",
+          "D23.9",
+          "D48.5"
+        ]
+      }
+    },
+    {
+      "mode": "table",
+      "target_ids": [
+        "v3-p544-neoplasm-metadata"
+      ],
+      "finding": "Neoplasia remite explícitamente a Tumor. Maligno selecciona las columnas de malignidad, pero requiere sitio y carácter primario/secundario.",
+      "columns": [
+        "malignant_primary",
+        "malignant_secondary"
+      ],
+      "proof_ids": [
+        "v3-p383-l26"
+      ],
+      "n": 22,
+      "printed_target_text": "Neoplasia, maligno",
+      "source_ids": [
+        "v3-p111-l82",
+        "v3-p111-l84"
+      ],
+      "expected_destinations": {
+        "v3-p544-neoplasm-metadata": "",
+        "v3-p383-l26": "Neoplasia (ver también Tumor)"
+      },
+      "expected_paths": {
+        "v3-p544-neoplasm-metadata": [],
+        "v3-p383-l26": [
+          "Neoplasia (ver también Tumor)"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p544-neoplasm-metadata": "special_table_metadata",
+        "v3-p383-l26": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p544-neoplasm-metadata": [],
+        "v3-p383-l26": [
+          "D48.9"
+        ]
+      }
+    },
+    {
+      "mode": "exact",
+      "target_ids": [
+        "v3-p86-l49"
+      ],
+      "finding": "Cuidado remite expresamente a Atención, cuya rama abertura artificial vuelve a remitir a orificio artificial.",
+      "proof_ids": [
+        "v3-p147-l65"
+      ],
+      "n": 23,
+      "printed_target_text": "Cuidado, abertura artificial",
+      "source_ids": [
+        "v3-p118-l83"
+      ],
+      "expected_destinations": {
+        "v3-p86-l49": "abertura artificial – ver Atención, orificio artificial",
+        "v3-p147-l65": "Cuidado (de) – ver Atención"
+      },
+      "expected_paths": {
+        "v3-p86-l49": [
+          "Atención (a) (de) (para) (posterior a)",
+          "abertura artificial – ver Atención, orificio artificial"
+        ],
+        "v3-p147-l65": [
+          "Cuidado (de) – ver Atención"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p86-l49": "index_entry",
+        "v3-p147-l65": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p86-l49": [],
+        "v3-p147-l65": []
+      }
+    },
+    {
+      "mode": "navigation",
+      "target_ids": [
+        "v3-p150-l103"
+      ],
+      "finding": "Deficiencia > factor remite expresamente a Deficiencia > coagulación. Los factores concretos se mantienen separados.",
+      "selector": "factor de coagulación",
+      "proof_ids": [
+        "v3-p151-l25"
+      ],
+      "n": 24,
+      "printed_target_text": "Deficiencia, factor, coagulación",
+      "source_ids": [
+        "v3-p149-l57"
+      ],
+      "expected_destinations": {
+        "v3-p150-l103": "coagulación",
+        "v3-p151-l25": "factor – ver también Deficiencia, coagulación"
+      },
+      "expected_paths": {
+        "v3-p150-l103": [
+          "Deficiencia (de), deficiente",
+          "coagulación"
+        ],
+        "v3-p151-l25": [
+          "Deficiencia",
+          "factor – ver también Deficiencia, coagulación"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p150-l103": "index_entry",
+        "v3-p151-l25": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p150-l103": [
+          "D68.9"
+        ],
+        "v3-p151-l25": []
+      }
+    },
+    {
+      "mode": "exact",
+      "target_ids": [
+        "v3-p155-l29"
+      ],
+      "finding": "La rama impresa es «meninges o membranas (congénita)»; se preservan la alternativa y el modificador.",
+      "n": 25,
+      "printed_target_text": "Deformidad, meninge",
+      "source_ids": [
+        "v3-p154-l43"
+      ],
+      "expected_destinations": {
+        "v3-p155-l29": "meninges o membranas (congénita)"
+      },
+      "expected_paths": {
+        "v3-p155-l29": [
+          "Deformidad",
+          "meninges o membranas (congénita)"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p155-l29": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p155-l29": [
+          "Q07.9"
+        ]
+      }
+    },
+    {
+      "mode": "unresolved",
+      "target_ids": [],
+      "finding": "Trastorno > maníaco no contiene recurrente; existen otras ramas afectivas, pero no se sustituye la dirección por un diagnóstico bipolar.",
+      "proof_ids": [
+        "v3-p511-l35",
+        "v3-p506-l105"
+      ],
+      "n": 26,
+      "printed_target_text": "Trastorno, maníaco, recurrente",
+      "source_ids": [
+        "v3-p163-l11"
+      ],
+      "expected_destinations": {
+        "v3-p511-l35": "maníaco",
+        "v3-p506-l105": "bipolar"
+      },
+      "expected_paths": {
+        "v3-p511-l35": [
+          "Trastorno (s)",
+          "maníaco"
+        ],
+        "v3-p506-l105": [
+          "Trastorno (s)",
+          "bipolar"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p511-l35": "index_entry",
+        "v3-p506-l105": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p511-l35": [
+          "F30.9"
+        ],
+        "v3-p506-l105": [
+          "F31.9"
+        ]
+      }
+    },
+    {
+      "mode": "exact",
+      "target_ids": [
+        "v3-p86-l54"
+      ],
+      "finding": "La dirección usa anticoncepción; el encabezado de Atención imprime anticonceptiva > dispositivo (intrauterino) (in situ).",
+      "n": 27,
+      "printed_target_text": "Atención, anticoncepción, dispositivo",
+      "source_ids": [
+        "v3-p178-l86"
+      ],
+      "expected_destinations": {
+        "v3-p86-l54": "dispositivo (intrauterino) (in situ)"
+      },
+      "expected_paths": {
+        "v3-p86-l54": [
+          "Atención (a) (de) (para) (posterior a)",
+          "anticonceptiva",
+          "dispositivo (intrauterino) (in situ)"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p86-l54": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p86-l54": [
+          "Z97.5"
+        ]
+      }
+    },
+    {
+      "mode": "navigation",
+      "target_ids": [
+        "v3-p58-l64",
+        "v3-p86-l74"
+      ],
+      "finding": "«Ajuste y Atención» son dos direcciones; control > dispositivo corresponde a Atención. Se conserva la rama de Ajuste como segunda ruta.",
+      "selector": "ajuste o control de dispositivo",
+      "n": 28,
+      "printed_target_text": "Ajuste y Atención, control, dispositivo",
+      "source_ids": [
+        "v3-p178-l92"
+      ],
+      "expected_destinations": {
+        "v3-p58-l64": "Ajuste (de)",
+        "v3-p86-l74": "dispositivo"
+      },
+      "expected_paths": {
+        "v3-p58-l64": [
+          "Ajuste (de)"
+        ],
+        "v3-p86-l74": [
+          "Atención (a) (de) (para) (posterior a)",
+          "control (de)",
+          "dispositivo"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p58-l64": "index_entry",
+        "v3-p86-l74": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p58-l64": [],
+        "v3-p86-l74": []
+      }
+    },
+    {
+      "mode": "navigation",
+      "target_ids": [
+        "v3-p190-l75"
+      ],
+      "finding": "«Por complicación» indica elegir la complicación bajo Embarazo > complicado por.",
+      "selector": "complicación del embarazo",
+      "n": 29,
+      "printed_target_text": "Embarazo por complicación",
+      "source_ids": [
+        "v3-p194-l69"
+      ],
+      "expected_destinations": {
+        "v3-p190-l75": "complicado por"
+      },
+      "expected_paths": {
+        "v3-p190-l75": [
+          "Embarazo",
+          "complicado por"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p190-l75": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p190-l75": [
+          "O26.9"
+        ]
+      }
+    },
+    {
+      "mode": "navigation",
+      "target_ids": [
+        "v3-p189-l95"
+      ],
+      "finding": "La dirección abrevia la entrada «atención afectada por (presunta)» bajo Embarazo. Debe determinarse la afección que afecta la atención.",
+      "selector": "afección que afecta la atención del embarazo",
+      "n": 30,
+      "printed_target_text": "Embarazo, atención",
+      "source_ids": [
+        "v3-p194-l95"
+      ],
+      "expected_destinations": {
+        "v3-p189-l95": "atención afectada por (presunta(o))"
+      },
+      "expected_paths": {
+        "v3-p189-l95": [
+          "Embarazo (único) (uterino)",
+          "atención afectada por (presunta(o))"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p189-l95": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p189-l95": []
+      }
+    },
+    {
+      "mode": "navigation",
+      "target_ids": [
+        "v3-p29-l98"
+      ],
+      "finding": "«Por válvula» requiere identificar la válvula. Afección remite explícitamente a Enfermedad; no se elige una válvula ni una categoría reumática por defecto.",
+      "selector": "válvula y condición reumática",
+      "proof_ids": [
+        "v3-p199-l95"
+      ],
+      "n": 31,
+      "printed_target_text": "Afección, por válvula, reumática",
+      "source_ids": [
+        "v3-p199-l95",
+        "v3-p200-l50",
+        "v3-p329-l47"
+      ],
+      "expected_destinations": {
+        "v3-p29-l98": "Afección – ver también Enfermedad",
+        "v3-p199-l95": "inactiva o quiescente (con corea) – ver Afección, por válvula, reumática"
+      },
+      "expected_paths": {
+        "v3-p29-l98": [
+          "Afección – ver también Enfermedad"
+        ],
+        "v3-p199-l95": [
+          "Endocarditis (crónica) (no bacteriana) (trombótica) (valvular)",
+          "con fiebre reumática (afecciones en )",
+          "inactiva o quiescente (con corea) – ver Afección, por válvula, reumática"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p29-l98": "index_entry",
+        "v3-p199-l95": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p29-l98": [],
+        "v3-p199-l95": []
+      }
+    },
+    {
+      "mode": "exact",
+      "target_ids": [
+        "v3-p396-l20"
+      ],
+      "finding": "La dirección escribe cerebelar y el encabezado impreso usa cerebelosa; se conserva la denominación completa.",
+      "n": 32,
+      "printed_target_text": "Oclusión, arteria, cerebelar",
+      "source_ids": [
+        "v3-p237-l34"
+      ],
+      "expected_destinations": {
+        "v3-p396-l20": "cerebelosa (anterior inferior) (posterior inferior) (superior)"
+      },
+      "expected_paths": {
+        "v3-p396-l20": [
+          "Oclusión",
+          "arteria(s) – ver también Embolia, arteria",
+          "cerebelosa (anterior inferior) (posterior inferior) (superior)"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p396-l20": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p396-l20": [
+          "I66.3"
+        ]
+      }
+    },
+    {
+      "mode": "unresolved",
+      "target_ids": [],
+      "finding": "La entrada ovárica se titula «ovárica primaria»; la dirección sólo dice ovárica. No se introduce el requisito primaria sin respaldo.",
+      "proof_ids": [
+        "v3-p330-l19"
+      ],
+      "n": 33,
+      "printed_target_text": "Insuficiencia, ovárica",
+      "source_ids": [
+        "v3-p243-l90"
+      ],
+      "expected_destinations": {
+        "v3-p330-l19": "ovárica primaria"
+      },
+      "expected_paths": {
+        "v3-p330-l19": [
+          "Insuficiencia",
+          "ovárica primaria"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p330-l19": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p330-l19": [
+          "E28.3"
+        ]
+      }
+    },
+    {
+      "mode": "exact",
+      "target_ids": [
+        "v3-p367-l7"
+      ],
+      "finding": "Meningites en la dirección es una variante ortográfica de Meningitis; ambas ramas conservan meningocócica.",
+      "n": 34,
+      "printed_target_text": "Meningites, meningocócica",
+      "source_ids": [
+        "v3-p250-l56"
+      ],
+      "expected_destinations": {
+        "v3-p367-l7": "meningocócica"
+      },
+      "expected_paths": {
+        "v3-p367-l7": [
+          "Meningitis",
+          "meningocócica"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p367-l7": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p367-l7": [
+          "A39.0†",
+          "G01*"
+        ]
+      }
+    },
+    {
+      "mode": "navigation",
+      "target_ids": [
+        "v3-p249-l49"
+      ],
+      "finding": "Hemmorrágica contiene una m duplicada. La rama impresa es hemorrágica y el resto de la instrucción requiere el tipo de virus.",
+      "selector": "tipo de virus",
+      "n": 35,
+      "printed_target_text": "Fiebre, hemmorrágica, por tipo de virus",
+      "source_ids": [
+        "v3-p251-l60"
+      ],
+      "expected_destinations": {
+        "v3-p249-l49": "hemorrágica (transmitida por artrópodos) NCOP"
+      },
+      "expected_paths": {
+        "v3-p249-l49": [
+          "Fiebre",
+          "hemorrágica (transmitida por artrópodos) NCOP"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p249-l49": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p249-l49": [
+          "A94"
+        ]
+      }
+    },
+    {
+      "mode": "navigation",
+      "target_ids": [
+        "v3-p251-l108"
+      ],
+      "finding": "Vesico– es un prefijo, no una entrada independiente. Se busca entre las ramas vesico* de Fístula según el órgano comunicado.",
+      "selector": "sufijo vesico– y órgano de comunicación",
+      "prefix": "vesico",
+      "n": 36,
+      "printed_target_text": "Fístula, vesico–",
+      "source_ids": [
+        "v3-p254-l107"
+      ],
+      "expected_destinations": {
+        "v3-p251-l108": "Fístula"
+      },
+      "expected_paths": {
+        "v3-p251-l108": [
+          "Fístula"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p251-l108": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p251-l108": [
+          "L98.8"
+        ]
+      }
+    },
+    {
+      "mode": "navigation",
+      "target_ids": [
+        "v3-p259-l26"
+      ],
+      "finding": "La dirección usa plural miembros y la entrada imprime miembro. La rama distingue ambos miembros superiores o inferiores.",
+      "selector": "miembro superior o inferior; ambos",
+      "n": 37,
+      "printed_target_text": "Fractura, miembros",
+      "source_ids": [
+        "v3-p257-l41"
+      ],
+      "expected_destinations": {
+        "v3-p259-l26": "miembro"
+      },
+      "expected_paths": {
+        "v3-p259-l26": [
+          "Fractura",
+          "miembro"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p259-l26": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p259-l26": [
+          "T14.2"
+        ]
+      }
+    },
+    {
+      "mode": "exact",
+      "target_ids": [
+        "v3-p135-l23"
+      ],
+      "finding": "Las direcciones nombran Congelación y la sección de enfermedades imprime Congelamiento. Se conserva esa navegación y el ámbito de enfermedades, sin usar la entrada de causas externas.",
+      "n": 38,
+      "printed_target_text": "Congelación",
+      "source_ids": [
+        "v3-p264-l79",
+        "v3-p274-l110"
+      ],
+      "expected_destinations": {
+        "v3-p135-l23": "Congelamiento"
+      },
+      "expected_paths": {
+        "v3-p135-l23": [
+          "Congelamiento"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p135-l23": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p135-l23": [
+          "T35.7"
+        ]
+      }
+    },
+    {
+      "mode": "unresolved",
+      "target_ids": [],
+      "finding": "El PDF 284 imprime las letras A/B/C bajo «secuela de» y los tipos crónicos en otra rama. No existe la ruta general «viral > tipo» solicitada; se conserva el alcance impreso.",
+      "proof_ids": [
+        "v3-p284-l20",
+        "v3-p284-l40"
+      ],
+      "n": 39,
+      "printed_target_text": "Hepatitis, viral, tipo, A",
+      "source_ids": [
+        "v3-p283-l59"
+      ],
+      "expected_destinations": {
+        "v3-p284-l20": "viral, virus",
+        "v3-p284-l40": "secuela de"
+      },
+      "expected_paths": {
+        "v3-p284-l20": [
+          "Hepatitis",
+          "viral, virus"
+        ],
+        "v3-p284-l40": [
+          "Hepatitis",
+          "viral, virus",
+          "secuela de"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p284-l20": "index_entry",
+        "v3-p284-l40": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p284-l20": [
+          "B19.9"
+        ],
+        "v3-p284-l40": [
+          "B94.2"
+        ]
+      }
+    },
+    {
+      "mode": "unresolved",
+      "target_ids": [],
+      "finding": "El PDF 284 imprime las letras A/B/C bajo «secuela de» y los tipos crónicos en otra rama. No existe la ruta general «viral > tipo» solicitada; se conserva el alcance impreso.",
+      "proof_ids": [
+        "v3-p284-l20",
+        "v3-p284-l40"
+      ],
+      "n": 40,
+      "printed_target_text": "Hepatitis, viral, tipo",
+      "source_ids": [
+        "v3-p283-l64"
+      ],
+      "expected_destinations": {
+        "v3-p284-l20": "viral, virus",
+        "v3-p284-l40": "secuela de"
+      },
+      "expected_paths": {
+        "v3-p284-l20": [
+          "Hepatitis",
+          "viral, virus"
+        ],
+        "v3-p284-l40": [
+          "Hepatitis",
+          "viral, virus",
+          "secuela de"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p284-l20": "index_entry",
+        "v3-p284-l40": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p284-l20": [
+          "B19.9"
+        ],
+        "v3-p284-l40": [
+          "B94.2"
+        ]
+      }
+    },
+    {
+      "mode": "unresolved",
+      "target_ids": [],
+      "finding": "El PDF 284 imprime las letras A/B/C bajo «secuela de» y los tipos crónicos en otra rama. No existe la ruta general «viral > tipo» solicitada; se conserva el alcance impreso.",
+      "proof_ids": [
+        "v3-p284-l20",
+        "v3-p284-l40"
+      ],
+      "n": 41,
+      "printed_target_text": "Hepatitis, viral, tipo, B",
+      "source_ids": [
+        "v3-p283-l71",
+        "v3-p283-l73",
+        "v3-p283-l76",
+        "v3-p283-l96",
+        "v3-p307-l83",
+        "v3-p495-l28"
+      ],
+      "expected_destinations": {
+        "v3-p284-l20": "viral, virus",
+        "v3-p284-l40": "secuela de"
+      },
+      "expected_paths": {
+        "v3-p284-l20": [
+          "Hepatitis",
+          "viral, virus"
+        ],
+        "v3-p284-l40": [
+          "Hepatitis",
+          "viral, virus",
+          "secuela de"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p284-l20": "index_entry",
+        "v3-p284-l40": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p284-l20": [
+          "B19.9"
+        ],
+        "v3-p284-l40": [
+          "B94.2"
+        ]
+      }
+    },
+    {
+      "mode": "unresolved",
+      "target_ids": [],
+      "finding": "El PDF 284 imprime las letras A/B/C bajo «secuela de» y los tipos crónicos en otra rama. No existe la ruta general «viral > tipo» solicitada; se conserva el alcance impreso.",
+      "proof_ids": [
+        "v3-p284-l20",
+        "v3-p284-l40"
+      ],
+      "n": 42,
+      "printed_target_text": "Hepatitis, viral, tipo, C",
+      "source_ids": [
+        "v3-p283-l78"
+      ],
+      "expected_destinations": {
+        "v3-p284-l20": "viral, virus",
+        "v3-p284-l40": "secuela de"
+      },
+      "expected_paths": {
+        "v3-p284-l20": [
+          "Hepatitis",
+          "viral, virus"
+        ],
+        "v3-p284-l40": [
+          "Hepatitis",
+          "viral, virus",
+          "secuela de"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p284-l20": "index_entry",
+        "v3-p284-l40": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p284-l20": [
+          "B19.9"
+        ],
+        "v3-p284-l40": [
+          "B94.2"
+        ]
+      }
+    },
+    {
+      "mode": "exact",
+      "target_ids": [
+        "v3-p230-l23"
+      ],
+      "finding": "La dirección usa hidrocefalia y el encabezado imprime «con hidrocéfalo NCOP». Ambos registros imprimen Q05.4.",
+      "n": 43,
+      "printed_target_text": "Espina bífida, con hidrocefalia",
+      "source_ids": [
+        "v3-p300-l68"
+      ],
+      "expected_destinations": {
+        "v3-p230-l23": "con hidrocéfalo NCOP"
+      },
+      "expected_paths": {
+        "v3-p230-l23": [
+          "Espina bífida (abierta)",
+          "con hidrocéfalo NCOP"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p230-l23": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p230-l23": [
+          "Q05.4"
+        ]
+      }
+    },
+    {
+      "mode": "exact",
+      "target_ids": [
+        "v3-p483-l112"
+      ],
+      "finding": "La remisión invierte el orden de los niveles. La entrada impresa es Síndrome > congénito > deficiencia de yodo; la fuente también imprime E00.9.",
+      "proof_ids": [
+        "v3-p484-l53"
+      ],
+      "n": 44,
+      "printed_target_text": "Síndrome, deficiencia de yodo, congénita",
+      "source_ids": [
+        "v3-p302-l30"
+      ],
+      "expected_destinations": {
+        "v3-p483-l112": "deficiencia de yodo",
+        "v3-p484-l53": "yodo – ver Síndrome, congénito, deficiencia de yodo"
+      },
+      "expected_paths": {
+        "v3-p483-l112": [
+          "Síndrome (de)",
+          "congénito",
+          "deficiencia de yodo"
+        ],
+        "v3-p484-l53": [
+          "Síndrome (de)",
+          "deficiencia",
+          "yodo – ver Síndrome, congénito, deficiencia de yodo"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p483-l112": "index_entry",
+        "v3-p484-l53": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p483-l112": [
+          "E00.9"
+        ],
+        "v3-p484-l53": []
+      }
+    },
+    {
+      "mode": "exact",
+      "target_ids": [
+        "v3-p341-l95"
+      ],
+      "finding": "La abreviatura HSIL reenvía a la rama cuello del útero > intraepitelial, escamosa (célula) > alto grado. Se conserva el orden impreso.",
+      "n": 45,
+      "printed_target_text": "lesión, cuello uterino, intraepitelial, escamoso (célula), alto grado",
+      "source_ids": [
+        "v3-p305-l13"
+      ],
+      "expected_destinations": {
+        "v3-p341-l95": "alto grado"
+      },
+      "expected_paths": {
+        "v3-p341-l95": [
+          "Lesión (no traumática)",
+          "cuello del útero (útero)",
+          "intraepitelial, escamosa (célula)",
+          "alto grado"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p341-l95": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p341-l95": [
+          "D06.9"
+        ]
+      }
+    },
+    {
+      "mode": "exact",
+      "target_ids": [
+        "v3-p284-l91"
+      ],
+      "finding": "Herida, abierto es una variación de género y segmentación del encabezado Herida abierta; no se añade un sitio anatómico.",
+      "n": 46,
+      "printed_target_text": "Herida, abierto",
+      "source_ids": [
+        "v3-p305-l118"
+      ],
+      "expected_destinations": {
+        "v3-p284-l91": "Herida abierta (arma de fuego) (con cuerpo extraño penetrante) (cortante) (lacerante) (mordedura) (punzante)"
+      },
+      "expected_paths": {
+        "v3-p284-l91": [
+          "Herida abierta (arma de fuego) (con cuerpo extraño penetrante) (cortante) (lacerante) (mordedura) (punzante)"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p284-l91": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p284-l91": [
+          "T14.1"
+        ]
+      }
+    },
+    {
+      "mode": "unresolved",
+      "target_ids": [],
+      "finding": "El PDF 284 imprime las letras A/B/C bajo «secuela de» y los tipos crónicos en otra rama. No existe la ruta general «viral > tipo» solicitada; se conserva el alcance impreso.",
+      "proof_ids": [
+        "v3-p284-l20",
+        "v3-p284-l40"
+      ],
+      "n": 47,
+      "printed_target_text": "Hepatitis, viral, tipo, B",
+      "source_ids": [
+        "v3-p307-l66"
+      ],
+      "expected_destinations": {
+        "v3-p284-l20": "viral, virus",
+        "v3-p284-l40": "secuela de"
+      },
+      "expected_paths": {
+        "v3-p284-l20": [
+          "Hepatitis",
+          "viral, virus"
+        ],
+        "v3-p284-l40": [
+          "Hepatitis",
+          "viral, virus",
+          "secuela de"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p284-l20": "index_entry",
+        "v3-p284-l40": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p284-l20": [
+          "B19.9"
+        ],
+        "v3-p284-l40": [
+          "B94.2"
+        ]
+      }
+    },
+    {
+      "mode": "exact",
+      "target_ids": [
+        "v3-p203-l84"
+      ],
+      "finding": "La dirección omite la s de cerebrovascular; la entrada impresa conserva cerebrovascular > aguda.",
+      "n": 48,
+      "printed_target_text": "Enfermedad, cerebrovacular, aguda",
+      "source_ids": [
+        "v3-p308-l12"
+      ],
+      "expected_destinations": {
+        "v3-p203-l84": "aguda"
+      },
+      "expected_paths": {
+        "v3-p203-l84": [
+          "Enfermedad (de)",
+          "cerebrovascular",
+          "aguda"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p203-l84": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p203-l84": [
+          "I67.8"
+        ]
+      }
+    },
+    {
+      "mode": "unresolved",
+      "target_ids": [],
+      "finding": "No existe Trastorno > obsesivo como rama independiente. Obsesivo aparece en psicógeno y personalidad, y hay obsesivo–compulsivo. No se decide entre esos contextos.",
+      "proof_ids": [
+        "v3-p513-l47",
+        "v3-p514-l105",
+        "v3-p515-l88"
+      ],
+      "n": 49,
+      "printed_target_text": "Trastorno, obsesivo",
+      "source_ids": [
+        "v3-p309-l64"
+      ],
+      "expected_destinations": {
+        "v3-p513-l47": "obsesivo–compulsivo",
+        "v3-p514-l105": "obsesivo",
+        "v3-p515-l88": "obsesivo"
+      },
+      "expected_paths": {
+        "v3-p513-l47": [
+          "Trastorno (s)",
+          "obsesivo–compulsivo"
+        ],
+        "v3-p514-l105": [
+          "Trastorno (s)",
+          "personalidad",
+          "obsesivo"
+        ],
+        "v3-p515-l88": [
+          "Trastorno (s)",
+          "psicógeno NCOP (ver también estado patológico)",
+          "obsesivo"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p513-l47": "index_entry",
+        "v3-p514-l105": "index_entry",
+        "v3-p515-l88": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p513-l47": [
+          "F42.9"
+        ],
+        "v3-p514-l105": [
+          "F60.5"
+        ],
+        "v3-p515-l88": [
+          "F42.0"
+        ]
+      }
+    },
+    {
+      "mode": "exact",
+      "target_ids": [
+        "v3-p331-l102"
+      ],
+      "finding": "La dirección usa alimentos y el encabezado impreso dice alimentaria; ambas fuentes imprimen A05.9.",
+      "n": 50,
+      "printed_target_text": "Intoxicación, alimentos",
+      "source_ids": [
+        "v3-p312-l109",
+        "v3-p320-l14"
+      ],
+      "expected_destinations": {
+        "v3-p331-l102": "alimentaria"
+      },
+      "expected_paths": {
+        "v3-p331-l102": [
+          "Intoxicación",
+          "alimentaria"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p331-l102": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p331-l102": [
+          "A05.9"
+        ]
+      }
+    },
+    {
+      "mode": "exact",
+      "target_ids": [
+        "v3-p406-l54"
+      ],
+      "finding": "La dirección presenta una variante ortográfica de Paracoccidioidomicosis; las fuentes imprimen B41.9 y la entrada de destino imprime B41.9.",
+      "n": 51,
+      "printed_target_text": "Paracoccioidiomicosis",
+      "source_ids": [
+        "v3-p313-l62"
+      ],
+      "expected_destinations": {
+        "v3-p406-l54": "Paracoccidioidomicosis"
+      },
+      "expected_paths": {
+        "v3-p406-l54": [
+          "Paracoccidioidomicosis"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p406-l54": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p406-l54": [
+          "B41.9"
+        ]
+      }
+    },
+    {
+      "mode": "exact",
+      "target_ids": [
+        "v3-p212-l37"
+      ],
+      "finding": "La dirección invierte las palabras de inflamatoria pélvica. Enfermedad > inflamatoria pélvica femenina remite expresamente a pelvis > inflamatoria.",
+      "proof_ids": [
+        "v3-p209-l16"
+      ],
+      "n": 52,
+      "printed_target_text": "Enfermedad, inflamatoria, pélvica",
+      "source_ids": [
+        "v3-p316-l31"
+      ],
+      "expected_destinations": {
+        "v3-p212-l37": "inflamatoria (femenina)",
+        "v3-p209-l16": "inflamatoria pélvica femenina – ver Enfermedad, pelvis, inflamatoria"
+      },
+      "expected_paths": {
+        "v3-p212-l37": [
+          "Enfermedad (de)",
+          "pelvis, pelviana, pélvica",
+          "inflamatoria (femenina)"
+        ],
+        "v3-p209-l16": [
+          "Enfermedad (de)",
+          "inflamatoria pélvica femenina – ver Enfermedad, pelvis, inflamatoria"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p212-l37": "index_entry",
+        "v3-p209-l16": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p212-l37": [
+          "N73.9"
+        ],
+        "v3-p209-l16": []
+      }
+    },
+    {
+      "mode": "unresolved",
+      "target_ids": [],
+      "finding": "El PDF 317 concatena «Mastoiditis maxila, maxilar» y K10.2. Mastoiditis sí existe, pero esa dirección completa es inconsistente y no se divide sin evidencia.",
+      "proof_ids": [
+        "v3-p362-l73"
+      ],
+      "n": 53,
+      "printed_target_text": "Mastoiditis maxila, maxilar",
+      "source_ids": [
+        "v3-p317-l74"
+      ],
+      "expected_destinations": {
+        "v3-p362-l73": "Mastoiditis (coalescente) (hemorrágica) (supurativa)"
+      },
+      "expected_paths": {
+        "v3-p362-l73": [
+          "Mastoiditis (coalescente) (hemorrágica) (supurativa)"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p362-l73": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p362-l73": [
+          "H70.9"
+        ]
+      }
+    },
+    {
+      "mode": "unresolved",
+      "target_ids": [],
+      "finding": "La dirección «o quiste» está impresa en la subentrada meninges con H00.0. No es una pérdida de texto del extractor; no se inventa el término omitido.",
+      "proof_ids": [],
+      "n": 54,
+      "printed_target_text": "o quiste",
+      "source_ids": [
+        "v3-p317-l86"
+      ],
+      "expected_destinations": {},
+      "expected_paths": {},
+      "expected_kinds": {},
+      "expected_code_references": {}
+    },
+    {
+      "mode": "exact",
+      "target_ids": [
+        "v3-p317-l98"
+      ],
+      "finding": "Micobacteria reenvía expresamente a Infección > micobacteria, donde existe atípica.",
+      "proof_ids": [
+        "v3-p370-l33"
+      ],
+      "n": 55,
+      "printed_target_text": "Micobacteria, atípica",
+      "source_ids": [
+        "v3-p317-l115"
+      ],
+      "expected_destinations": {
+        "v3-p317-l98": "atípica",
+        "v3-p370-l33": "Micobacteria, micobacteriana, micobacteriosis, mycobacteria, Mycobacterium – ver Infección, micobacteria"
+      },
+      "expected_paths": {
+        "v3-p317-l98": [
+          "Infección",
+          "micobacteria, Mycobacterium",
+          "atípica"
+        ],
+        "v3-p370-l33": [
+          "Micobacteria, micobacteriana, micobacteriosis, mycobacteria, Mycobacterium – ver Infección, micobacteria"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p317-l98": "index_entry",
+        "v3-p370-l33": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p317-l98": [
+          "A31.9"
+        ],
+        "v3-p370-l33": []
+      }
+    },
+    {
+      "mode": "navigation",
+      "target_ids": [
+        "v3-p214-l24"
+      ],
+      "finding": "Afección remite también a Enfermedad. Allí está respiratoria > crónica NCOP > debida a. La ruta exige identificar el agente y conserva tanto crónica como el contexto respiratorio superior de la fuente; no se elige un código.",
+      "selector": "agente externo; afección respiratoria crónica; alcance respiratorio superior de la fuente",
+      "proof_ids": [
+        "v3-p29-l98",
+        "v3-p30-l90"
+      ],
+      "n": 56,
+      "printed_target_text": "Afección respiratoria crónica, debida a",
+      "source_ids": [
+        "v3-p325-l88"
+      ],
+      "expected_destinations": {
+        "v3-p214-l24": "debida a",
+        "v3-p29-l98": "Afección – ver también Enfermedad",
+        "v3-p30-l90": "respiratoria – ver Trastorno, respiratorio"
+      },
+      "expected_paths": {
+        "v3-p214-l24": [
+          "Enfermedad (de)",
+          "respiratoria (tracto)",
+          "crónica NCOP",
+          "debida a"
+        ],
+        "v3-p29-l98": [
+          "Afección – ver también Enfermedad"
+        ],
+        "v3-p30-l90": [
+          "Afección",
+          "respiratoria – ver Trastorno, respiratorio"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p214-l24": "index_entry",
+        "v3-p29-l98": "index_entry",
+        "v3-p30-l90": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p214-l24": [],
+        "v3-p29-l98": [],
+        "v3-p30-l90": []
+      }
+    },
+    {
+      "mode": "navigation",
+      "target_ids": [
+        "v3-p349-l13"
+      ],
+      "finding": "No existe el encabezado literal Liviano para las fechas. El índice imprime liviano para la fecha bajo Nacimiento con P05.0 y Liviano para la edad (recién nacido) con P05.0. Se ofrece esta ruta documentada, preservando la distinción entre recién nacido y atención del embarazo y sin recodificar un feto.",
+      "selector": "recién nacido o atención del embarazo; peso y edad",
+      "proof_ids": [
+        "v3-p378-l66"
+      ],
+      "n": 57,
+      "printed_target_text": "Liviano para las fechas",
+      "source_ids": [
+        "v3-p327-l75"
+      ],
+      "expected_destinations": {
+        "v3-p349-l13": "Liviano para la edad (recién nacido)",
+        "v3-p378-l66": "liviano para la fecha"
+      },
+      "expected_paths": {
+        "v3-p349-l13": [
+          "Liviano para la edad (recién nacido)"
+        ],
+        "v3-p378-l66": [
+          "Nacimiento",
+          "prematuro (niño nacido vivo) NCOP",
+          "liviano para la fecha"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p349-l13": "index_entry",
+        "v3-p378-l66": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p349-l13": [
+          "P05.0"
+        ],
+        "v3-p378-l66": [
+          "P05.0"
+        ]
+      }
+    },
+    {
+      "mode": "unresolved",
+      "target_ids": [],
+      "finding": "Consejo remite a Consulta, donde está dietética, pero la dirección también exige vigilancia de la dieta. No se afirma que esa rama adicional exista.",
+      "proof_ids": [
+        "v3-p136-l95",
+        "v3-p137-l25"
+      ],
+      "n": 58,
+      "printed_target_text": "Consejo y vigilancia de la dieta",
+      "source_ids": [
+        "v3-p328-l55"
+      ],
+      "expected_destinations": {
+        "v3-p136-l95": "Consejo – ver Consulta",
+        "v3-p137-l25": "dietética"
+      },
+      "expected_paths": {
+        "v3-p136-l95": [
+          "Consejo – ver Consulta"
+        ],
+        "v3-p137-l25": [
+          "Consulta (asesoría) (médica) (para)",
+          "dietética"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p136-l95": "index_entry",
+        "v3-p137-l25": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p136-l95": [],
+        "v3-p137-l25": [
+          "Z71.3"
+        ]
+      }
+    },
+    {
+      "mode": "unresolved",
+      "target_ids": [],
+      "finding": "La fuente nombra placenta o leche materna, pero Absorción sólo imprime ramas a través de la placenta. La vía leche materna no se inventa ni se elimina.",
+      "proof_ids": [
+        "v3-p20-l50",
+        "v3-p20-l71"
+      ],
+      "n": 59,
+      "printed_target_text": "Absorción, droga, a través de",
+      "source_ids": [
+        "v3-p332-l18",
+        "v3-p332-l56"
+      ],
+      "expected_destinations": {
+        "v3-p20-l50": "a través de la placenta (que afecta al feto o al recién nacido) (antineoplásicas) (citotóxicas)",
+        "v3-p20-l71": "a través de la placenta (que afecta al feto o al recién nacido)"
+      },
+      "expected_paths": {
+        "v3-p20-l50": [
+          "Absorción",
+          "droga (ver también Reacción, droga)",
+          "medicinal NCOP",
+          "a través de la placenta (que afecta al feto o al recién nacido) (antineoplásicas) (citotóxicas)"
+        ],
+        "v3-p20-l71": [
+          "Absorción",
+          "sustancia",
+          "química",
+          "a través de la placenta (que afecta al feto o al recién nacido)"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p20-l50": "index_entry",
+        "v3-p20-l71": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p20-l50": [
+          "P04.1"
+        ],
+        "v3-p20-l71": [
+          "P04.9"
+        ]
+      }
+    },
+    {
+      "mode": "unresolved",
+      "target_ids": [],
+      "finding": "La fuente nombra placenta o leche materna, pero Absorción sólo imprime ramas a través de la placenta. La vía leche materna no se inventa ni se elimina.",
+      "proof_ids": [
+        "v3-p20-l50",
+        "v3-p20-l71"
+      ],
+      "n": 60,
+      "printed_target_text": "Absorción, sustancia, química, a través de",
+      "source_ids": [
+        "v3-p332-l31",
+        "v3-p332-l45"
+      ],
+      "expected_destinations": {
+        "v3-p20-l50": "a través de la placenta (que afecta al feto o al recién nacido) (antineoplásicas) (citotóxicas)",
+        "v3-p20-l71": "a través de la placenta (que afecta al feto o al recién nacido)"
+      },
+      "expected_paths": {
+        "v3-p20-l50": [
+          "Absorción",
+          "droga (ver también Reacción, droga)",
+          "medicinal NCOP",
+          "a través de la placenta (que afecta al feto o al recién nacido) (antineoplásicas) (citotóxicas)"
+        ],
+        "v3-p20-l71": [
+          "Absorción",
+          "sustancia",
+          "química",
+          "a través de la placenta (que afecta al feto o al recién nacido)"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p20-l50": "index_entry",
+        "v3-p20-l71": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p20-l50": [
+          "P04.1"
+        ],
+        "v3-p20-l71": [
+          "P04.9"
+        ]
+      }
+    },
+    {
+      "mode": "unresolved",
+      "target_ids": [],
+      "finding": "La fuente nombra placenta o leche materna, pero Absorción sólo imprime ramas a través de la placenta. La vía leche materna no se inventa ni se elimina.",
+      "proof_ids": [
+        "v3-p20-l50",
+        "v3-p20-l71"
+      ],
+      "n": 61,
+      "printed_target_text": "Absorción, droga, medicinal, a través de",
+      "source_ids": [
+        "v3-p332-l38"
+      ],
+      "expected_destinations": {
+        "v3-p20-l50": "a través de la placenta (que afecta al feto o al recién nacido) (antineoplásicas) (citotóxicas)",
+        "v3-p20-l71": "a través de la placenta (que afecta al feto o al recién nacido)"
+      },
+      "expected_paths": {
+        "v3-p20-l50": [
+          "Absorción",
+          "droga (ver también Reacción, droga)",
+          "medicinal NCOP",
+          "a través de la placenta (que afecta al feto o al recién nacido) (antineoplásicas) (citotóxicas)"
+        ],
+        "v3-p20-l71": [
+          "Absorción",
+          "sustancia",
+          "química",
+          "a través de la placenta (que afecta al feto o al recién nacido)"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p20-l50": "index_entry",
+        "v3-p20-l71": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p20-l50": [
+          "P04.1"
+        ],
+        "v3-p20-l71": [
+          "P04.9"
+        ]
+      }
+    },
+    {
+      "mode": "exact",
+      "target_ids": [
+        "v3-p204-l32"
+      ],
+      "finding": "La fuente especifica conducto biliar y K83.9. La entrada impresa Enfermedad > conducto > biliar también imprime K83.9; ese contexto permite recuperar el nivel omitido sin elegir vesícula biliar.",
+      "n": 62,
+      "printed_target_text": "Enfermedad, biliar",
+      "source_ids": [
+        "v3-p341-l84"
+      ],
+      "expected_destinations": {
+        "v3-p204-l32": "biliar (común) (hepático)"
+      },
+      "expected_paths": {
+        "v3-p204-l32": [
+          "Enfermedad (de)",
+          "conducto",
+          "biliar (común) (hepático)"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p204-l32": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p204-l32": [
+          "K83.9"
+        ]
+      }
+    },
+    {
+      "mode": "exact",
+      "target_ids": [
+        "v3-p522-l27"
+      ],
+      "finding": "La fuente dice médula espinal y abrevia la dirección como médula; el encabezado de Traumatismo imprime médula espinal.",
+      "n": 63,
+      "printed_target_text": "Traumatismo, médula",
+      "source_ids": [
+        "v3-p342-l29"
+      ],
+      "expected_destinations": {
+        "v3-p522-l27": "médula espinal"
+      },
+      "expected_paths": {
+        "v3-p522-l27": [
+          "Traumatismo",
+          "médula espinal"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p522-l27": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p522-l27": [
+          "T09.3"
+        ]
+      }
+    },
+    {
+      "mode": "exact",
+      "target_ids": [
+        "v3-p341-l96"
+      ],
+      "finding": "LSIL corresponde a la rama impresa cuello del útero > intraepitelial, escamosa (célula) > bajo grado; las palabras de la dirección están reorganizadas.",
+      "n": 64,
+      "printed_target_text": "Lesión, cuello uterino, escamosa intraepitelial (célula) de bajo grado",
+      "source_ids": [
+        "v3-p349-l65"
+      ],
+      "expected_destinations": {
+        "v3-p341-l96": "bajo grado"
+      },
+      "expected_paths": {
+        "v3-p341-l96": [
+          "Lesión (no traumática)",
+          "cuello del útero (útero)",
+          "intraepitelial, escamosa (célula)",
+          "bajo grado"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p341-l96": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p341-l96": [
+          "N87.0"
+        ]
+      }
+    },
+    {
+      "mode": "navigation",
+      "target_ids": [
+        "v3-p355-l49"
+      ],
+      "finding": "La dirección abrevia la rama órganos o tejidos pelvianos en el embarazo o el parto. Se conserva expresamente esa restricción y se exige comprobarla.",
+      "selector": "órganos o tejidos pelvianos; embarazo o parto",
+      "anchor_only": false,
+      "n": 65,
+      "printed_target_text": "Mala posición, órganos pelvianos",
+      "source_ids": [
+        "v3-p355-l53"
+      ],
+      "expected_destinations": {
+        "v3-p355-l49": "órganos o tejidos pelvianos en el embarazo o el parto"
+      },
+      "expected_paths": {
+        "v3-p355-l49": [
+          "Mala",
+          "posición",
+          "órganos o tejidos pelvianos en el embarazo o el parto"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p355-l49": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p355-l49": [
+          "O34.8"
+        ]
+      }
+    },
+    {
+      "mode": "exact",
+      "target_ids": [
+        "v3-p356-l72"
+      ],
+      "finding": "La rama completa imprime cámaras cardíacas y sus conexiones; se conserva el encabezado y sus descendientes.",
+      "n": 66,
+      "printed_target_text": "Malformación, cámaras cardíacas",
+      "source_ids": [
+        "v3-p357-l9"
+      ],
+      "expected_destinations": {
+        "v3-p356-l72": "cámaras cardíacas y sus conexiones"
+      },
+      "expected_paths": {
+        "v3-p356-l72": [
+          "Malformación",
+          "cámaras cardíacas y sus conexiones"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p356-l72": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p356-l72": [
+          "Q20.9"
+        ]
+      }
+    },
+    {
+      "mode": "navigation",
+      "target_ids": [
+        "v3-p201-l48"
+      ],
+      "finding": "«Órgano o sitio especificado» indica elegir el órgano bajo Enfermedad; no es una subentrada llamada órgano o sitio.",
+      "selector": "órgano o sitio especificado",
+      "n": 67,
+      "printed_target_text": "Enfermedad, órgano o sitio especificado",
+      "source_ids": [
+        "v3-p362-l19"
+      ],
+      "expected_destinations": {
+        "v3-p201-l48": "Enfermedad (de) – ver también Síndrome"
+      },
+      "expected_paths": {
+        "v3-p201-l48": [
+          "Enfermedad (de) – ver también Síndrome"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p201-l48": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p201-l48": []
+      }
+    },
+    {
+      "mode": "navigation",
+      "target_ids": [
+        "v3-p240-l1",
+        "v3-p424-l41"
+      ],
+      "finding": "«Examen o pesquisa» enumera rutas alternativas. Pesquisa remite expresamente a Pesquisa especial.",
+      "selector": "examen o pesquisa especial",
+      "proof_ids": [],
+      "n": 68,
+      "printed_target_text": "Examen o pesquisa",
+      "source_ids": [
+        "v3-p377-l45"
+      ],
+      "expected_destinations": {
+        "v3-p240-l1": "Examen",
+        "v3-p424-l41": "Pesquisa especial (para)"
+      },
+      "expected_paths": {
+        "v3-p240-l1": [
+          "Examen"
+        ],
+        "v3-p424-l41": [
+          "Pesquisa especial (para)"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p240-l1": "index_entry",
+        "v3-p424-l41": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p240-l1": [],
+        "v3-p424-l41": [
+          "Z13.9"
+        ]
+      }
+    },
+    {
+      "mode": "unresolved",
+      "target_ids": [],
+      "finding": "El PDF imprime la remisión de Spitz a Nevus > célula > fusiforme, pero esa rama no aparece bajo Nevus. No se reemplaza por un carcinoma de células fusiformes.",
+      "proof_ids": [],
+      "n": 69,
+      "printed_target_text": "Nevus, célula, fusiforme",
+      "source_ids": [
+        "v3-p391-l49"
+      ],
+      "expected_destinations": {},
+      "expected_paths": {},
+      "expected_kinds": {},
+      "expected_code_references": {}
+    },
+    {
+      "mode": "navigation",
+      "target_ids": [
+        "v3-p503-l91"
+      ],
+      "finding": "La dirección usa obstrucción y el encabezado de Trabajo de parto imprime obstruido. Debe recorrerse la causa de obstrucción.",
+      "selector": "causa de obstrucción",
+      "n": 70,
+      "printed_target_text": "Trabajo de parto, obstrucción",
+      "source_ids": [
+        "v3-p395-l63"
+      ],
+      "expected_destinations": {
+        "v3-p503-l91": "obstruido"
+      },
+      "expected_paths": {
+        "v3-p503-l91": [
+          "Trabajo de parto – ver también Parto",
+          "obstruido"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p503-l91": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p503-l91": [
+          "O66.9"
+        ]
+      }
+    },
+    {
+      "mode": "unresolved",
+      "target_ids": [],
+      "finding": "Alteración remite a estado patológico y no tiene coagulación. Hay Defecto y Trastorno de coagulación, pero la remisión no elige entre ellos.",
+      "proof_ids": [
+        "v3-p60-l53"
+      ],
+      "n": 71,
+      "printed_target_text": "Alteración, coagulación",
+      "source_ids": [
+        "v3-p403-l65"
+      ],
+      "expected_destinations": {
+        "v3-p60-l53": "Alteración – ver también estado patológico"
+      },
+      "expected_paths": {
+        "v3-p60-l53": [
+          "Alteración – ver también estado patológico"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p60-l53": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p60-l53": []
+      }
+    },
+    {
+      "mode": "unresolved",
+      "target_ids": [],
+      "finding": "Paresoa está escrito así en el PDF 407 y no tiene encabezado de destino. No se sustituye por Paresia ni por otro término.",
+      "proof_ids": [],
+      "n": 72,
+      "printed_target_text": "Paresoa",
+      "source_ids": [
+        "v3-p407-l1"
+      ],
+      "expected_destinations": {},
+      "expected_paths": {},
+      "expected_kinds": {},
+      "expected_code_references": {}
+    },
+    {
+      "mode": "navigation",
+      "target_ids": [
+        "v3-p407-l49",
+        "v3-p407-l51",
+        "v3-p407-l65",
+        "v3-p407-l68",
+        "v3-p407-l75",
+        "v3-p407-l71"
+      ],
+      "finding": "No existe una rama general cerebral > espástica. Se ofrecen las ramas impresas espástica, espasmódica y espasmódica de los subtipos cuadripléjico, dipléjico, hemipléjico, monopléjico, tetrapléjico y parapléjico. Hay que identificar el subtipo; no se elige un G80 por defecto.",
+      "selector": "subtipo de parálisis cerebral espástica",
+      "n": 73,
+      "printed_target_text": "Parálisis, cerebral, espástica",
+      "source_ids": [
+        "v3-p407-l119",
+        "v3-p407-l120",
+        "v3-p408-l33",
+        "v3-p408-l65"
+      ],
+      "expected_destinations": {
+        "v3-p407-l49": "espástica, espasmódica",
+        "v3-p407-l51": "espástica, espasmódica",
+        "v3-p407-l65": "espástica, espasmódica",
+        "v3-p407-l68": "espástica, espasmódica",
+        "v3-p407-l75": "espástica, espasmódica",
+        "v3-p407-l71": "espasmódica"
+      },
+      "expected_paths": {
+        "v3-p407-l49": [
+          "Parálisis, paralítico (a) (de) (completa) (incompleta) (ver también Paresia)",
+          "cerebral (congénita)",
+          "cuadripléjica",
+          "espástica, espasmódica"
+        ],
+        "v3-p407-l51": [
+          "Parálisis, paralítico (a) (de) (completa) (incompleta) (ver también Paresia)",
+          "cerebral (congénita)",
+          "dipléjica",
+          "espástica, espasmódica"
+        ],
+        "v3-p407-l65": [
+          "Parálisis, paralítico (a) (de) (completa) (incompleta) (ver también Paresia)",
+          "cerebral (congénita)",
+          "hemipléjica",
+          "espástica, espasmódica"
+        ],
+        "v3-p407-l68": [
+          "Parálisis, paralítico (a) (de) (completa) (incompleta) (ver también Paresia)",
+          "cerebral (congénita)",
+          "monopléjica",
+          "espástica, espasmódica"
+        ],
+        "v3-p407-l75": [
+          "Parálisis, paralítico (a) (de) (completa) (incompleta) (ver también Paresia)",
+          "cerebral (congénita)",
+          "tetrapléjica",
+          "espástica, espasmódica"
+        ],
+        "v3-p407-l71": [
+          "Parálisis, paralítico (a) (de) (completa) (incompleta) (ver también Paresia)",
+          "cerebral (congénita)",
+          "parapléjica",
+          "espasmódica"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p407-l49": "index_entry",
+        "v3-p407-l51": "index_entry",
+        "v3-p407-l65": "index_entry",
+        "v3-p407-l68": "index_entry",
+        "v3-p407-l75": "index_entry",
+        "v3-p407-l71": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p407-l49": [
+          "G80.0"
+        ],
+        "v3-p407-l51": [
+          "G80.1"
+        ],
+        "v3-p407-l65": [
+          "G80.2"
+        ],
+        "v3-p407-l68": [
+          "G80.1"
+        ],
+        "v3-p407-l75": [
+          "G80.0"
+        ],
+        "v3-p407-l71": [
+          "G80.1"
+        ]
+      }
+    },
+    {
+      "mode": "exact",
+      "target_ids": [
+        "v3-p425-l68"
+      ],
+      "finding": "La fuente es cáncer y la entrada de Pesquisa especial se titula tumor maligno; la condición maligno se mantiene explícita.",
+      "n": 74,
+      "printed_target_text": "Pesquisa especial, tumor",
+      "source_ids": [
+        "v3-p424-l55"
+      ],
+      "expected_destinations": {
+        "v3-p425-l68": "tumor maligno (de)"
+      },
+      "expected_paths": {
+        "v3-p425-l68": [
+          "Pesquisa especial (para)",
+          "tumor maligno (de)"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p425-l68": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p425-l68": [
+          "Z12.9"
+        ]
+      }
+    },
+    {
+      "mode": "prefix",
+      "target_ids": [
+        "v3-p476-l40",
+        "v3-p476-l44",
+        "v3-p476-l47",
+        "v3-p476-l113"
+      ],
+      "finding": "Pseudo remite al prefijo Seudo, no a un código de una enfermedad. Se exige completar el término y buscar el encabezado Seudo*.",
+      "selector": "término completo que comienza por Seudo",
+      "prefix": "seudo",
+      "n": 75,
+      "printed_target_text": "Seudo",
+      "source_ids": [
+        "v3-p441-l80"
+      ],
+      "expected_destinations": {
+        "v3-p476-l40": "Seudociesis",
+        "v3-p476-l44": "Seudocrup",
+        "v3-p476-l47": "Seudofaquia",
+        "v3-p476-l113": "Seudotumor"
+      },
+      "expected_paths": {
+        "v3-p476-l40": [
+          "Seudociesis"
+        ],
+        "v3-p476-l44": [
+          "Seudocrup"
+        ],
+        "v3-p476-l47": [
+          "Seudofaquia"
+        ],
+        "v3-p476-l113": [
+          "Seudotumor"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p476-l40": "index_entry",
+        "v3-p476-l44": "index_entry",
+        "v3-p476-l47": "index_entry",
+        "v3-p476-l113": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p476-l40": [
+          "F45.8"
+        ],
+        "v3-p476-l44": [
+          "J38.5"
+        ],
+        "v3-p476-l47": [
+          "Z96.1"
+        ],
+        "v3-p476-l113": []
+      }
+    },
+    {
+      "mode": "exact",
+      "target_ids": [
+        "v3-p220-l15"
+      ],
+      "finding": "La entrada imprime alimentos (agudo) (bacteriano) (descompuestos) NCOP; la dirección usa alimento. Se conservan las variantes y todas las ramas del destino.",
+      "n": 76,
+      "printed_target_text": "Envenenamiento, alimento",
+      "source_ids": [
+        "v3-p443-l81"
+      ],
+      "expected_destinations": {
+        "v3-p220-l15": "alimentos (agudo) (bacteriano) (descompuestos) NCOP (ver también Intoxicación alimentaria, por agente)"
+      },
+      "expected_paths": {
+        "v3-p220-l15": [
+          "Envenenamiento (agudo) (ver también Tabla de medicamentos y productos químicos)",
+          "alimentos (agudo) (bacteriano) (descompuestos) NCOP (ver también Intoxicación alimentaria, por agente)"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p220-l15": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p220-l15": [
+          "A05.9"
+        ]
+      }
+    },
+    {
+      "mode": "exact",
+      "target_ids": [
+        "v3-p387-l81"
+      ],
+      "finding": "La dirección abrevia el encabezado desplazamiento, prolapso, protrusión o ruptura de disco intervertebral; se mantiene completa la rama debida a.",
+      "n": 77,
+      "printed_target_text": "Neuritis, debida a, desplazamiento disco intervertebral",
+      "source_ids": [
+        "v3-p456-l23"
+      ],
+      "expected_destinations": {
+        "v3-p387-l81": "desplazamiento, prolapso, protrusión o ruptura de disco intervertebral"
+      },
+      "expected_paths": {
+        "v3-p387-l81": [
+          "Neuritis",
+          "debida a",
+          "desplazamiento, prolapso, protrusión o ruptura de disco intervertebral"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p387-l81": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p387-l81": [
+          "M51.1†",
+          "G55.1*"
+        ]
+      }
+    },
+    {
+      "mode": "exact",
+      "target_ids": [
+        "v3-p273-l30"
+      ],
+      "finding": "La dirección usa Hallazgos y el encabezado imprime Hallazgo; la rama diagnóstico por imagen permanece igual.",
+      "n": 78,
+      "printed_target_text": "Hallazgos, diagnóstico por imagen",
+      "source_ids": [
+        "v3-p457-l3"
+      ],
+      "expected_destinations": {
+        "v3-p273-l30": "diagnóstico por imagen"
+      },
+      "expected_paths": {
+        "v3-p273-l30": [
+          "Hallazgo (anormal) (en)",
+          "diagnóstico por imagen"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p273-l30": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p273-l30": []
+      }
+    },
+    {
+      "mode": "exact",
+      "target_ids": [
+        "v3-p130-l46"
+      ],
+      "finding": "La dirección usa plural procedimientos y la rama de enfermedades de Complicación imprime procedimiento. No se toma la entrada homónima de causas externas.",
+      "n": 79,
+      "printed_target_text": "Complicación, procedimientos",
+      "source_ids": [
+        "v3-p458-l10"
+      ],
+      "expected_destinations": {
+        "v3-p130-l46": "procedimiento"
+      },
+      "expected_paths": {
+        "v3-p130-l46": [
+          "Complicación",
+          "procedimiento"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p130-l46": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p130-l46": [
+          "T88.9"
+        ]
+      }
+    },
+    {
+      "mode": "exact",
+      "target_ids": [
+        "v3-p137-l48"
+      ],
+      "finding": "La entrada de Consulta imprime repetición de receta. «De salud» en la dirección no crea un nuevo encabezado ni modifica la ruta.",
+      "n": 80,
+      "printed_target_text": "Consulta de salud, repetición de receta",
+      "source_ids": [
+        "v3-p458-l85"
+      ],
+      "expected_destinations": {
+        "v3-p137-l48": "repetición de receta (medicamentos) (lentes) (aparatos)"
+      },
+      "expected_paths": {
+        "v3-p137-l48": [
+          "Consulta (asesoría) (médica) (para)",
+          "repetición de receta (medicamentos) (lentes) (aparatos)"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p137-l48": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p137-l48": [
+          "Z76.0"
+        ]
+      }
+    },
+    {
+      "mode": "exact",
+      "target_ids": [
+        "v3-p463-l99"
+      ],
+      "finding": "Neorickettsia sennetsu está impreso como subentrada de Rickettsiosis > debida a en la misma página. La dirección omite esos niveles, que se conservan.",
+      "n": 81,
+      "printed_target_text": "Neorickettsia sennetsu",
+      "source_ids": [
+        "v3-p463-l97"
+      ],
+      "expected_destinations": {
+        "v3-p463-l99": "Neorickettsia sennetsu"
+      },
+      "expected_paths": {
+        "v3-p463-l99": [
+          "Rickettsiosis NCOP",
+          "debida a",
+          "Neorickettsia sennetsu"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p463-l99": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p463-l99": [
+          "A79.8"
+        ]
+      }
+    },
+    {
+      "mode": "navigation",
+      "target_ids": [
+        "v3-p464-l9"
+      ],
+      "finding": "La rama perineo o vulva restringe su alcance al embarazo o parto. Se exige ese contexto y se conserva el encabezado completo.",
+      "selector": "perineo o vulva; embarazo o parto",
+      "anchor_only": false,
+      "n": 82,
+      "printed_target_text": "Rigidez, perineo",
+      "source_ids": [
+        "v3-p464-l22"
+      ],
+      "expected_destinations": {
+        "v3-p464-l9": "perineo o vulva en el embarazo o el parto"
+      },
+      "expected_paths": {
+        "v3-p464-l9": [
+          "Rigidez",
+          "perineo o vulva en el embarazo o el parto"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p464-l9": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p464-l9": [
+          "O34.7"
+        ]
+      }
+    },
+    {
+      "mode": "exact",
+      "target_ids": [
+        "v3-p419-l28"
+      ],
+      "finding": "La rama membrana del tímpano reenvía expresamente a tímpano (membrana). La dirección usa membrana, timpánica.",
+      "proof_ids": [
+        "v3-p418-l113"
+      ],
+      "n": 83,
+      "printed_target_text": "Perforación, membrana, timpánica",
+      "source_ids": [
+        "v3-p466-l105"
+      ],
+      "expected_destinations": {
+        "v3-p419-l28": "tímpano (membrana) (persistente postraumática) (posinflamatoria)",
+        "v3-p418-l113": "membrana del tímpano – ver Perforación, tímpano"
+      },
+      "expected_paths": {
+        "v3-p419-l28": [
+          "Perforación",
+          "tímpano (membrana) (persistente postraumática) (posinflamatoria)"
+        ],
+        "v3-p418-l113": [
+          "Perforación (no traumática)",
+          "membrana del tímpano – ver Perforación, tímpano"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p419-l28": "index_entry",
+        "v3-p418-l113": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p419-l28": [
+          "H72.9"
+        ],
+        "v3-p418-l113": []
+      }
+    },
+    {
+      "mode": "exact",
+      "target_ids": [
+        "v3-p488-l24"
+      ],
+      "finding": "La dirección plural Síndromes de muerte súbita nombra Síndrome > muerte súbita. Los subtipos adulto, arrítmico e infantil permanecen separados.",
+      "n": 84,
+      "printed_target_text": "Síndromes de muerte súbita",
+      "source_ids": [
+        "v3-p469-l35"
+      ],
+      "expected_destinations": {
+        "v3-p488-l24": "muerte súbita"
+      },
+      "expected_paths": {
+        "v3-p488-l24": [
+          "Síndrome (de)",
+          "muerte súbita"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p488-l24": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p488-l24": []
+      }
+    },
+    {
+      "mode": "exact",
+      "target_ids": [
+        "v3-p477-l121"
+      ],
+      "finding": "La rama completa es tardía o a la edad de dos años o más NCOP. La fuente y el destino imprimen A50.7.",
+      "n": 85,
+      "printed_target_text": "Sífilis, congénita, tardía",
+      "source_ids": [
+        "v3-p478-l104"
+      ],
+      "expected_destinations": {
+        "v3-p477-l121": "tardía o a la edad de dos años o más NCOP"
+      },
+      "expected_paths": {
+        "v3-p477-l121": [
+          "Sífilis, sifilítico(a)(s) (adquirida)",
+          "congénita",
+          "tardía o a la edad de dos años o más NCOP"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p477-l121": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p477-l121": [
+          "A50.7"
+        ]
+      }
+    },
+    {
+      "mode": "exact",
+      "target_ids": [
+        "v3-p489-l81"
+      ],
+      "finding": "La fuente especifica madre diabética y abrevia la dirección a recién nacido. La entrada completa es recién nacido de madre diabética; no se extiende a todo recién nacido.",
+      "n": 86,
+      "printed_target_text": "Síndrome, recién nacido",
+      "source_ids": [
+        "v3-p486-l100"
+      ],
+      "expected_destinations": {
+        "v3-p489-l81": "recién nacido de madre diabética"
+      },
+      "expected_paths": {
+        "v3-p489-l81": [
+          "Síndrome (de)",
+          "recién nacido de madre diabética"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p489-l81": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p489-l81": [
+          "P70.1"
+        ]
+      }
+    },
+    {
+      "mode": "exact",
+      "target_ids": [
+        "v3-p201-l67"
+      ],
+      "finding": "La dirección escribe almacenamiento de glucógeno; la rama impresa es almacenamiento > glucógeno. No se usan los subtipos de órgano con asterisco.",
+      "n": 87,
+      "printed_target_text": "Enfermedad, almacenamiento de glucógeno",
+      "source_ids": [
+        "v3-p499-l118"
+      ],
+      "expected_destinations": {
+        "v3-p201-l67": "glucógeno (Andersen) (Cori) (Forbe) (Hers) McArdle–Schmid–Pearson) (Pompe) (Tauri) (von Gierke)"
+      },
+      "expected_paths": {
+        "v3-p201-l67": [
+          "Enfermedad (de) – ver también Síndrome",
+          "almacenamiento",
+          "glucógeno (Andersen) (Cori) (Forbe) (Hers) McArdle–Schmid–Pearson) (Pompe) (Tauri) (von Gierke)"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p201-l67": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p201-l67": [
+          "E74.0"
+        ]
+      }
+    },
+    {
+      "mode": "unresolved",
+      "target_ids": [],
+      "finding": "Afección > respiratoria remite a Trastorno > respiratorio, pero no se encuentra la ruta completa superior/crónica > debida a de esta dirección. No se descartan esos calificadores.",
+      "proof_ids": [
+        "v3-p30-l90",
+        "v3-p516-l109"
+      ],
+      "n": 88,
+      "printed_target_text": "Afección, respiratoria superior, debida a",
+      "source_ids": [
+        "v3-p505-l27"
+      ],
+      "expected_destinations": {
+        "v3-p30-l90": "respiratoria – ver Trastorno, respiratorio",
+        "v3-p516-l109": "respiratorio"
+      },
+      "expected_paths": {
+        "v3-p30-l90": [
+          "Afección",
+          "respiratoria – ver Trastorno, respiratorio"
+        ],
+        "v3-p516-l109": [
+          "Trastorno (s)",
+          "respiratorio"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p30-l90": "index_entry",
+        "v3-p516-l109": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p30-l90": [],
+        "v3-p516-l109": [
+          "J98.9"
+        ]
+      }
+    },
+    {
+      "mode": "navigation",
+      "target_ids": [
+        "v3-p214-l24"
+      ],
+      "finding": "Afección remite también a Enfermedad, donde está la rama respiratoria > crónica NCOP > debida a. Se conserva crónica tal como la exige la dirección y se requiere el agente causal.",
+      "selector": "agente causal; condición crónica de la dirección",
+      "proof_ids": [
+        "v3-p29-l98",
+        "v3-p30-l90"
+      ],
+      "n": 89,
+      "printed_target_text": "Afección, respiratoria, crónica, debida a",
+      "source_ids": [
+        "v3-p505-l54"
+      ],
+      "expected_destinations": {
+        "v3-p214-l24": "debida a",
+        "v3-p29-l98": "Afección – ver también Enfermedad",
+        "v3-p30-l90": "respiratoria – ver Trastorno, respiratorio"
+      },
+      "expected_paths": {
+        "v3-p214-l24": [
+          "Enfermedad (de)",
+          "respiratoria (tracto)",
+          "crónica NCOP",
+          "debida a"
+        ],
+        "v3-p29-l98": [
+          "Afección – ver también Enfermedad"
+        ],
+        "v3-p30-l90": [
+          "Afección",
+          "respiratoria – ver Trastorno, respiratorio"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p214-l24": "index_entry",
+        "v3-p29-l98": "index_entry",
+        "v3-p30-l90": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p214-l24": [],
+        "v3-p29-l98": [],
+        "v3-p30-l90": []
+      }
+    },
+    {
+      "mode": "navigation",
+      "target_ids": [
+        "v3-p516-l46"
+      ],
+      "finding": "La rama impresa es residual y de comienzo tardío, inducido por. El agente debe determinar la opción; no se toma automáticamente alcohol u otra droga.",
+      "selector": "agente inductor",
+      "n": 90,
+      "printed_target_text": "Trastorno, psicótico, residual",
+      "source_ids": [
+        "v3-p516-l24"
+      ],
+      "expected_destinations": {
+        "v3-p516-l46": "residual y de comienzo tardío, inducido por"
+      },
+      "expected_paths": {
+        "v3-p516-l46": [
+          "Trastorno (s)",
+          "psicótico",
+          "residual y de comienzo tardío, inducido por"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p516-l46": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p516-l46": []
+      }
+    },
+    {
+      "mode": "exact",
+      "target_ids": [
+        "v3-p521-l77"
+      ],
+      "finding": "La dirección usa suelo y la rama de Traumatismo > interno > pelvis imprime piso.",
+      "n": 91,
+      "printed_target_text": "Traumatismo, interno, pelvis, suelo",
+      "source_ids": [
+        "v3-p526-l97"
+      ],
+      "expected_destinations": {
+        "v3-p521-l77": "piso"
+      },
+      "expected_paths": {
+        "v3-p521-l77": [
+          "Traumatismo",
+          "interno",
+          "pelvis, pelviano (órgano)",
+          "piso"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p521-l77": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p521-l77": [
+          "S39.9"
+        ]
+      }
+    },
+    {
+      "mode": "table",
+      "target_ids": [
+        "v3-p544-neoplasm-metadata"
+      ],
+      "finding": "La dirección escribe neoplasma o Neplasma benigno; Neoplasia remite expresamente a Tumor. Se conserva benigno como selector de columna, sin inferir sitio.",
+      "columns": [
+        "benign"
+      ],
+      "proof_ids": [
+        "v3-p383-l26"
+      ],
+      "n": 92,
+      "printed_target_text": "neoplasma benigno",
+      "source_ids": [
+        "v3-p542-l114"
+      ],
+      "expected_destinations": {
+        "v3-p544-neoplasm-metadata": "",
+        "v3-p383-l26": "Neoplasia (ver también Tumor)"
+      },
+      "expected_paths": {
+        "v3-p544-neoplasm-metadata": [],
+        "v3-p383-l26": [
+          "Neoplasia (ver también Tumor)"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p544-neoplasm-metadata": "special_table_metadata",
+        "v3-p383-l26": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p544-neoplasm-metadata": [],
+        "v3-p383-l26": [
+          "D48.9"
+        ]
+      }
+    },
+    {
+      "mode": "table",
+      "target_ids": [
+        "v3-p544-neoplasm-metadata"
+      ],
+      "finding": "La dirección escribe neoplasma o Neplasma benigno; Neoplasia remite expresamente a Tumor. Se conserva benigno como selector de columna, sin inferir sitio. La fuente está bajo neuroendocrino (maligno), en conflicto con la remisión benigno; se muestra el conflicto sin recodificar.",
+      "columns": [
+        "benign"
+      ],
+      "proof_ids": [
+        "v3-p383-l26"
+      ],
+      "source_scope_conflict": true,
+      "n": 93,
+      "printed_target_text": "Neplasma benigno",
+      "source_ids": [
+        "v3-p542-l115"
+      ],
+      "expected_destinations": {
+        "v3-p544-neoplasm-metadata": "",
+        "v3-p383-l26": "Neoplasia (ver también Tumor)"
+      },
+      "expected_paths": {
+        "v3-p544-neoplasm-metadata": [],
+        "v3-p383-l26": [
+          "Neoplasia (ver también Tumor)"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p544-neoplasm-metadata": "special_table_metadata",
+        "v3-p383-l26": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p544-neoplasm-metadata": [],
+        "v3-p383-l26": [
+          "D48.9"
+        ]
+      }
+    },
+    {
+      "mode": "table",
+      "target_ids": [
+        "v3-p568-table-y1968"
+      ],
+      "finding": "Neoplasia remite explícitamente a Tumor; la tabla imprime piel (no melanótico). Maligna selecciona las columnas malignas y mantiene la distinción primaria/secundaria.",
+      "columns": [
+        "malignant_primary",
+        "malignant_secondary"
+      ],
+      "proof_ids": [
+        "v3-p383-l26"
+      ],
+      "n": 94,
+      "printed_target_text": "Neoplasia, piel, maligna",
+      "source_ids": [
+        "v3-p584-l51"
+      ],
+      "expected_destinations": {
+        "v3-p568-table-y1968": "piel (no melanótico)",
+        "v3-p383-l26": "Neoplasia (ver también Tumor)"
+      },
+      "expected_paths": {
+        "v3-p568-table-y1968": [
+          "Tumor (de)",
+          "piel (no melanótico)"
+        ],
+        "v3-p383-l26": [
+          "Neoplasia (ver también Tumor)"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p568-table-y1968": "neoplasm_table_row",
+        "v3-p383-l26": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p568-table-y1968": [
+          "C44.9",
+          "C79.2",
+          "D04.9",
+          "D23.9",
+          "D48.5"
+        ],
+        "v3-p383-l26": [
+          "D48.9"
+        ]
+      }
+    },
+    {
+      "mode": "exact",
+      "target_ids": [
+        "v3-p209-l65"
+      ],
+      "finding": "Alcohólica y psicosis son modificadores impresos entre paréntesis de Korsakov, ambos nombrados por la remisión.",
+      "n": 95,
+      "printed_target_text": "Enfermedad, Korsakov, alcohólica, psicosis",
+      "source_ids": [
+        "v3-p594-l45"
+      ],
+      "expected_destinations": {
+        "v3-p209-l65": "Korsakov (alcohólica) (psicosis)"
+      },
+      "expected_paths": {
+        "v3-p209-l65": [
+          "Enfermedad (de)",
+          "Korsakov (alcohólica) (psicosis)"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p209-l65": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p209-l65": [
+          "F10.6"
+        ]
+      }
+    },
+    {
+      "mode": "exact",
+      "target_ids": [
+        "v3-p457-l1"
+      ],
+      "finding": "La dirección singular Rayo X nombra el encabezado Rayos X; no se toma el encabezado Rayo de descarga atmosférica.",
+      "n": 96,
+      "printed_target_text": "Rayo X",
+      "source_ids": [
+        "v3-p595-l3"
+      ],
+      "expected_destinations": {
+        "v3-p457-l1": "Rayos X (de, por)"
+      },
+      "expected_paths": {
+        "v3-p457-l1": [
+          "Rayos X (de, por)"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p457-l1": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p457-l1": []
+      }
+    },
+    {
+      "mode": "unresolved",
+      "target_ids": [],
+      "finding": "El PDF 607 corta la dirección después de «para». Hay otra rama para todo terreno, pero el literal completo omitido no puede reconstruirse como hecho oficial.",
+      "proof_ids": [
+        "v3-p609-l4"
+      ],
+      "n": 97,
+      "printed_target_text": "Accidente, transporte, vehículo, para",
+      "source_ids": [
+        "v3-p607-l82"
+      ],
+      "expected_destinations": {
+        "v3-p609-l4": "para todo terreno o para uso fuera de la carretera (no de tránsito)"
+      },
+      "expected_paths": {
+        "v3-p609-l4": [
+          "Accidente",
+          "transporte",
+          "vehículo (de)",
+          "para todo terreno o para uso fuera de la carretera (no de tránsito)"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p609-l4": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p609-l4": [
+          "V86.9"
+        ]
+      }
+    },
+    {
+      "mode": "navigation",
+      "target_ids": [
+        "v3-p602-l54"
+      ],
+      "finding": "La fuente imprime tracción animal y V80.9. La rama de ocupante > vehículo > tracción animal imprime V80.9 y remite a jinete. Se conservan esos niveles; no se usa la rama mal situada bajo tren.",
+      "selector": "jinete u ocupante de vehículo de tracción animal",
+      "proof_ids": [
+        "v3-p607-l29"
+      ],
+      "n": 98,
+      "printed_target_text": "Accidente, transporte, vehículo, tracción animal",
+      "source_ids": [
+        "v3-p609-l48"
+      ],
+      "expected_destinations": {
+        "v3-p602-l54": "tracción animal (ver también Accidente, transporte, jinete)",
+        "v3-p607-l29": "tracción animal (ver también Accidente, transporte, jinete)"
+      },
+      "expected_paths": {
+        "v3-p602-l54": [
+          "Accidente",
+          "transporte",
+          "ocupante (de)",
+          "vehículo (de)",
+          "tracción animal (ver también Accidente, transporte, jinete)"
+        ],
+        "v3-p607-l29": [
+          "Accidente",
+          "transporte",
+          "vehículo (de)",
+          "tren (monorriel) (dos rieles) (subterráneo) (elevado)",
+          "tracción animal (ver también Accidente, transporte, jinete)"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p602-l54": "index_entry",
+        "v3-p607-l29": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p602-l54": [
+          "V80.9"
+        ],
+        "v3-p607-l29": [
+          "V80.9"
+        ]
+      }
+    },
+    {
+      "mode": "exact",
+      "target_ids": [
+        "v3-p607-l86"
+      ],
+      "finding": "El encabezado «vehículo (de) tres ruedas (motorizado)» repite vehículo en el propio nombre; la dirección lo abrevia a tres ruedas. La fuente y el destino imprimen V39.9 y se conserva la jerarquía literal.",
+      "n": 99,
+      "printed_target_text": "Accidente, transporte, vehículo, tres ruedas",
+      "source_ids": [
+        "v3-p609-l53"
+      ],
+      "expected_destinations": {
+        "v3-p607-l86": "vehículo (de) tres ruedas (motorizado)"
+      },
+      "expected_paths": {
+        "v3-p607-l86": [
+          "Accidente",
+          "transporte",
+          "vehículo (de)",
+          "vehículo (de) tres ruedas (motorizado)"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p607-l86": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p607-l86": [
+          "V39.9"
+        ]
+      }
+    },
+    {
+      "mode": "exact",
+      "target_ids": [
+        "v3-p646-l39"
+      ],
+      "finding": "La fuente de Aplastamiento imprime derrumbe con asfixia o sofocación y W77.–; la entrada de Sofocación imprime soterramiento y W77.–.",
+      "n": 100,
+      "printed_target_text": "Sofocación, debida a, derrumbe",
+      "source_ids": [
+        "v3-p611-l24"
+      ],
+      "expected_destinations": {
+        "v3-p646-l39": "soterramiento"
+      },
+      "expected_paths": {
+        "v3-p646-l39": [
+          "Sofocación",
+          "debida a, por",
+          "soterramiento"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p646-l39": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p646-l39": [
+          "W77.–"
+        ]
+      }
+    },
+    {
+      "mode": "exact",
+      "target_ids": [
+        "v3-p646-l45"
+      ],
+      "finding": "La dirección omite el nivel en, impreso bajo Sofocación en causas externas. La fuente y el destino conservan W83.– y el ámbito accidental.",
+      "n": 101,
+      "printed_target_text": "Sofocación, bolsa plástica",
+      "source_ids": [
+        "v3-p612-l2"
+      ],
+      "expected_destinations": {
+        "v3-p646-l45": "bolsa plástica (en circunstancias accidentales)"
+      },
+      "expected_paths": {
+        "v3-p646-l45": [
+          "Sofocación",
+          "en",
+          "bolsa plástica (en circunstancias accidentales)"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p646-l45": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p646-l45": [
+          "W83.–"
+        ]
+      }
+    },
+    {
+      "mode": "navigation",
+      "target_ids": [
+        "v3-p602-l98"
+      ],
+      "finding": "La dirección omite la preposición con al final de colisión con; debe determinarse el vehículo u objeto.",
+      "selector": "vehículo u objeto de colisión",
+      "n": 102,
+      "printed_target_text": "Accidente, transporte, peatón, colisión",
+      "source_ids": [
+        "v3-p612-l37"
+      ],
+      "expected_destinations": {
+        "v3-p602-l98": "colisión con"
+      },
+      "expected_paths": {
+        "v3-p602-l98": [
+          "Accidente",
+          "transporte",
+          "peatón",
+          "colisión con"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p602-l98": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p602-l98": []
+      }
+    },
+    {
+      "mode": "navigation",
+      "target_ids": [
+        "v3-p618-l45"
+      ],
+      "finding": "La rama imprime máquina, maquinaria NCOP y reenvía por tipo de máquina. Se mantiene ese selector.",
+      "selector": "tipo de máquina",
+      "n": 103,
+      "printed_target_text": "Contacto traumático, maquinaria, por tipo",
+      "source_ids": [
+        "v3-p613-l57"
+      ],
+      "expected_destinations": {
+        "v3-p618-l45": "máquina, maquinaria NCOP (ver también Contacto traumático, por tipo de máquina)"
+      },
+      "expected_paths": {
+        "v3-p618-l45": [
+          "Contacto traumático",
+          "máquina, maquinaria NCOP (ver también Contacto traumático, por tipo de máquina)"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p618-l45": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p618-l45": [
+          "W31.–"
+        ]
+      }
+    },
+    {
+      "mode": "navigation",
+      "target_ids": [
+        "v3-p618-l88",
+        "v3-p618-l45"
+      ],
+      "finding": "«Por objeto o máquina» solicita elegir entre dos ramas de Contacto traumático, según el objeto o la máquina que produjo el contacto.",
+      "selector": "objeto o máquina",
+      "n": 104,
+      "printed_target_text": "Contacto traumático, por objeto o máquina",
+      "source_ids": [
+        "v3-p619-l88"
+      ],
+      "expected_destinations": {
+        "v3-p618-l88": "objeto (contundente) (romo) NCOP",
+        "v3-p618-l45": "máquina, maquinaria NCOP (ver también Contacto traumático, por tipo de máquina)"
+      },
+      "expected_paths": {
+        "v3-p618-l88": [
+          "Contacto traumático",
+          "objeto (contundente) (romo) NCOP"
+        ],
+        "v3-p618-l45": [
+          "Contacto traumático",
+          "máquina, maquinaria NCOP (ver también Contacto traumático, por tipo de máquina)"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p618-l88": "index_entry",
+        "v3-p618-l45": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p618-l88": [],
+        "v3-p618-l45": [
+          "W31.–"
+        ]
+      }
+    },
+    {
+      "mode": "exact",
+      "target_ids": [
+        "v3-p628-l19"
+      ],
+      "finding": "La dirección usa balas y el encabezado imprime bala o balín con la lista de armas. Se conserva el encabezado completo.",
+      "n": 105,
+      "printed_target_text": "Guerra, balas",
+      "source_ids": [
+        "v3-p629-l22"
+      ],
+      "expected_destinations": {
+        "v3-p628-l19": "bala o balín (de ametralladora, carabina, escopeta, fusil, mosquetón, pistola, revólver o rifle)"
+      },
+      "expected_paths": {
+        "v3-p628-l19": [
+          "Guerra (operación de) (durante las hostilidades) (traumatismo) (en) (por)",
+          "bala o balín (de ametralladora, carabina, escopeta, fusil, mosquetón, pistola, revólver o rifle)"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p628-l19": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p628-l19": [
+          "Y36.4"
+        ]
+      }
+    },
+    {
+      "mode": "navigation",
+      "target_ids": [
+        "v3-p631-l76"
+      ],
+      "finding": "La fuente es Incidente durante atención médica o quirúrgica > hemorragia. Su dirección corte apunta al encabezado corte, punción, perforación o hemorragia del mismo contexto.",
+      "selector": "tipo de procedimiento",
+      "n": 106,
+      "printed_target_text": "Incidente, corte, por tipo de procedimiento",
+      "source_ids": [
+        "v3-p632-l64"
+      ],
+      "expected_destinations": {
+        "v3-p631-l76": "corte, punción, perforación o hemorragia (no intencional)"
+      },
+      "expected_paths": {
+        "v3-p631-l76": [
+          "Incidente (adverso) (al paciente)",
+          "durante atención médica o quirúrgica",
+          "corte, punción, perforación o hemorragia (no intencional)"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p631-l76": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p631-l76": [
+          "Y60.9"
+        ]
+      }
+    },
+    {
+      "mode": "navigation",
+      "target_ids": [
+        "v3-p613-l37"
+      ],
+      "finding": "Delante abrevia la rama delante de tren, vehículo u otro objeto en movimiento; la rama remite a Colisión.",
+      "selector": "objeto en movimiento",
+      "proof_ids": [
+        "v3-p613-l37"
+      ],
+      "n": 107,
+      "printed_target_text": "Caída, delante",
+      "source_ids": [
+        "v3-p635-l4"
+      ],
+      "expected_destinations": {
+        "v3-p613-l37": "delante de tren, vehículo u otro objeto en movimiento – ver también Colisión"
+      },
+      "expected_paths": {
+        "v3-p613-l37": [
+          "Caída (accidental)",
+          "delante de tren, vehículo u otro objeto en movimiento – ver también Colisión"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p613-l37": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p613-l37": []
+      }
+    },
+    {
+      "mode": "navigation",
+      "target_ids": [
+        "v3-p617-l5"
+      ],
+      "finding": "La fuente es Puñalada accidental W26.9. La sección de causas externas imprime Contacto traumático (accidental) (con), cuyas ramas distinguen objetos; el Contacto con de enfermedades tiene otro ámbito.",
+      "selector": "objeto que causa contacto traumático",
+      "proof_ids": [
+        "v3-p618-l88"
+      ],
+      "n": 108,
+      "printed_target_text": "Contacto, con, por objeto",
+      "source_ids": [
+        "v3-p640-l32"
+      ],
+      "expected_destinations": {
+        "v3-p617-l5": "Contacto traumático (accidental) (con)",
+        "v3-p618-l88": "objeto (contundente) (romo) NCOP"
+      },
+      "expected_paths": {
+        "v3-p617-l5": [
+          "Contacto traumático (accidental) (con)"
+        ],
+        "v3-p618-l88": [
+          "Contacto traumático",
+          "objeto (contundente) (romo) NCOP"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p617-l5": "index_entry",
+        "v3-p618-l88": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p617-l5": [],
+        "v3-p618-l88": []
+      }
+    },
+    {
+      "mode": "navigation",
+      "target_ids": [
+        "v3-p623-l79"
+      ],
+      "finding": "Exceso en causas externas remite explícitamente a Exposición. La palabra exposición de esta dirección indica continuar por ese reenvío.",
+      "selector": "tipo de exposición",
+      "proof_ids": [
+        "v3-p623-l79"
+      ],
+      "n": 109,
+      "printed_target_text": "Exceso, exposición",
+      "source_ids": [
+        "v3-p645-l80"
+      ],
+      "expected_destinations": {
+        "v3-p623-l79": "Exceso, excesivo(a) – ver también Exposición"
+      },
+      "expected_paths": {
+        "v3-p623-l79": [
+          "Exceso, excesivo(a) – ver también Exposición"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p623-l79": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p623-l79": []
+      }
+    },
+    {
+      "mode": "navigation",
+      "target_ids": [
+        "v3-p645-l81"
+      ],
+      "finding": "Sobreposición accidental es el encabezado completo. Sus condiciones de lactante, sofocación y sueño se conservan y deben comprobarse.",
+      "selector": "accidental; sobre lactante; durante sueño",
+      "n": 110,
+      "printed_target_text": "Sobreposición",
+      "source_ids": [
+        "v3-p647-l94"
+      ],
+      "expected_destinations": {
+        "v3-p645-l81": "Sobreposición accidental (de cuerpo) (sobre recién nacido o lactante) (que causa sofocación) (durante el sueño)"
+      },
+      "expected_paths": {
+        "v3-p645-l81": [
+          "Sobreposición accidental (de cuerpo) (sobre recién nacido o lactante) (que causa sofocación) (durante el sueño)"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p645-l81": "index_entry"
+      },
+      "expected_code_references": {
+        "v3-p645-l81": [
+          "W75.–"
+        ]
+      }
+    },
+    {
+      "mode": "table",
+      "target_ids": [
+        "v3-p730-l39"
+      ],
+      "finding": "Metales nombra el encabezado Metal de la tabla. «O metal especificado» exige identificar el metal y después seleccionar la columna del contexto.",
+      "selector": "metal especificado",
+      "columns": [
+        "poisoning_chapter_xix",
+        "accidental",
+        "intentional_self_harm",
+        "undetermined",
+        "adverse_therapeutic_use"
+      ],
+      "n": 111,
+      "printed_target_text": "Metales, o metal especificado",
+      "source_ids": [
+        "v3-p696-l26"
+      ],
+      "expected_destinations": {
+        "v3-p730-l39": "Metal (no medicinal) (pesado) NCOP"
+      },
+      "expected_paths": {
+        "v3-p730-l39": [
+          "Metal (no medicinal) (pesado) NCOP"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p730-l39": "drug_table_row"
+      },
+      "expected_code_references": {
+        "v3-p730-l39": [
+          "T56.9",
+          "X49.–",
+          "X69.–",
+          "Y19.–"
+        ]
+      }
+    },
+    {
+      "mode": "table",
+      "target_ids": [
+        "v3-p730-l39"
+      ],
+      "finding": "Metales nombra el encabezado Metal de la tabla. «O metal especificado» exige identificar el metal y después seleccionar la columna del contexto.",
+      "selector": "metal especificado",
+      "columns": [
+        "poisoning_chapter_xix",
+        "accidental",
+        "intentional_self_harm",
+        "undetermined",
+        "adverse_therapeutic_use"
+      ],
+      "n": 112,
+      "printed_target_text": "Metales o el metal especificado",
+      "source_ids": [
+        "v3-p716-l12"
+      ],
+      "expected_destinations": {
+        "v3-p730-l39": "Metal (no medicinal) (pesado) NCOP"
+      },
+      "expected_paths": {
+        "v3-p730-l39": [
+          "Metal (no medicinal) (pesado) NCOP"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p730-l39": "drug_table_row"
+      },
+      "expected_code_references": {
+        "v3-p730-l39": [
+          "T56.9",
+          "X49.–",
+          "X69.–",
+          "Y19.–"
+        ]
+      }
+    },
+    {
+      "mode": "table",
+      "target_ids": [
+        "v3-p571-table-y1952"
+      ],
+      "finding": "La tabla imprime pliegue > aritenoepiglótico, interaritenoideo, mientras la dirección usa ariepiglótico. El encabezado inicial también enumera ariepiglótico, aritenoepiglótico (pliegue).",
+      "proof_ids": [
+        "v3-p545-table-y4509"
+      ],
+      "n": 113,
+      "printed_target_text": "Tumor, pliegue, ariepiglótico",
+      "source_ids": [
+        "v3-p545-table-y4601"
+      ],
+      "expected_destinations": {
+        "v3-p571-table-y1952": "aritenoepiglótico, interaritenoideo",
+        "v3-p545-table-y4509": "ariepiglótico, aritenoepiglótico (pliegue)"
+      },
+      "expected_paths": {
+        "v3-p571-table-y1952": [
+          "Tumor (de)",
+          "pliegue",
+          "aritenoepiglótico, interaritenoideo"
+        ],
+        "v3-p545-table-y4509": [
+          "Tumor (de)",
+          "ariepiglótico, aritenoepiglótico (pliegue)"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p571-table-y1952": "neoplasm_table_row",
+        "v3-p545-table-y4509": "neoplasm_table_row"
+      },
+      "expected_code_references": {
+        "v3-p571-table-y1952": [
+          "C13.1",
+          "C79.8",
+          "D00.0",
+          "D10.7",
+          "D37.0"
+        ],
+        "v3-p545-table-y4509": []
+      }
+    },
+    {
+      "mode": "table",
+      "target_ids": [
+        "v3-p559-table-y1306",
+        "v3-p559-table-y2134"
+      ],
+      "finding": "La dirección enumera inferior o superior. Ambas caras internas están impresas con filas diferentes; se conservan ambas y se exige la localización.",
+      "selector": "labio inferior o superior",
+      "n": 114,
+      "printed_target_text": "Tumor, labio, inferior o superior, cara, interna",
+      "source_ids": [
+        "v3-p562-table-y2648"
+      ],
+      "expected_destinations": {
+        "v3-p559-table-y1306": "interna (frenillo) (mucosa) (parte bucal, oral)",
+        "v3-p559-table-y2134": "interna (frenillo) (mucosa) (parte bucal, oral)"
+      },
+      "expected_paths": {
+        "v3-p559-table-y1306": [
+          "Tumor (de)",
+          "labio (boca), labial",
+          "inferior NCOP",
+          "cara",
+          "interna (frenillo) (mucosa) (parte bucal, oral)"
+        ],
+        "v3-p559-table-y2134": [
+          "Tumor (de)",
+          "labio (boca), labial",
+          "superior",
+          "cara",
+          "interna (frenillo) (mucosa) (parte bucal, oral)"
+        ]
+      },
+      "expected_kinds": {
+        "v3-p559-table-y1306": "neoplasm_table_row",
+        "v3-p559-table-y2134": "neoplasm_table_row"
+      },
+      "expected_code_references": {
+        "v3-p559-table-y1306": [
+          "C00.4",
+          "C79.8",
+          "D00.0",
+          "D10.0",
+          "D37.0"
+        ],
+        "v3-p559-table-y2134": [
+          "C00.3",
+          "C79.8",
+          "D00.0",
+          "D10.0",
+          "D37.0"
+        ]
+      }
+    }
+  ]
+}

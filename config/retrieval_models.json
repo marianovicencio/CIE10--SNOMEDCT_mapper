@@ -1,0 +1,14 @@
+{
+  "experiment_version": "0.1.0",
+  "checked_on": "2026-10-15",
+  "common_protocol": "CLS, L2 normalization, float32, identical token budget; not a reproduction of each publication's complete system",
+  "models": {
+    "sapbert_spanish": {
+      "repository": "BSC-NLP4BIA/SapBERT-from-roberta-base-biomedical-clinical-es",
+      "revision": "379ed9999e76a012f6b0403354a9c8b6b3024cb8",
+      "pooling": "cls",
+      "role": "spanish_biomedical_retriever_not_complete_ClinLinker"
+    }
+  },
+  "protocol": "CLS, L2 normalization and explicit token budgets for source-bound Spanish biomedical retrieval"
+}

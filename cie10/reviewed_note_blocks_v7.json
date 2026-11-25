@@ -1,0 +1,288 @@
+{
+  "v1-p563-l1": [
+    {
+      "field": "exclusions",
+      "reason": "wrapped_and_compound_list_prefixes",
+      "expected": [
+        [
+          563,
+          4,
+          "dermatitis infecciosa (L30.3)"
+        ],
+        [
+          563,
+          5,
+          "granuloma piógeno (L98.0)"
+        ],
+        [
+          563,
+          6,
+          "infecciones locales de la piel clasificadas en el Capítulo I, tales"
+        ],
+        [
+          563,
+          7,
+          "como:"
+        ],
+        [
+          563,
+          8,
+          "• erisipela (A46)"
+        ],
+        [
+          563,
+          9,
+          "• erisipeloide (A26.–)"
+        ],
+        [
+          563,
+          10,
+          "• herpes:"
+        ],
+        [
+          563,
+          11,
+          "• anogenital (A60.–)"
+        ],
+        [
+          563,
+          12,
+          "• simple (B00.–)"
+        ],
+        [
+          563,
+          13,
+          "• zoster (B02.–)"
+        ],
+        [
+          563,
+          14,
+          "• micosis (B35–B49)"
+        ],
+        [
+          563,
+          15,
+          "• molusco contagioso (B08.1)"
+        ],
+        [
+          563,
+          16,
+          "• pediculosis, acariasis y otras infestaciones (B85–B89)"
+        ],
+        [
+          563,
+          17,
+          "• verrugas víricas (B07) orzuelo (H00.0) paniculitis (de):"
+        ],
+        [
+          563,
+          18,
+          "• SAI (M79.3)"
+        ],
+        [
+          563,
+          19,
+          "• cuello y espalda (M54.0)"
+        ],
+        [
+          563,
+          20,
+          "• lupus (L93.2)"
+        ],
+        [
+          563,
+          21,
+          "• recidivante [Weber–Christian] (M35.6)"
+        ],
+        [
+          563,
+          22,
+          "queilitis (debida a):"
+        ],
+        [
+          563,
+          23,
+          "• SAI (K13.0)"
+        ],
+        [
+          563,
+          24,
+          "• candidiasis (B37.–)"
+        ],
+        [
+          563,
+          25,
+          "• deficiencia de riboflavina (E53.0)"
+        ]
+      ],
+      "entries": [
+        {
+          "text": "dermatitis infecciosa (L30.3)"
+        },
+        {
+          "text": "granuloma piógeno (L98.0)"
+        },
+        {
+          "text": "infecciones locales de la piel clasificadas en el Capítulo I, tales como erisipela (A46)"
+        },
+        {
+          "text": "infecciones locales de la piel clasificadas en el Capítulo I, tales como erisipeloide (A26.–)"
+        },
+        {
+          "text": "infecciones locales de la piel clasificadas en el Capítulo I, tales como herpes anogenital (A60.–)"
+        },
+        {
+          "text": "infecciones locales de la piel clasificadas en el Capítulo I, tales como herpes simple (B00.–)"
+        },
+        {
+          "text": "infecciones locales de la piel clasificadas en el Capítulo I, tales como herpes zoster (B02.–)"
+        },
+        {
+          "text": "infecciones locales de la piel clasificadas en el Capítulo I, tales como micosis (B35–B49)"
+        },
+        {
+          "text": "infecciones locales de la piel clasificadas en el Capítulo I, tales como molusco contagioso (B08.1)"
+        },
+        {
+          "text": "infecciones locales de la piel clasificadas en el Capítulo I, tales como pediculosis, acariasis y otras infestaciones (B85–B89)"
+        },
+        {
+          "text": "infecciones locales de la piel clasificadas en el Capítulo I, tales como verrugas víricas (B07) orzuelo (H00.0)",
+          "examples": [
+            "verrugas víricas (B07)",
+            "orzuelo (H00.0)"
+          ],
+          "source_ambiguity_preserved": true
+        },
+        {
+          "text": "paniculitis (de) SAI (M79.3)"
+        },
+        {
+          "text": "paniculitis (de) cuello y espalda (M54.0)"
+        },
+        {
+          "text": "paniculitis (de) lupus (L93.2)"
+        },
+        {
+          "text": "paniculitis (de) recidivante [Weber–Christian] (M35.6)"
+        },
+        {
+          "text": "queilitis (debida a) SAI (K13.0)"
+        },
+        {
+          "text": "queilitis (debida a) candidiasis (B37.–)"
+        },
+        {
+          "text": "queilitis (debida a) deficiencia de riboflavina (E53.0)"
+        }
+      ]
+    }
+  ],
+  "W94": [
+    {
+      "field": "inclusions",
+      "reason": "wrapped_and_compound_list_prefixes",
+      "expected": [
+        [
+          1009,
+          17,
+          "cambio brusco en la presión del aire en aeronaves durante"
+        ],
+        [
+          1009,
+          18,
+          "ascenso o descenso"
+        ],
+        [
+          1009,
+          19,
+          "presión alta de aire debida a rápido descenso en el agua"
+        ],
+        [
+          1009,
+          20,
+          "reducción de la presión atmosférica mientras se emerge"
+        ],
+        [
+          1009,
+          21,
+          "(de):"
+        ],
+        [
+          1009,
+          22,
+          "• bajo tierra"
+        ],
+        [
+          1009,
+          23,
+          "• zambullida en aguas profundas"
+        ],
+        [
+          1009,
+          24,
+          "residencia o visita prolongada a gran altitud como la causa"
+        ],
+        [
+          1009,
+          25,
+          "de:"
+        ],
+        [
+          1009,
+          26,
+          "• anoxia"
+        ],
+        [
+          1009,
+          27,
+          "• barodontalgia"
+        ],
+        [
+          1009,
+          28,
+          "• barotitis"
+        ],
+        [
+          1009,
+          29,
+          "• enfermedad de montaña"
+        ],
+        [
+          1009,
+          30,
+          "• hipoxia"
+        ]
+      ],
+      "entries": [
+        {
+          "text": "cambio brusco en la presión del aire en aeronaves durante ascenso o descenso"
+        },
+        {
+          "text": "presión alta de aire debida a rápido descenso en el agua"
+        },
+        {
+          "text": "reducción de la presión atmosférica mientras se emerge (de) bajo tierra"
+        },
+        {
+          "text": "reducción de la presión atmosférica mientras se emerge (de) zambullida en aguas profundas"
+        },
+        {
+          "text": "residencia o visita prolongada a gran altitud como la causa de anoxia"
+        },
+        {
+          "text": "residencia o visita prolongada a gran altitud como la causa de barodontalgia"
+        },
+        {
+          "text": "residencia o visita prolongada a gran altitud como la causa de barotitis"
+        },
+        {
+          "text": "residencia o visita prolongada a gran altitud como la causa de enfermedad de montaña"
+        },
+        {
+          "text": "residencia o visita prolongada a gran altitud como la causa de hipoxia"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "edition": "OPS/OMS, edición española de 2018",
+  "provenance": "Edición española OPS/OMS 2018. La importación verifica las huellas de los tres PDF y conserva su procedencia documental.",
+  "volumes": {
+    "1": {
+      "filename": "CIE-10_2018_VOL1.pdf",
+      "sha256": "efa4c93e31d97b2b54dcc2e325537e66ff27667e266d4d311e72df4bd189d62c",
+      "pages": 1154,
+      "role": "Lista tabular",
+      "tabular_pages": [
+        108,
+        1113
+      ],
+      "pilot_pages": "2-3,108-115,492-496"
+    },
+    "2": {
+      "filename": "CIE-10_2018_VOL2.pdf",
+      "sha256": "0012341842f985dc67fb39609c6cc591a76cc27b7dc1796eb07ad3fb48f5a2bf",
+      "pages": 282,
+      "role": "Manual de instrucciones",
+      "manual_pages": [
+        12,
+        282
+      ],
+      "pilot_pages": "2-3,12-14,30-40"
+    },
+    "3": {
+      "filename": "CIE-10_2018_VOL3.pdf",
+      "sha256": "c95ef4b76916e3aced0faaa599c26c16c58544c46c952d6d2e0c4ad9d8cb5c5f",
+      "pages": 773,
+      "role": "Índice alfabético y tabla de medicamentos",
+      "index_disease_pages": [
+        13,
+        597
+      ],
+      "index_external_pages": [
+        599,
+        651
+      ],
+      "drug_table_pages": [
+        654,
+        773
+      ],
+      "pilot_pages": "2-3,13-23,598-600,654-656"
+    }
+  }
+}

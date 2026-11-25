@@ -1,0 +1,521 @@
+{
+  "v1-p837-l28-definition": {
+    "expected": [
+      [
+        837,
+        29,
+        "Fractura:"
+      ],
+      [
+        837,
+        30,
+        "• abierta:"
+      ],
+      [
+        837,
+        31,
+        "• compuesta"
+      ],
+      [
+        837,
+        32,
+        ""
+      ],
+      [
+        837,
+        33,
+        "• con cuerpo extraño "
+      ],
+      [
+        837,
+        34,
+        ""
+      ],
+      [
+        837,
+        35,
+        "• infectada con o sin retardo en la consolidación"
+      ],
+      [
+        837,
+        36,
+        ""
+      ],
+      [
+        837,
+        37,
+        "• por herida punzante "
+      ],
+      [
+        837,
+        38,
+        ""
+      ],
+      [
+        837,
+        39,
+        "• por proyectil"
+      ],
+      [
+        837,
+        40,
+        ""
+      ],
+      [
+        837,
+        41,
+        "• cerrada:"
+      ],
+      [
+        838,
+        1,
+        "• con desprendimiento epifisario"
+      ],
+      [
+        838,
+        2,
+        ""
+      ],
+      [
+        838,
+        3,
+        "• con elevación"
+      ],
+      [
+        838,
+        4,
+        ""
+      ],
+      [
+        838,
+        5,
+        "• con hundimiento"
+      ],
+      [
+        838,
+        6,
+        ""
+      ],
+      [
+        838,
+        7,
+        "• conminuta"
+      ],
+      [
+        838,
+        8,
+        "• en es piral"
+      ],
+      [
+        838,
+        9,
+        "• en tallo ve rde  con o sin retardo en la consolidación"
+      ],
+      [
+        838,
+        10,
+        "• fisu rada"
+      ],
+      [
+        838,
+        11,
+        ""
+      ],
+      [
+        838,
+        12,
+        "• impactada"
+      ],
+      [
+        838,
+        13,
+        "• lineal "
+      ],
+      [
+        838,
+        14,
+        "• simple"
+      ],
+      [
+        838,
+        15,
+        "• d esplazad a "
+      ],
+      [
+        838,
+        16,
+        "• dislocada"
+      ]
+    ],
+    "groups": [
+      {
+        "prefix": "Fractura abierta",
+        "members": [
+          "compuesta",
+          "con cuerpo extraño",
+          "infectada",
+          "por herida punzante",
+          "por proyectil"
+        ],
+        "shared_qualifier": "con o sin retardo en la consolidación"
+      },
+      {
+        "prefix": "Fractura cerrada",
+        "members": [
+          "con desprendimiento epifisario",
+          "con elevación",
+          "con hundimiento",
+          "conminuta",
+          "en espiral",
+          "en tallo verde",
+          "fisurada",
+          "impactada",
+          "lineal",
+          "simple",
+          "desplazada"
+        ],
+        "shared_qualifier": "con o sin retardo en la consolidación"
+      }
+    ],
+    "standalone_terms": [
+      "Fractura cerrada dislocada"
+    ]
+  },
+  "v1-p838-l23-definition": {
+    "expected": [
+      [
+        838,
+        24,
+        "avulsión"
+      ],
+      [
+        838,
+        25,
+        ""
+      ],
+      [
+        838,
+        26,
+        "desgarro traumático"
+      ],
+      [
+        838,
+        27,
+        ""
+      ],
+      [
+        838,
+        28,
+        "distensión "
+      ],
+      [
+        838,
+        29,
+        "cartílago"
+      ],
+      [
+        838,
+        30,
+        ""
+      ],
+      [
+        838,
+        31,
+        "esguince"
+      ],
+      [
+        838,
+        32,
+        "de  cápsula articular"
+      ],
+      [
+        838,
+        33,
+        " "
+      ],
+      [
+        838,
+        34,
+        "hemartrosis traumática"
+      ],
+      [
+        838,
+        35,
+        " ligamento"
+      ],
+      [
+        838,
+        36,
+        " "
+      ],
+      [
+        838,
+        37,
+        "laceración"
+      ],
+      [
+        838,
+        38,
+        ""
+      ],
+      [
+        838,
+        39,
+        "ruptura traumática"
+      ],
+      [
+        838,
+        40,
+        "subluxación traumática"
+      ],
+      [
+        838,
+        41,
+        ""
+      ]
+    ],
+    "groups": [
+      {
+        "members": [
+          "avulsión",
+          "desgarro traumático",
+          "distensión",
+          "esguince",
+          "hemartrosis traumática",
+          "laceración",
+          "ruptura traumática",
+          "subluxación traumática"
+        ],
+        "connector": "de",
+        "shared_qualifiers": [
+          "cartílago",
+          "cápsula articular",
+          "ligamento"
+        ]
+      }
+    ]
+  },
+  "v1-p839-l1-definition": {
+    "expected": [
+      [
+        839,
+        2,
+        "avulsión "
+      ],
+      [
+        839,
+        3,
+        ""
+      ],
+      [
+        839,
+        4,
+        "aneurisma o fístula (arteriovenosa)"
+      ],
+      [
+        839,
+        5,
+        ""
+      ],
+      [
+        839,
+        6,
+        "traumática(o)"
+      ],
+      [
+        839,
+        7,
+        "corte  de vasos sanguíneos"
+      ],
+      [
+        839,
+        8,
+        "hematoma arterial traumático "
+      ],
+      [
+        839,
+        9,
+        "laceración "
+      ],
+      [
+        839,
+        10,
+        "ruptura traumática"
+      ],
+      [
+        839,
+        11,
+        ""
+      ]
+    ],
+    "groups": [
+      {
+        "members": [
+          "avulsión",
+          "aneurisma o fístula (arteriovenosa) traumática(o)",
+          "corte",
+          "hematoma arterial traumático",
+          "laceración",
+          "ruptura traumática"
+        ],
+        "shared_qualifier": "de vasos sanguíneos"
+      }
+    ]
+  },
+  "v1-p839-l12-definition": {
+    "expected": [
+      [
+        839,
+        13,
+        "avulsión "
+      ],
+      [
+        839,
+        14,
+        "corte "
+      ],
+      [
+        839,
+        15,
+        ""
+      ],
+      [
+        839,
+        16,
+        "laceración  de tendón, fascia y músculo"
+      ],
+      [
+        839,
+        17,
+        "ruptura traumática "
+      ],
+      [
+        839,
+        18,
+        ""
+      ],
+      [
+        839,
+        19,
+        "distención"
+      ],
+      [
+        839,
+        20,
+        ""
+      ]
+    ],
+    "groups": [
+      {
+        "members": [
+          "avulsión",
+          "corte",
+          "laceración",
+          "ruptura traumática",
+          "distención"
+        ],
+        "shared_qualifier": "de tendón, fascia y músculo"
+      }
+    ]
+  },
+  "v1-p839-l23-definition": {
+    "expected": [
+      [
+        839,
+        24,
+        "aplastamiento"
+      ],
+      [
+        839,
+        25,
+        ""
+      ],
+      [
+        839,
+        26,
+        "desgarro traumático"
+      ],
+      [
+        839,
+        27,
+        ""
+      ],
+      [
+        839,
+        28,
+        "hematoma traumático"
+      ],
+      [
+        839,
+        29,
+        ""
+      ],
+      [
+        839,
+        30,
+        "laceración"
+      ],
+      [
+        839,
+        31,
+        "magulladura de órganos internos"
+      ],
+      [
+        839,
+        32,
+        ""
+      ],
+      [
+        839,
+        33,
+        "punción traumática"
+      ],
+      [
+        839,
+        34,
+        ""
+      ],
+      [
+        839,
+        35,
+        "ruptura traumática"
+      ],
+      [
+        839,
+        36,
+        ""
+      ],
+      [
+        839,
+        37,
+        "traumatismos por concusión"
+      ],
+      [
+        839,
+        38,
+        "traumatismos por explosión"
+      ],
+      [
+        839,
+        39,
+        ""
+      ]
+    ],
+    "groups": [
+      {
+        "members": [
+          "aplastamiento",
+          "desgarro traumático",
+          "hematoma traumático",
+          "laceración",
+          "magulladura",
+          "punción traumática",
+          "ruptura traumática",
+          "traumatismos por concusión",
+          "traumatismos por explosión"
+        ],
+        "shared_qualifier": "de órganos internos"
+      }
+    ]
+  }
+}

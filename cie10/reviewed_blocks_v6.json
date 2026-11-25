@@ -1,0 +1,1408 @@
+{
+  "J02.8": [
+    {
+      "field": "exclusions",
+      "expected": [
+        [
+          488,
+          24,
+          "faringitis (debida a):"
+        ],
+        [
+          488,
+          25,
+          "• herpética [herpes simple] (B00.2)"
+        ],
+        [
+          488,
+          26,
+          "• mononucleosis infecciosa (B27.–)"
+        ],
+        [
+          488,
+          27,
+          "• vesicular enterovírica (B08.5)"
+        ],
+        [
+          488,
+          28,
+          "• virus de la influenza:"
+        ],
+        [
+          488,
+          29,
+          "identificado"
+        ],
+        [
+          488,
+          30,
+          "• influenza aviar (J09†)"
+        ],
+        [
+          488,
+          31,
+          "• otro (J10.1†)"
+        ],
+        [
+          488,
+          32,
+          "no identificado (J11.1)"
+        ]
+      ],
+      "entries": [
+        {
+          "text": "faringitis (debida a) herpética [herpes simple] (B00.2)"
+        },
+        {
+          "text": "faringitis (debida a) mononucleosis infecciosa (B27.–)"
+        },
+        {
+          "text": "faringitis (debida a) vesicular enterovírica (B08.5)"
+        },
+        {
+          "text": "faringitis (debida a) virus de la influenza identificado influenza aviar (J09†)"
+        },
+        {
+          "text": "faringitis (debida a) virus de la influenza identificado otro (J10.1†)"
+        },
+        {
+          "text": "faringitis (debida a) virus de la influenza no identificado (J11.1)"
+        }
+      ],
+      "reason": "verified_nested_list"
+    }
+  ],
+  "J10": [
+    {
+      "field": "exclusions",
+      "expected": [
+        [
+          491,
+          27,
+          "infección SAI (A49.2) ⎫"
+        ],
+        [
+          491,
+          28,
+          "⎪⎪ debida a Haemophilus"
+        ],
+        [
+          491,
+          29,
+          "meningitis (G00.0) ⎬"
+        ],
+        [
+          491,
+          30,
+          "influenzae [H. influenzae]"
+        ],
+        [
+          491,
+          31,
+          "neumonía (J14)"
+        ],
+        [
+          491,
+          32,
+          "⎭⎪⎪"
+        ],
+        [
+          491,
+          33,
+          "Influenza debido a virus de la influenza zoonótico o pandémico"
+        ],
+        [
+          491,
+          34,
+          "identificados (J09)"
+        ],
+        [
+          491,
+          37,
+          "⎭"
+        ]
+      ],
+      "entries": [
+        {
+          "text": "infección SAI (A49.2) debida a Haemophilus influenzae [H. influenzae]"
+        },
+        {
+          "text": "meningitis (G00.0) debida a Haemophilus influenzae [H. influenzae]"
+        },
+        {
+          "text": "neumonía (J14) debida a Haemophilus influenzae [H. influenzae]"
+        },
+        {
+          "text": "Influenza debido a virus de la influenza zoonótico o pandémico identificados (J09)"
+        }
+      ],
+      "reason": "verified_brace_composition"
+    }
+  ],
+  "K04.8": [
+    {
+      "field": "unclassified",
+      "expected": [
+        [
+          521,
+          23,
+          "• Quiste:"
+        ],
+        [
+          521,
+          24,
+          "• apical (periodontal)"
+        ],
+        [
+          521,
+          25,
+          "• periapical"
+        ],
+        [
+          521,
+          26,
+          "• radicular residual"
+        ]
+      ],
+      "entries": [
+        {
+          "text": "Quiste apical (periodontal)"
+        },
+        {
+          "text": "Quiste periapical"
+        },
+        {
+          "text": "Quiste radicular residual"
+        }
+      ],
+      "reason": "verified_nested_list",
+      "destination": "inclusions"
+    }
+  ],
+  "K72": [
+    {
+      "field": "inclusions",
+      "expected": [
+        [
+          552,
+          19,
+          "• atrofia o distrofia amarilla del hígado"
+        ],
+        [
+          552,
+          20,
+          "• coma hepático SAI"
+        ],
+        [
+          552,
+          21,
+          "• encefalopatía hepática SAI"
+        ],
+        [
+          552,
+          22,
+          "• hepatitis:"
+        ],
+        [
+          552,
+          23,
+          "• fulminante "
+        ],
+        [
+          552,
+          24,
+          "NCOP con insuficiencia hepática"
+        ],
+        [
+          552,
+          25,
+          ""
+        ],
+        [
+          552,
+          26,
+          "• maligna"
+        ],
+        [
+          552,
+          27,
+          ""
+        ],
+        [
+          552,
+          28,
+          "• necrosis hepática (células) con insuficiencia hepática"
+        ]
+      ],
+      "entries": [
+        {
+          "text": "atrofia o distrofia amarilla del hígado"
+        },
+        {
+          "text": "coma hepático SAI"
+        },
+        {
+          "text": "encefalopatía hepática SAI"
+        },
+        {
+          "text": "hepatitis fulminante NCOP con insuficiencia hepática"
+        },
+        {
+          "text": "hepatitis maligna NCOP con insuficiencia hepática"
+        },
+        {
+          "text": "necrosis hepática (células) con insuficiencia hepática"
+        }
+      ],
+      "reason": "verified_brace_composition"
+    }
+  ],
+  "O70.1": [
+    {
+      "field": "unclassified",
+      "expected": [
+        [
+          703,
+          19,
+          "Desgarro, laceración o ruptura perineal como aparecen en O70.0,"
+        ],
+        [
+          703,
+          20,
+          "que toma además:"
+        ],
+        [
+          703,
+          21,
+          "músculos: "
+        ],
+        [
+          703,
+          22,
+          "• perineales  "
+        ],
+        [
+          703,
+          23,
+          "durante el parto"
+        ],
+        [
+          703,
+          24,
+          ""
+        ],
+        [
+          703,
+          25,
+          "• vaginales"
+        ],
+        [
+          703,
+          26,
+          ""
+        ],
+        [
+          703,
+          27,
+          ""
+        ],
+        [
+          703,
+          28,
+          "suelo de la pelvis"
+        ],
+        [
+          703,
+          29,
+          ""
+        ]
+      ],
+      "entries": [
+        {
+          "text": "músculos perineales durante el parto",
+          "scope_statement": "Desgarro, laceración o ruptura perineal como aparecen en O70.0, que toma además:"
+        },
+        {
+          "text": "músculos vaginales durante el parto",
+          "scope_statement": "Desgarro, laceración o ruptura perineal como aparecen en O70.0, que toma además:"
+        },
+        {
+          "text": "suelo de la pelvis durante el parto",
+          "scope_statement": "Desgarro, laceración o ruptura perineal como aparecen en O70.0, que toma además:"
+        }
+      ],
+      "reason": "verified_brace_composition",
+      "destination": "inclusions",
+      "scope_statement": "Desgarro, laceración o ruptura perineal como aparecen en O70.0, que toma además:"
+    }
+  ],
+  "O70.2": [
+    {
+      "field": "unclassified",
+      "expected": [
+        [
+          703,
+          32,
+          "Desgarro, laceración o ruptura perineal, como aparecen en O70.1,"
+        ],
+        [
+          703,
+          33,
+          "que toma además:"
+        ],
+        [
+          703,
+          34,
+          "esfínter: "
+        ],
+        [
+          703,
+          35,
+          "• SAI  "
+        ],
+        [
+          703,
+          36,
+          "durante el parto"
+        ],
+        [
+          703,
+          37,
+          ""
+        ],
+        [
+          703,
+          38,
+          "• anal"
+        ],
+        [
+          703,
+          39,
+          ""
+        ],
+        [
+          703,
+          40,
+          ""
+        ],
+        [
+          703,
+          41,
+          "tabique rectovaginal"
+        ],
+        [
+          703,
+          42,
+          ""
+        ]
+      ],
+      "entries": [
+        {
+          "text": "esfínter SAI durante el parto",
+          "scope_statement": "Desgarro, laceración o ruptura perineal, como aparecen en O70.1, que toma además:"
+        },
+        {
+          "text": "esfínter anal durante el parto",
+          "scope_statement": "Desgarro, laceración o ruptura perineal, como aparecen en O70.1, que toma además:"
+        },
+        {
+          "text": "tabique rectovaginal durante el parto",
+          "scope_statement": "Desgarro, laceración o ruptura perineal, como aparecen en O70.1, que toma además:"
+        }
+      ],
+      "reason": "verified_brace_composition",
+      "destination": "inclusions",
+      "scope_statement": "Desgarro, laceración o ruptura perineal, como aparecen en O70.1, que toma además:"
+    }
+  ],
+  "O70.3": [
+    {
+      "field": "unclassified",
+      "expected": [
+        [
+          703,
+          46,
+          "Desgarro, laceración o ruptura perineal como en O70.2, que toma"
+        ],
+        [
+          703,
+          47,
+          "además:"
+        ],
+        [
+          703,
+          48,
+          "mucosa:"
+        ],
+        [
+          703,
+          49,
+          "• anal "
+        ],
+        [
+          703,
+          50,
+          ""
+        ],
+        [
+          703,
+          51,
+          "• rectal durante el parto"
+        ],
+        [
+          703,
+          52,
+          ""
+        ]
+      ],
+      "entries": [
+        {
+          "text": "mucosa anal durante el parto",
+          "scope_statement": "Desgarro, laceración o ruptura perineal como en O70.2, que toma además:"
+        },
+        {
+          "text": "mucosa rectal durante el parto",
+          "scope_statement": "Desgarro, laceración o ruptura perineal como en O70.2, que toma además:"
+        }
+      ],
+      "reason": "verified_brace_composition",
+      "destination": "inclusions",
+      "scope_statement": "Desgarro, laceración o ruptura perineal como en O70.2, que toma además:"
+    }
+  ],
+  "P01.7": [
+    {
+      "field": "unclassified",
+      "expected": [
+        [
+          721,
+          10,
+          "Presentación (de):"
+        ],
+        [
+          721,
+          11,
+          "• cara "
+        ],
+        [
+          721,
+          12,
+          "• podálica "
+        ],
+        [
+          721,
+          13,
+          ""
+        ],
+        [
+          721,
+          14,
+          "Situación:"
+        ],
+        [
+          721,
+          15,
+          "antes del trabajo de parto"
+        ],
+        [
+          721,
+          16,
+          ""
+        ],
+        [
+          721,
+          17,
+          "• inestable"
+        ],
+        [
+          721,
+          18,
+          ""
+        ],
+        [
+          721,
+          19,
+          "• transversa "
+        ],
+        [
+          721,
+          20,
+          "Versión externa"
+        ],
+        [
+          721,
+          21,
+          ""
+        ]
+      ],
+      "entries": [
+        {
+          "text": "Presentación (de) cara antes del trabajo de parto"
+        },
+        {
+          "text": "Presentación (de) podálica antes del trabajo de parto"
+        },
+        {
+          "text": "Situación inestable antes del trabajo de parto"
+        },
+        {
+          "text": "Situación transversa antes del trabajo de parto"
+        },
+        {
+          "text": "Versión externa antes del trabajo de parto"
+        }
+      ],
+      "reason": "verified_brace_composition",
+      "destination": "inclusions"
+    }
+  ],
+  "R89": [
+    {
+      "field": "unclassified",
+      "expected": [
+        [
+          830,
+          31,
+          "[Para el cuarto carácter ver las subdivisiones antes de R83]"
+        ],
+        [
+          830,
+          32,
+          "Hallazgos anormales en:"
+        ],
+        [
+          830,
+          33,
+          "• líquido sinovial"
+        ],
+        [
+          830,
+          34,
+          "• secreciones (de, del):"
+        ],
+        [
+          830,
+          35,
+          "• heridas"
+        ],
+        [
+          830,
+          36,
+          "• pezón"
+        ]
+      ],
+      "entries": [
+        {
+          "text": "Hallazgos anormales en líquido sinovial"
+        },
+        {
+          "text": "Hallazgos anormales en secreciones (de, del) heridas"
+        },
+        {
+          "text": "Hallazgos anormales en secreciones (de, del) pezón"
+        }
+      ],
+      "reason": "verified_nested_list",
+      "destination": "inclusions",
+      "preserve_editorial_prefix": true
+    }
+  ],
+  "T80.5": [
+    {
+      "field": "exclusions",
+      "expected": [
+        [
+          933,
+          37,
+          "c hoque:"
+        ],
+        [
+          933,
+          38,
+          "• alérgico SAI (T78.2)"
+        ],
+        [
+          933,
+          39,
+          "• a nafilá ctico:"
+        ],
+        [
+          933,
+          40,
+          "• S AI (T78 .2 )"
+        ],
+        [
+          933,
+          41,
+          "• d ebido aefectos adversos de sustancia medicinal"
+        ],
+        [
+          933,
+          42,
+          "correcta administrada apropiadamente (T88.6)"
+        ]
+      ],
+      "entries": [
+        {
+          "text": "choque alérgico SAI (T78.2)"
+        },
+        {
+          "text": "choque anafiláctico SAI (T78.2)"
+        },
+        {
+          "text": "choque anafiláctico debido a efectos adversos de sustancia medicinal correcta administrada apropiadamente (T88.6)"
+        }
+      ],
+      "reason": "verified_label_and_nested_list"
+    }
+  ],
+  "T81.2": [
+    {
+      "field": "unclassified",
+      "expected": [
+        [
+          935,
+          16,
+          "Perforación accidental de:"
+        ],
+        [
+          935,
+          17,
+          " catéter"
+        ],
+        [
+          935,
+          18,
+          "• nervio"
+        ],
+        [
+          935,
+          19,
+          ""
+        ],
+        [
+          935,
+          20,
+          "  endoscopio  durante un"
+        ],
+        [
+          935,
+          21,
+          "• órgano  por"
+        ],
+        [
+          935,
+          22,
+          "  "
+        ],
+        [
+          935,
+          23,
+          "instrumento procedimiento"
+        ],
+        [
+          935,
+          24,
+          "• vaso sanguíneo    "
+        ],
+        [
+          935,
+          25,
+          " sonda"
+        ],
+        [
+          935,
+          26,
+          ""
+        ]
+      ],
+      "entries": [
+        {
+          "text": "Perforación accidental de nervio por catéter durante un procedimiento"
+        },
+        {
+          "text": "Perforación accidental de nervio por endoscopio durante un procedimiento"
+        },
+        {
+          "text": "Perforación accidental de nervio por instrumento durante un procedimiento"
+        },
+        {
+          "text": "Perforación accidental de nervio por sonda durante un procedimiento"
+        },
+        {
+          "text": "Perforación accidental de órgano por catéter durante un procedimiento"
+        },
+        {
+          "text": "Perforación accidental de órgano por endoscopio durante un procedimiento"
+        },
+        {
+          "text": "Perforación accidental de órgano por instrumento durante un procedimiento"
+        },
+        {
+          "text": "Perforación accidental de órgano por sonda durante un procedimiento"
+        },
+        {
+          "text": "Perforación accidental de vaso sanguíneo por catéter durante un procedimiento"
+        },
+        {
+          "text": "Perforación accidental de vaso sanguíneo por endoscopio durante un procedimiento"
+        },
+        {
+          "text": "Perforación accidental de vaso sanguíneo por instrumento durante un procedimiento"
+        },
+        {
+          "text": "Perforación accidental de vaso sanguíneo por sonda durante un procedimiento"
+        }
+      ],
+      "reason": "verified_brace_composition",
+      "destination": "inclusions"
+    },
+    {
+      "field": "exclusions",
+      "expected": [
+        [
+          935,
+          27,
+          "complicaciones especificadas clasificadas en otra parte,"
+        ],
+        [
+          935,
+          28,
+          "tales como:"
+        ],
+        [
+          935,
+          29,
+          "• síndrome de laceración del ligamento ancho"
+        ],
+        [
+          935,
+          30,
+          "[Allen–Masters] (N83.8)"
+        ],
+        [
+          935,
+          31,
+          "lesión por instrumentos durante el parto (O70–O71)"
+        ],
+        [
+          935,
+          32,
+          "perforación, punción o laceración causada por dispositivo"
+        ],
+        [
+          935,
+          33,
+          "o implante dejado intencionalmente en herida"
+        ],
+        [
+          935,
+          34,
+          "quirúrgica (T82–T85)"
+        ]
+      ],
+      "entries": [
+        {
+          "text": "complicaciones especificadas clasificadas en otra parte, tales como síndrome de laceración del ligamento ancho [Allen–Masters] (N83.8)"
+        },
+        {
+          "text": "lesión por instrumentos durante el parto (O70–O71)"
+        },
+        {
+          "text": "perforación, punción o laceración causada por dispositivo o implante dejado intencionalmente en herida quirúrgica (T82–T85)"
+        }
+      ],
+      "reason": "verified_wrapped_exclusions"
+    }
+  ],
+  "T88.0": [
+    {
+      "field": "unclassified",
+      "expected": [
+        [
+          942,
+          31,
+          "Sepsis } posterior a inmunización"
+        ]
+      ],
+      "entries": [
+        {
+          "text": "Sepsis posterior a inmunización"
+        }
+      ],
+      "reason": "verified_brace_composition",
+      "destination": "inclusions"
+    }
+  ],
+  "T88.7": [
+    {
+      "field": "unclassified",
+      "expected": [
+        [
+          943,
+          19,
+          "Efecto adverso "
+        ],
+        [
+          943,
+          20,
+          "Hipersensibilidad   (a) (de) droga o medicamento correcto,"
+        ],
+        [
+          943,
+          21,
+          ""
+        ],
+        [
+          943,
+          22,
+          "Idiosincracia administrado apropiadamente"
+        ],
+        [
+          943,
+          23,
+          ""
+        ],
+        [
+          943,
+          24,
+          ""
+        ],
+        [
+          943,
+          25,
+          "Reacción alérgica"
+        ],
+        [
+          943,
+          26,
+          ""
+        ],
+        [
+          943,
+          27,
+          "Hipersensibilidad SAI "
+        ],
+        [
+          943,
+          28,
+          "a drogas"
+        ],
+        [
+          943,
+          29,
+          ""
+        ],
+        [
+          943,
+          30,
+          "Reacción SAI"
+        ],
+        [
+          943,
+          31,
+          ""
+        ]
+      ],
+      "entries": [
+        {
+          "text": "Efecto adverso (a) (de) droga o medicamento correcto, administrado apropiadamente"
+        },
+        {
+          "text": "Hipersensibilidad (a) (de) droga o medicamento correcto, administrado apropiadamente"
+        },
+        {
+          "text": "Idiosincracia (a) (de) droga o medicamento correcto, administrado apropiadamente"
+        },
+        {
+          "text": "Reacción alérgica (a) (de) droga o medicamento correcto, administrado apropiadamente"
+        },
+        {
+          "text": "Hipersensibilidad SAI a drogas"
+        },
+        {
+          "text": "Reacción SAI a drogas"
+        }
+      ],
+      "reason": "verified_brace_composition",
+      "destination": "inclusions"
+    }
+  ],
+  "W20": [
+    {
+      "field": "inclusions",
+      "expected": [
+        [
+          998,
+          10,
+          "árbol "
+        ],
+        [
+          998,
+          11,
+          "piedra "
+        ],
+        [
+          998,
+          12,
+          "qu"
+        ],
+        [
+          998,
+          13,
+          "e cae"
+        ],
+        [
+          998,
+          14,
+          "roca"
+        ],
+        [
+          998,
+          15,
+          ""
+        ],
+        [
+          998,
+          16,
+          ""
+        ],
+        [
+          998,
+          17,
+          "derrumbe de edificio u otra construcción, excepto el que"
+        ],
+        [
+          998,
+          18,
+          "está en llamas"
+        ],
+        [
+          998,
+          19,
+          "hundimiento sin asfixia o sofocación"
+        ]
+      ],
+      "entries": [
+        {
+          "text": "árbol que cae"
+        },
+        {
+          "text": "piedra que cae"
+        },
+        {
+          "text": "roca que cae"
+        },
+        {
+          "text": "derrumbe de edificio u otra construcción, excepto el que está en llamas"
+        },
+        {
+          "text": "hundimiento sin asfixia o sofocación"
+        }
+      ],
+      "reason": "verified_brace_composition"
+    }
+  ],
+  "W23": [
+    {
+      "field": "inclusions",
+      "expected": [
+        [
+          999,
+          3,
+          "atrapado, aplastado, trabado o apretado:"
+        ],
+        [
+          999,
+          4,
+          " cajón de"
+        ],
+        [
+          999,
+          5,
+          "embalaje que"
+        ],
+        [
+          999,
+          6,
+          ""
+        ],
+        [
+          999,
+          7,
+          "se suelta por"
+        ],
+        [
+          999,
+          8,
+          ""
+        ],
+        [
+          999,
+          9,
+          "• dentro de un objeto pérdida de"
+        ],
+        [
+          999,
+          10,
+          "• entre objetos: asidero"
+        ],
+        [
+          999,
+          11,
+          "tales"
+        ],
+        [
+          999,
+          12,
+          "• en movimiento exprimidor de"
+        ],
+        [
+          999,
+          13,
+          " como"
+        ],
+        [
+          999,
+          14,
+          "• estacionados y en máquina de"
+        ],
+        [
+          999,
+          15,
+          "movimiento  lavar"
+        ],
+        [
+          999,
+          16,
+          "objeto plegable"
+        ],
+        [
+          999,
+          17,
+          ""
+        ],
+        [
+          999,
+          18,
+          "puerta corrediza"
+        ],
+        [
+          999,
+          19,
+          "y marco de"
+        ],
+        [
+          999,
+          20,
+          ""
+        ],
+        [
+          999,
+          21,
+          ""
+        ],
+        [
+          999,
+          22,
+          ""
+        ],
+        [
+          999,
+          23,
+          ""
+        ],
+        [
+          999,
+          24,
+          "puerta"
+        ]
+      ],
+      "entries": [
+        {
+          "text": "atrapado, aplastado, trabado o apretado dentro de un objeto",
+          "examples": [
+            {
+              "text": "cajón de embalaje que se suelta por pérdida de asidero",
+              "role": "illustrative_example",
+              "implies_clinical_equivalence": false
+            },
+            {
+              "text": "exprimidor de máquina de lavar",
+              "role": "illustrative_example",
+              "implies_clinical_equivalence": false
+            },
+            {
+              "text": "objeto plegable",
+              "role": "illustrative_example",
+              "implies_clinical_equivalence": false
+            },
+            {
+              "text": "puerta corrediza y marco de puerta",
+              "role": "illustrative_example",
+              "implies_clinical_equivalence": false
+            }
+          ]
+        },
+        {
+          "text": "atrapado, aplastado, trabado o apretado entre objetos en movimiento",
+          "examples": [
+            {
+              "text": "cajón de embalaje que se suelta por pérdida de asidero",
+              "role": "illustrative_example",
+              "implies_clinical_equivalence": false
+            },
+            {
+              "text": "exprimidor de máquina de lavar",
+              "role": "illustrative_example",
+              "implies_clinical_equivalence": false
+            },
+            {
+              "text": "objeto plegable",
+              "role": "illustrative_example",
+              "implies_clinical_equivalence": false
+            },
+            {
+              "text": "puerta corrediza y marco de puerta",
+              "role": "illustrative_example",
+              "implies_clinical_equivalence": false
+            }
+          ]
+        },
+        {
+          "text": "atrapado, aplastado, trabado o apretado entre objetos estacionados y en movimiento",
+          "examples": [
+            {
+              "text": "cajón de embalaje que se suelta por pérdida de asidero",
+              "role": "illustrative_example",
+              "implies_clinical_equivalence": false
+            },
+            {
+              "text": "exprimidor de máquina de lavar",
+              "role": "illustrative_example",
+              "implies_clinical_equivalence": false
+            },
+            {
+              "text": "objeto plegable",
+              "role": "illustrative_example",
+              "implies_clinical_equivalence": false
+            },
+            {
+              "text": "puerta corrediza y marco de puerta",
+              "role": "illustrative_example",
+              "implies_clinical_equivalence": false
+            }
+          ]
+        }
+      ],
+      "reason": "verified_examples_and_nested_list"
+    }
+  ],
+  "X00": [
+    {
+      "field": "inclusions",
+      "expected": [
+        [
+          1010,
+          10,
+          "brasas "
+        ],
+        [
+          1010,
+          11,
+          "herrajes"
+        ],
+        [
+          1010,
+          12,
+          ""
+        ],
+        [
+          1010,
+          13,
+          "fuego  de"
+        ],
+        [
+          1010,
+          14,
+          "fusión"
+        ],
+        [
+          1010,
+          15,
+          ""
+        ],
+        [
+          1010,
+          16,
+          ""
+        ],
+        [
+          1010,
+          18,
+          ""
+        ],
+        [
+          1010,
+          19,
+          "muebles"
+        ],
+        [
+          1010,
+          20,
+          "caída desde "
+        ],
+        [
+          1010,
+          21,
+          "conflagración en "
+        ],
+        [
+          1010,
+          22,
+          ""
+        ],
+        [
+          1010,
+          23,
+          "derrumbe de edificio u otra construcción en"
+        ],
+        [
+          1010,
+          24,
+          ""
+        ],
+        [
+          1010,
+          25,
+          "golpe por objeto llamas"
+        ],
+        [
+          1010,
+          26,
+          ""
+        ],
+        [
+          1010,
+          27,
+          "que cae desde "
+        ],
+        [
+          1010,
+          28,
+          "salto desde"
+        ],
+        [
+          1010,
+          29,
+          ""
+        ]
+      ],
+      "entries": [
+        {
+          "text": "brasas de herrajes"
+        },
+        {
+          "text": "brasas de muebles"
+        },
+        {
+          "text": "fuego de herrajes"
+        },
+        {
+          "text": "fuego de muebles"
+        },
+        {
+          "text": "fusión de herrajes"
+        },
+        {
+          "text": "fusión de muebles"
+        },
+        {
+          "text": "caída desde edificio u otra construcción en llamas"
+        },
+        {
+          "text": "conflagración en edificio u otra construcción en llamas"
+        },
+        {
+          "text": "derrumbe de edificio u otra construcción en llamas"
+        },
+        {
+          "text": "golpe por objeto que cae desde edificio u otra construcción en llamas"
+        },
+        {
+          "text": "salto desde edificio u otra construcción en llamas"
+        }
+      ],
+      "reason": "verified_brace_composition"
+    }
+  ],
+  "Z02.8": [
+    {
+      "field": "unclassified",
+      "expected": [
+        [
+          1063,
+          19,
+          "Exámenes para:"
+        ],
+        [
+          1063,
+          20,
+          "• admisión a:"
+        ],
+        [
+          1063,
+          21,
+          "• campamento de veraneo"
+        ],
+        [
+          1063,
+          22,
+          "• prisión"
+        ],
+        [
+          1063,
+          23,
+          "• adopción"
+        ],
+        [
+          1063,
+          24,
+          "• inmigración"
+        ],
+        [
+          1063,
+          25,
+          "• naturalización"
+        ],
+        [
+          1063,
+          26,
+          "• prenupcial"
+        ]
+      ],
+      "entries": [
+        {
+          "text": "Exámenes para admisión a campamento de veraneo"
+        },
+        {
+          "text": "Exámenes para admisión a prisión"
+        },
+        {
+          "text": "Exámenes para adopción"
+        },
+        {
+          "text": "Exámenes para inmigración"
+        },
+        {
+          "text": "Exámenes para naturalización"
+        },
+        {
+          "text": "Exámenes para prenupcial"
+        }
+      ],
+      "reason": "verified_nested_list",
+      "destination": "inclusions"
+    }
+  ]
+}
