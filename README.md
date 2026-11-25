@@ -121,12 +121,6 @@ python3 scripts/check_reasoning.py
 
 Las comprobaciones que necesitan corpus locales se omiten cuando estos no están disponibles. Los informes experimentales históricos no forman parte de esta publicación.
 
-## Qué queda fuera
-
-El repositorio no incluye PDF completos, archivos RF2, corpus procesados, bases de datos, vectores, pesos de modelos, ejecutables descargados, entornos instalados, claves, diagnósticos de usuarios ni historiales de explicaciones. Tampoco incluye copias de respaldo, informes de desarrollo o presentaciones.
-
-El responsable de cada instalación debe obtener las fuentes y modelos por sus canales correspondientes. La licencia Apache del repositorio corresponde al código; las terminologías, documentos y modelos mantienen sus condiciones de uso. Consulta [fuentes y dependencias](docs/third-party.md).
-
 ## Referencias
 
 - [MINSAL: estándares y perfiles de interoperabilidad](https://interoperabilidad.minsal.cl/docs/especificacion-de-la-arquitectura/estandares-perfiles.html).
@@ -136,4 +130,4 @@ El responsable de cada instalación debe obtener las fuentes y modelos por sus c
 
 ## Licencia y contacto
 
-Código bajo [Apache License 2.0](LICENSE). Autor: Mariano Vicencio. Consultas: mariano.vicencio@gmail.com.
+Código bajo [Apache License 2.0](LICENSE).
